@@ -61,7 +61,11 @@ export default function BlogPage() {
                 {p.excerpt}
               </p>
               <div className="mt-4">
-                <ButtonLink href={`/blog/${p.slug}`} variant="link" size="sm">
+                <ButtonLink
+                  href={`/blog/${p.slug}` as any}
+                  variant="link"
+                  size="sm"
+                >
                   Read article
                 </ButtonLink>
               </div>

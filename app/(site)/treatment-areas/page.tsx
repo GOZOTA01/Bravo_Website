@@ -72,7 +72,7 @@ export default function TreatmentAreasPage() {
               </p>
               <div className="mt-4 flex flex-wrap gap-3">
                 <ButtonLink
-                  href={`/treatment-areas/${a.slug}`}
+                  href={`/treatment-areas/${a.slug}` as any}
                   variant="outline"
                   size="sm"
                 >
