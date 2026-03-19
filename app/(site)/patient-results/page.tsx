@@ -16,7 +16,7 @@ const placeholderResults = Array.from({ length: 9 }).map((_, i) => ({
 export default function PatientResultsPage() {
   return (
     <>
-      <section className="border-b border-slate-200 bg-white">
+      <section className="border-b border-brand-stroke bg-brand-bg">
         <div className="container-base py-14">
           <SectionHeader
             eyebrow="Confidence, backed by process"
@@ -39,20 +39,20 @@ export default function PatientResultsPage() {
           {placeholderResults.map((r) => (
             <div
               key={r.id}
-              className="group overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm"
+              className="glass group overflow-hidden rounded-3xl shadow-sm"
             >
-              <div className="h-44 bg-gradient-to-br from-brand.light via-white to-brand.emerald/25 transition group-hover:scale-[1.01]" />
+              <div className="h-44 bg-gradient-to-br from-brand-bg2/30 via-brand-bg to-brand-emerald/25 transition group-hover:scale-[1.01]" />
               <div className="p-5">
                 <h3 className="text-sm font-semibold text-ink">{r.title}</h3>
                 <p className="mt-1 text-xs text-ink.soft">{r.detail}</p>
                 <div className="mt-4 flex gap-3 text-[11px] text-ink.soft">
-                  <span className="rounded-full bg-slate-50 px-2 py-1">
+                  <span className="rounded-full bg-white/5 px-2 py-1 border border-brand-stroke">
                     Abdomen
                   </span>
-                  <span className="rounded-full bg-slate-50 px-2 py-1">
+                  <span className="rounded-full bg-white/5 px-2 py-1 border border-brand-stroke">
                     Waist
                   </span>
-                  <span className="rounded-full bg-slate-50 px-2 py-1">
+                  <span className="rounded-full bg-white/5 px-2 py-1 border border-brand-stroke">
                     Thighs
                   </span>
                 </div>
@@ -61,7 +61,7 @@ export default function PatientResultsPage() {
           ))}
         </div>
 
-        <div className="mt-12 rounded-3xl border border-slate-200 bg-slate-50 p-8">
+        <div className="mt-12 rounded-3xl border border-brand-stroke bg-brand-surface p-8 backdrop-blur">
           <h2 className="text-lg font-semibold text-ink">
             Expected outcomes (high level)
           </h2>

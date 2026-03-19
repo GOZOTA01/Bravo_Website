@@ -192,7 +192,7 @@ export default async function TreatmentAreaPage({
 
   return (
     <>
-      <section className="border-b border-slate-200 bg-white">
+      <section className="border-b border-brand-stroke bg-brand-bg">
         <div className="container-base py-14">
           <SectionHeader
             eyebrow="Treatment area"
@@ -225,13 +225,13 @@ export default async function TreatmentAreaPage({
             </div>
           </div>
 
-          <aside className="rounded-3xl border border-slate-200 bg-slate-50 p-6">
+          <aside className="glass rounded-3xl p-6 shadow-sm">
             <h3 className="text-sm font-semibold text-ink">
               Frequently asked questions
             </h3>
             <div className="mt-4 space-y-4 text-xs text-ink.soft">
               {area.faqs.map((f) => (
-                <div key={f.q} className="rounded-2xl bg-white p-4">
+                <div key={f.q} className="glass rounded-2xl p-4">
                   <p className="font-semibold text-ink">{f.q}</p>
                   <p className="mt-2 leading-relaxed">{f.a}</p>
                 </div>

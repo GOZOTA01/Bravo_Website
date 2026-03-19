@@ -8,7 +8,7 @@ export const metadata = {
 export default function DisclaimerPage() {
   return (
     <>
-      <section className="border-b border-slate-200 bg-white">
+      <section className="border-b border-brand-stroke bg-brand-bg">
         <div className="container-base py-14">
           <SectionHeader
             eyebrow="Legal"
@@ -18,7 +18,7 @@ export default function DisclaimerPage() {
         </div>
       </section>
       <section className="container-base py-16 text-sm text-ink.soft">
-        <div className="rounded-3xl border border-slate-200 bg-slate-50 p-8">
+        <div className="glass rounded-3xl p-8 shadow-sm">
           <p>
             Bravo Laser information is for educational purposes and does not
             replace medical advice. Individual results vary. Consult a licensed

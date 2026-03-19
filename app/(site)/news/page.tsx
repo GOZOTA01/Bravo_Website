@@ -9,7 +9,7 @@ export const metadata = {
 export default function NewsPage() {
   return (
     <>
-      <section className="border-b border-slate-200 bg-white">
+      <section className="border-b border-brand-stroke bg-brand-bg">
         <div className="container-base py-14">
           <SectionHeader
             eyebrow="Updates"
@@ -20,7 +20,7 @@ export default function NewsPage() {
       </section>
 
       <section className="container-base py-16 text-sm text-ink.soft">
-        <div className="rounded-3xl border border-slate-200 bg-slate-50 p-8">
+        <div className="glass rounded-3xl p-8 shadow-sm">
           <p>
             Coming soon: Bravo Laser announcements, clinic spotlights, and
             industry updates.

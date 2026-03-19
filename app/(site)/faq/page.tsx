@@ -65,7 +65,7 @@ const providerFaqs = [
 export default function FaqPage() {
   return (
     <>
-      <section className="border-b border-slate-200 bg-white">
+      <section className="border-b border-brand-stroke bg-brand-bg">
         <div className="container-base py-14">
           <SectionHeader
             eyebrow="Clarity builds trust"
@@ -100,7 +100,7 @@ export default function FaqPage() {
           </div>
         </div>
 
-        <div className="my-14 h-px bg-slate-200" />
+        <div className="my-14 h-px bg-brand-stroke/60" />
 
         <div id="providers" className="scroll-mt-24">
           <SectionHeader

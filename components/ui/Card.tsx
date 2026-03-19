@@ -11,7 +11,7 @@ export function Card({
   return (
     <div
       className={cx(
-        "rounded-3xl border border-slate-200 bg-white shadow-sm",
+        "glass rounded-3xl shadow-sm",
         className
       )}
       {...props}

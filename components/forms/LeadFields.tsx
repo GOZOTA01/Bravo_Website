@@ -26,7 +26,7 @@ export function Field({
     <label className="block">
       <span className="text-xs font-semibold text-ink">
         {label}
-        {required ? <span className="text-brand.emerald"> *</span> : null}
+        {required ? <span className="text-brand-emerald"> *</span> : null}
       </span>
       <input
         name={name}
@@ -35,7 +35,7 @@ export function Field({
         aria-invalid={Boolean(error)}
         aria-describedby={describedBy}
         className={cx(
-          "mt-2 w-full rounded-2xl border bg-white px-4 py-3 text-sm text-ink shadow-sm outline-none transition placeholder:text-slate-400 focus:border-brand.emerald focus:ring-2 focus:ring-brand.emerald/20",
+          "mt-2 w-full rounded-2xl border border-slate-200 bg-white px-4 py-3 text-sm text-slate-900 shadow-sm outline-none transition placeholder:text-slate-500 focus:border-brand-emerald focus:ring-2 focus:ring-brand-emerald/20",
           error ? "border-red-300" : "border-slate-200"
         )}
       />
@@ -66,14 +66,14 @@ export function SelectField({
     <label className="block">
       <span className="text-xs font-semibold text-ink">
         {label}
-        {required ? <span className="text-brand.emerald"> *</span> : null}
+        {required ? <span className="text-brand-emerald"> *</span> : null}
       </span>
       <select
         name={name}
         aria-invalid={Boolean(error)}
         aria-describedby={describedBy}
         className={cx(
-          "mt-2 w-full rounded-2xl border bg-white px-4 py-3 text-sm text-ink shadow-sm outline-none transition focus:border-brand.emerald focus:ring-2 focus:ring-brand.emerald/20",
+          "mt-2 w-full rounded-2xl border border-slate-200 bg-white px-4 py-3 text-sm text-slate-900 shadow-sm outline-none transition focus:border-brand-emerald focus:ring-2 focus:ring-brand-emerald/20",
           error ? "border-red-300" : "border-slate-200"
         )}
       >
@@ -110,7 +110,7 @@ export function TextAreaField({
         aria-invalid={Boolean(error)}
         aria-describedby={describedBy}
         className={cx(
-          "mt-2 w-full resize-y rounded-2xl border bg-white px-4 py-3 text-sm text-ink shadow-sm outline-none transition placeholder:text-slate-400 focus:border-brand.emerald focus:ring-2 focus:ring-brand.emerald/20",
+          "mt-2 w-full resize-y rounded-2xl border border-slate-200 bg-white px-4 py-3 text-sm text-slate-900 shadow-sm outline-none transition placeholder:text-slate-500 focus:border-brand-emerald focus:ring-2 focus:ring-brand-emerald/20",
           error ? "border-red-300" : "border-slate-200"
         )}
       />
@@ -141,9 +141,9 @@ export function ConsentField({
           type="checkbox"
           aria-invalid={Boolean(error)}
           aria-describedby={describedBy}
-          className="mt-1 h-4 w-4 accent-brand.emerald"
+          className="mt-1 h-4 w-4 accent-brand-emerald"
         />
-        <span className="text-xs leading-relaxed text-ink.soft">{label}</span>
+        <span className="text-xs leading-relaxed text-slate-700">{label}</span>
       </label>
       {error ? (
         <span id={describedBy} className="mt-2 block text-xs text-red-600">

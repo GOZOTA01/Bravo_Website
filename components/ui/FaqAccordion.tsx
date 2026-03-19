@@ -10,7 +10,7 @@ export function FaqAccordion({
       {items.map((item) => (
         <details
           key={item.question}
-          className="group rounded-2xl border border-slate-200 bg-white px-5 py-4"
+          className="group rounded-2xl border border-brand-stroke bg-brand-surface px-5 py-4 backdrop-blur"
         >
           <summary className="cursor-pointer list-none text-sm font-semibold text-ink">
             <span className="flex items-center justify-between gap-4">

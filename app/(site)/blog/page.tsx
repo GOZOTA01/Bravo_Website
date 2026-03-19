@@ -34,7 +34,7 @@ const placeholderPosts = [
 export default function BlogPage() {
   return (
     <>
-      <section className="border-b border-slate-200 bg-white">
+      <section className="border-b border-brand-stroke bg-brand-bg">
         <div className="container-base py-14">
           <SectionHeader
             eyebrow="Articles & updates"
@@ -49,9 +49,9 @@ export default function BlogPage() {
           {placeholderPosts.map((p) => (
             <article
               key={p.slug}
-              className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm"
+              className="glass rounded-3xl p-6 shadow-sm"
             >
-              <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-brand.emerald">
+              <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-brand-emerald">
                 {p.category}
               </p>
               <h2 className="mt-3 text-base font-semibold tracking-tight text-ink">

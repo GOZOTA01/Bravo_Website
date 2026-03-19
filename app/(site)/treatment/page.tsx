@@ -10,7 +10,7 @@ export const metadata = {
 export default function TreatmentPage() {
   return (
     <>
-      <section className="border-b border-slate-200 bg-white">
+      <section className="border-b border-brand-stroke bg-brand-bg">
         <div className="container-base py-14">
           <SectionHeader
             eyebrow="Comfortable. Structured. Clinical."
@@ -62,7 +62,7 @@ export default function TreatmentPage() {
                   Lifestyle support can be used to reinforce outcomes.
                 </p>
               </div>
-              <div className="rounded-3xl border border-slate-200 bg-slate-50 p-6">
+              <div className="glass rounded-3xl p-6 shadow-sm">
                 <h3 className="text-sm font-semibold text-ink">
                   Realistic expectations
                 </h3>
@@ -76,7 +76,7 @@ export default function TreatmentPage() {
             </div>
           </div>
 
-          <aside className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+          <aside className="glass rounded-3xl p-6 shadow-sm">
             <h3 className="text-sm font-semibold text-ink">
               Quick answers
             </h3>

@@ -10,7 +10,7 @@ export const metadata = {
 export default function WhatIsBravoLaserPage() {
   return (
     <>
-      <section className="border-b border-slate-200 bg-white">
+      <section className="border-b border-brand-stroke bg-brand-bg">
         <div className="container-base py-14">
           <SectionHeader
             eyebrow="Science‑backed body contouring"
@@ -75,7 +75,7 @@ export default function WhatIsBravoLaserPage() {
                   What makes it different
                 </h2>
                 <ul className="mt-3 grid gap-2">
-                  <li className="rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3">
+                  <li className="glass rounded-2xl px-4 py-3">
                     <span className="font-semibold text-ink">
                       Non‑surgical
                     </span>{" "}
@@ -83,7 +83,7 @@ export default function WhatIsBravoLaserPage() {
                       — no anesthesia, no incisions, no recovery timeline.
                     </span>
                   </li>
-                  <li className="rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3">
+                  <li className="rounded-2xl border border-brand-stroke bg-brand-surface px-4 py-3">
                     <span className="font-semibold text-ink">
                       Workflow‑friendly
                     </span>{" "}
@@ -92,7 +92,7 @@ export default function WhatIsBravoLaserPage() {
                       operations.
                     </span>
                   </li>
-                  <li className="rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3">
+                  <li className="rounded-2xl border border-brand-stroke bg-brand-surface px-4 py-3">
                     <span className="font-semibold text-ink">Premium</span>{" "}
                     <span>
                       — a high‑trust, clinical experience with modern design and
@@ -104,7 +104,7 @@ export default function WhatIsBravoLaserPage() {
             </div>
           </div>
 
-          <aside className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+          <aside className="rounded-3xl border border-brand-stroke bg-brand-surface p-6 shadow-sm backdrop-blur">
             <h3 className="text-sm font-semibold text-ink">
               Not sure where to start?
             </h3>

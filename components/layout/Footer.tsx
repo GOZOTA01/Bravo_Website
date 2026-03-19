@@ -1,17 +1,25 @@
 import Link from "next/link";
+import Image from "next/image";
+import logo from "@/pictures/logo.png";
 
 export function Footer() {
   return (
-    <footer className="mt-16 border-t border-slate-200 bg-slate-50/70">
-      <div className="container-base py-10 text-sm text-ink.soft">
+    <footer className="mt-16 border-t border-brand-stroke bg-brand-bg">
+      <div className="container-base py-12 text-sm text-ink.soft">
         <div className="grid gap-8 md:grid-cols-6">
           <div className="space-y-3 md:col-span-2">
             <div className="flex items-center gap-2">
-              <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-brand.emerald text-white text-sm font-semibold">
-                B
+              <div className="relative h-9 w-9 overflow-hidden rounded-xl border border-brand-stroke bg-brand-surface">
+                <Image
+                  src={logo}
+                  alt="Bravo Laser"
+                  fill
+                  className="object-cover"
+                  sizes="36px"
+                />
               </div>
-              <span className="text-sm font-semibold text-ink">
-                Bravo Laser
+              <span className="text-sm font-semibold tracking-[0.18em] text-ink">
+                BRAVO LASER
               </span>
             </div>
             <p className="max-w-xs text-xs leading-relaxed">
@@ -19,111 +27,149 @@ export function Footer() {
               platform designed to deliver clinically credible fat reduction
               with no surgery and no downtime.
             </p>
-            <p className="text-[11px] text-slate-500">
+            <p className="text-[11px] text-ink.soft">
               © {new Date().getFullYear()} Bravo Laser. All rights reserved.
             </p>
           </div>
 
           <div className="space-y-2">
-            <h3 className="text-xs font-semibold uppercase tracking-wide text-ink">
+            <h3 className="text-xs font-semibold uppercase tracking-[0.22em] text-brand-gold">
               Explore
             </h3>
             <ul className="space-y-1 text-xs">
               <li>
-                <Link href="/what-is-bravo-laser">What is Bravo Laser</Link>
+                <Link className="hover:text-brand-gold" href="/what-is-bravo-laser">
+                  What is Bravo Laser
+                </Link>
               </li>
               <li>
-                <Link href="/treatment">Treatment</Link>
+                <Link className="hover:text-brand-gold" href="/treatment">
+                  Treatment
+                </Link>
               </li>
               <li>
-                <Link href="/patient-results">Patient Results</Link>
+                <Link className="hover:text-brand-gold" href="/patient-results">
+                  Patient Results
+                </Link>
               </li>
               <li>
-                <Link href="/treatment-areas">Treatment Areas</Link>
+                <Link className="hover:text-brand-gold" href="/treatment-areas">
+                  Treatment Areas
+                </Link>
               </li>
               <li>
-                <Link href="/find-a-provider">Find a Provider</Link>
+                <Link className="hover:text-brand-gold" href="/find-a-provider">
+                  Find a Provider
+                </Link>
               </li>
             </ul>
           </div>
 
           <div className="space-y-2">
-            <h3 className="text-xs font-semibold uppercase tracking-wide text-ink">
+            <h3 className="text-xs font-semibold uppercase tracking-[0.22em] text-brand-gold">
               Providers
             </h3>
             <ul className="space-y-1 text-xs">
               <li>
-                <Link href="/provider-benefits">Provider Benefits</Link>
+                <Link className="hover:text-brand-gold" href="/provider-benefits">
+                  Provider Benefits
+                </Link>
               </li>
               <li>
-                <Link href="/faq#providers">Provider FAQ</Link>
+                <Link className="hover:text-brand-gold" href="/faq#providers">
+                  Provider FAQ
+                </Link>
               </li>
               <li>
-                <Link href="/contact?type=provider">Inquire Now</Link>
+                <Link className="hover:text-brand-gold" href="/contact?type=provider">
+                  Inquire Now
+                </Link>
               </li>
             </ul>
           </div>
 
           <div className="space-y-2">
-            <h3 className="text-xs font-semibold uppercase tracking-wide text-ink">
+            <h3 className="text-xs font-semibold uppercase tracking-[0.22em] text-brand-gold">
               Company
             </h3>
             <ul className="space-y-1 text-xs">
               <li>
-                <Link href="/about">About Us</Link>
+                <Link className="hover:text-brand-gold" href="/about">
+                  About Us
+                </Link>
               </li>
               <li>
-                <Link href="/contact">Contact</Link>
+                <Link className="hover:text-brand-gold" href="/contact">
+                  Contact
+                </Link>
               </li>
               <li>
-                <Link href="/blog">Articles / Blog</Link>
+                <Link className="hover:text-brand-gold" href="/blog">
+                  Articles / Blog
+                </Link>
               </li>
               <li>
-                <Link href="/news">News</Link>
+                <Link className="hover:text-brand-gold" href="/news">
+                  News
+                </Link>
               </li>
             </ul>
           </div>
 
           <div className="space-y-2">
-            <h3 className="text-xs font-semibold uppercase tracking-wide text-ink">
+            <h3 className="text-xs font-semibold uppercase tracking-[0.22em] text-brand-gold">
               Legal
             </h3>
             <ul className="space-y-1 text-xs">
               <li>
-                <Link href="/privacy">Privacy Policy</Link>
+                <Link className="hover:text-brand-gold" href="/privacy">
+                  Privacy Policy
+                </Link>
               </li>
               <li>
-                <Link href="/terms">Terms &amp; Conditions</Link>
+                <Link className="hover:text-brand-gold" href="/terms">
+                  Terms &amp; Conditions
+                </Link>
               </li>
               <li>
-                <Link href="/disclaimer">Disclaimer</Link>
+                <Link className="hover:text-brand-gold" href="/disclaimer">
+                  Disclaimer
+                </Link>
               </li>
             </ul>
           </div>
 
           <div className="space-y-2">
-            <h3 className="text-xs font-semibold uppercase tracking-wide text-ink">
+            <h3 className="text-xs font-semibold uppercase tracking-[0.22em] text-brand-gold">
               Social
             </h3>
             <ul className="space-y-1 text-xs">
               <li>
                 <a href="#" aria-label="Bravo Laser on Instagram">
-                  Instagram
+                  <span className="transition hover:text-brand-gold">
+                    Instagram
+                  </span>
                 </a>
               </li>
               <li>
                 <a href="#" aria-label="Bravo Laser on Facebook">
-                  Facebook
+                  <span className="transition hover:text-brand-gold">
+                    Facebook
+                  </span>
                 </a>
               </li>
               <li>
                 <a href="#" aria-label="Bravo Laser on X / Twitter">
-                  X / Twitter
+                  <span className="transition hover:text-brand-gold">
+                    X / Twitter
+                  </span>
                 </a>
               </li>
               <li>
                 <a href="#" aria-label="Bravo Laser on LinkedIn">
-                  LinkedIn
+                  <span className="transition hover:text-brand-gold">
+                    LinkedIn
+                  </span>
                 </a>
               </li>
             </ul>

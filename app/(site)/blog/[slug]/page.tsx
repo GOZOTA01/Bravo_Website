@@ -52,7 +52,7 @@ export default async function BlogPostPage({
 
   return (
     <>
-      <section className="border-b border-slate-200 bg-white">
+      <section className="border-b border-brand-stroke bg-brand-bg">
         <div className="container-base py-14">
           <SectionHeader
             eyebrow={post.category}
@@ -77,7 +77,7 @@ export default async function BlogPostPage({
           ))}
         </article>
 
-        <div className="mt-12 rounded-3xl border border-slate-200 bg-slate-50 p-8">
+        <div className="glass mt-12 rounded-3xl p-8 shadow-sm">
           <h2 className="text-lg font-semibold text-ink">
             Ready for next steps?
           </h2>

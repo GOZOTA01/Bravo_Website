@@ -13,11 +13,11 @@ export function SectionHeader({
   return (
     <div className={`space-y-3 ${alignClass}`}>
       {eyebrow ? (
-        <p className="text-xs font-semibold uppercase tracking-[0.2em] text-brand.emerald">
+        <p className="text-xs font-semibold uppercase tracking-[0.28em] text-brand-gold">
           {eyebrow}
         </p>
       ) : null}
-      <h2 className="text-2xl font-semibold tracking-tight text-ink sm:text-3xl">
+      <h2 className="text-2xl font-semibold tracking-[0.06em] text-ink sm:text-3xl">
         {title}
       </h2>
       {subtitle ? (

@@ -10,7 +10,7 @@ export const metadata = {
 export default function AboutPage() {
   return (
     <>
-      <section className="border-b border-slate-200 bg-white">
+      <section className="border-b border-brand-stroke bg-brand-bg">
         <div className="container-base py-14">
           <SectionHeader
             eyebrow="High‑trust, modern med‑tech"
@@ -67,7 +67,7 @@ export default function AboutPage() {
               ].map((v) => (
                 <div
                   key={v.title}
-                  className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm"
+                  className="glass rounded-3xl p-6 shadow-sm"
                 >
                   <h3 className="text-sm font-semibold text-ink">{v.title}</h3>
                   <p className="mt-2 text-xs leading-relaxed text-ink.soft">
@@ -78,7 +78,7 @@ export default function AboutPage() {
             </div>
           </div>
 
-          <aside className="rounded-3xl border border-slate-200 bg-slate-50 p-6">
+          <aside className="glass rounded-3xl p-6">
             <h3 className="text-sm font-semibold text-ink">Medical credibility</h3>
             <p className="mt-2 text-xs leading-relaxed text-ink.soft">
               This site is designed to support future clinical assets—study

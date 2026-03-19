@@ -11,7 +11,7 @@ export const metadata = {
 export default function ProviderBenefitsPage() {
   return (
     <>
-      <section className="border-b border-slate-200 bg-white">
+      <section className="border-b border-brand-stroke bg-brand-bg">
         <div className="container-base py-14">
           <SectionHeader
             eyebrow="For clinics & medical practices"
@@ -31,7 +31,7 @@ export default function ProviderBenefitsPage() {
 
       <section className="container-base py-16">
         <div className="grid gap-6 lg:grid-cols-3">
-          <div className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+          <div className="glass rounded-3xl p-6 shadow-sm">
             <h3 className="text-sm font-semibold text-ink">
               Differentiation patients understand
             </h3>
@@ -40,14 +40,14 @@ export default function ProviderBenefitsPage() {
               for staff to explain and for patients to trust.
             </p>
           </div>
-          <div className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+          <div className="glass rounded-3xl p-6 shadow-sm">
             <h3 className="text-sm font-semibold text-ink">Operationally easy</h3>
             <p className="mt-2 text-xs leading-relaxed text-ink.soft">
               Streamlined protocol with minimal overhead—designed for med spas,
               chiropractic, wellness, and aesthetic practices.
             </p>
           </div>
-          <div className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+          <div className="glass rounded-3xl p-6 shadow-sm">
             <h3 className="text-sm font-semibold text-ink">
               Scalable revenue category
             </h3>
@@ -76,15 +76,15 @@ export default function ProviderBenefitsPage() {
               ].map((x) => (
                 <li
                   key={x}
-                  className="rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3 text-xs"
+                  className="glass rounded-2xl px-4 py-3 text-xs"
                 >
                   {x}
                 </li>
               ))}
             </ul>
 
-            <div className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
-              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-brand.emerald">
+            <div className="glass rounded-3xl p-6 shadow-sm">
+              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-brand-emerald">
                 Financing / acquisition ready
               </p>
               <p className="mt-2 text-sm leading-relaxed text-ink.soft">
@@ -103,7 +103,7 @@ export default function ProviderBenefitsPage() {
             </div>
           </div>
 
-          <div className="rounded-3xl border border-slate-200 bg-slate-50 p-8">
+          <div className="glass rounded-3xl p-8 shadow-sm">
             <h3 className="text-lg font-semibold text-ink">
               Provider inquiry
             </h3>

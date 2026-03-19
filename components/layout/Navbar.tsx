@@ -1,4 +1,6 @@
 import Link from "next/link";
+import Image from "next/image";
+import logo from "@/pictures/logo.png";
 
 const navLinks = [
   { href: "/what-is-bravo-laser", label: "What is Bravo Laser" },
@@ -14,18 +16,25 @@ const navLinks = [
 
 export function Navbar() {
   return (
-    <header className="sticky top-0 z-40 border-b border-slate-200 bg-white/90 backdrop-blur">
+    <header className="sticky top-0 z-40 border-b border-brand-stroke bg-brand-bg/70 backdrop-blur">
       <div className="container-base flex h-16 items-center justify-between gap-4">
         <Link href="/" className="flex items-center gap-2">
-          <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-brand.emerald text-white text-sm font-semibold">
-            B
+          <div className="relative h-9 w-9 overflow-hidden rounded-xl border border-brand-stroke bg-brand-surface">
+            <Image
+              src={logo}
+              alt="Bravo Laser"
+              fill
+              className="object-cover"
+              sizes="36px"
+              priority
+            />
           </div>
           <div className="flex flex-col leading-tight">
-            <span className="text-sm font-semibold tracking-wide">
-              Bravo Laser
+            <span className="text-sm font-semibold tracking-[0.18em] text-ink">
+              BRAVO LASER
             </span>
-            <span className="text-[11px] text-ink.soft">
-              Non‑Invasive Body Contouring
+            <span className="text-[11px] uppercase tracking-[0.22em] text-ink.soft">
+              Advanced body contouring
             </span>
           </div>
         </Link>
@@ -35,7 +44,7 @@ export function Navbar() {
             <Link
               key={item.href}
               href={item.href}
-              className="text-ink.soft transition hover:text-ink"
+              className="text-[13px] text-ink.soft transition hover:text-brand-gold"
             >
               {item.label}
             </Link>
@@ -45,13 +54,13 @@ export function Navbar() {
         <div className="hidden items-center gap-3 md:flex">
           <Link
             href="/contact?type=patient"
-            className="rounded-pill border border-brand.emerald px-4 py-2 text-xs font-medium text-brand.emerald transition hover:bg-brand.light"
+            className="rounded-pill border border-brand-stroke bg-transparent px-4 py-2 text-xs font-semibold text-brand-gold transition hover:border-[rgba(214,179,106,0.35)] hover:bg-white/5"
           >
             Book Consultation
           </Link>
           <Link
             href="/provider-benefits"
-            className="rounded-pill bg-brand.emerald px-4 py-2 text-xs font-semibold text-white shadow-sm transition hover:bg-emerald-600"
+            className="rounded-pill bg-gradient-to-b from-brand-emerald to-brand-emerald2 px-4 py-2 text-xs font-semibold text-white shadow-glow transition hover:shadow-[0_0_0_1px_rgba(13,163,143,0.30),0_18px_90px_rgba(13,163,143,0.18)]"
           >
             For Providers
           </Link>

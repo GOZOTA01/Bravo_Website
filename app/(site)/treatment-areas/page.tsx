@@ -41,7 +41,7 @@ export const metadata = {
 export default function TreatmentAreasPage() {
   return (
     <>
-      <section className="border-b border-slate-200 bg-white">
+      <section className="border-b border-brand-stroke bg-brand-bg">
         <div className="container-base py-14">
           <SectionHeader
             eyebrow="Targeted, provider-guided"
@@ -64,7 +64,7 @@ export default function TreatmentAreasPage() {
           {areas.map((a) => (
             <div
               key={a.slug}
-              className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm"
+              className="glass rounded-3xl p-6 shadow-sm"
             >
               <h3 className="text-sm font-semibold text-ink">{a.name}</h3>
               <p className="mt-2 text-xs leading-relaxed text-ink.soft">
