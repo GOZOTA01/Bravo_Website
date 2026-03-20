@@ -6,6 +6,9 @@ function cx(...classes: Array<string | false | undefined | null>) {
   return classes.filter(Boolean).join(" ");
 }
 
+const fieldBase =
+  "mt-2 w-full rounded-2xl border border-brand-stroke bg-brand-surfaceMuted/80 px-4 py-3 text-sm text-ink shadow-sm outline-none transition placeholder:text-ink.soft/55 focus:border-brand-gold/60 focus:ring-2 focus:ring-brand-gold/15";
+
 export function Field({
   label,
   name,
@@ -26,7 +29,7 @@ export function Field({
     <label className="block">
       <span className="text-xs font-semibold text-ink">
         {label}
-        {required ? <span className="text-brand-emerald"> *</span> : null}
+        {required ? <span className="text-brand-gold"> *</span> : null}
       </span>
       <input
         name={name}
@@ -34,13 +37,10 @@ export function Field({
         placeholder={placeholder}
         aria-invalid={Boolean(error)}
         aria-describedby={describedBy}
-        className={cx(
-          "mt-2 w-full rounded-2xl border border-slate-200 bg-white px-4 py-3 text-sm text-slate-900 shadow-sm outline-none transition placeholder:text-slate-500 focus:border-brand-emerald focus:ring-2 focus:ring-brand-emerald/20",
-          error ? "border-red-300" : "border-slate-200"
-        )}
+        className={cx(fieldBase, error ? "border-red-400/50" : "")}
       />
       {error ? (
-        <span id={describedBy} className="mt-2 block text-xs text-red-600">
+        <span id={describedBy} className="mt-2 block text-xs text-red-400">
           {error}
         </span>
       ) : null}
@@ -66,21 +66,18 @@ export function SelectField({
     <label className="block">
       <span className="text-xs font-semibold text-ink">
         {label}
-        {required ? <span className="text-brand-emerald"> *</span> : null}
+        {required ? <span className="text-brand-gold"> *</span> : null}
       </span>
       <select
         name={name}
         aria-invalid={Boolean(error)}
         aria-describedby={describedBy}
-        className={cx(
-          "mt-2 w-full rounded-2xl border border-slate-200 bg-white px-4 py-3 text-sm text-slate-900 shadow-sm outline-none transition focus:border-brand-emerald focus:ring-2 focus:ring-brand-emerald/20",
-          error ? "border-red-300" : "border-slate-200"
-        )}
+        className={cx(fieldBase, error ? "border-red-400/50" : "")}
       >
         {children}
       </select>
       {error ? (
-        <span id={describedBy} className="mt-2 block text-xs text-red-600">
+        <span id={describedBy} className="mt-2 block text-xs text-red-400">
           {error}
         </span>
       ) : null}
@@ -110,12 +107,13 @@ export function TextAreaField({
         aria-invalid={Boolean(error)}
         aria-describedby={describedBy}
         className={cx(
-          "mt-2 w-full resize-y rounded-2xl border border-slate-200 bg-white px-4 py-3 text-sm text-slate-900 shadow-sm outline-none transition placeholder:text-slate-500 focus:border-brand-emerald focus:ring-2 focus:ring-brand-emerald/20",
-          error ? "border-red-300" : "border-slate-200"
+          fieldBase,
+          "resize-y",
+          error ? "border-red-400/50" : ""
         )}
       />
       {error ? (
-        <span id={describedBy} className="mt-2 block text-xs text-red-600">
+        <span id={describedBy} className="mt-2 block text-xs text-red-400">
           {error}
         </span>
       ) : null}
@@ -135,22 +133,21 @@ export function ConsentField({
   const describedBy = error ? `${name}-error` : undefined;
   return (
     <div>
-      <label className="flex items-start gap-3 rounded-2xl border border-slate-200 bg-white px-4 py-3">
+      <label className="flex items-start gap-3 rounded-2xl border border-brand-stroke bg-brand-surfaceMuted/60 px-4 py-3">
         <input
           name={name}
           type="checkbox"
           aria-invalid={Boolean(error)}
           aria-describedby={describedBy}
-          className="mt-1 h-4 w-4 accent-brand-emerald"
+          className="mt-1 h-4 w-4 rounded border-brand-stroke bg-brand-bg text-brand-gold accent-brand-gold"
         />
-        <span className="text-xs leading-relaxed text-slate-700">{label}</span>
+        <span className="text-xs leading-relaxed text-ink.soft">{label}</span>
       </label>
       {error ? (
-        <span id={describedBy} className="mt-2 block text-xs text-red-600">
+        <span id={describedBy} className="mt-2 block text-xs text-red-400">
           {error}
         </span>
       ) : null}
     </div>
   );
 }
-

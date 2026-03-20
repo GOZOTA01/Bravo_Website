@@ -11,15 +11,15 @@ body {
 }
 
 .glass {
-  @apply border border-brand-stroke bg-brand-surface backdrop-blur;
+  @apply border border-brand-stroke/80 bg-brand-surface/90 backdrop-blur-sm;
 }
 
 .divider-gold {
   background: linear-gradient(
     90deg,
-    rgba(214, 179, 106, 0),
-    rgba(214, 179, 106, 0.6),
-    rgba(214, 179, 106, 0)
+    rgba(214, 152, 60, 0),
+    rgba(214, 152, 60, 0.55),
+    rgba(214, 152, 60, 0)
   );
 }
 
@@ -29,10 +29,10 @@ body {
     opacity: 0;
   }
   18% {
-    opacity: 0.6;
+    opacity: 0.5;
   }
   60% {
-    opacity: 0.25;
+    opacity: 0.2;
   }
   100% {
     transform: translateX(60%) translateY(30%) rotate(-8deg);
@@ -46,10 +46,10 @@ body {
 
 .bg-laser-grid {
   background-image: radial-gradient(
-      rgba(13, 163, 143, 0.15) 1px,
+      rgba(214, 152, 60, 0.09) 1px,
       transparent 1px
     ),
-    radial-gradient(rgba(214, 179, 106, 0.08) 1px, transparent 1px);
+    radial-gradient(rgba(154, 112, 52, 0.06) 1px, transparent 1px);
   background-size: 64px 64px, 96px 96px;
   background-position: 0 0, 24px 40px;
   mask-image: radial-gradient(circle at center, black 50%, transparent 78%);
@@ -68,26 +68,23 @@ body {
 }
 
 /*
- * Readability on light “patch” panels:
- * Our base theme uses near-white `text-ink` text for dark backgrounds.
- * Some legacy/placeholder sections still use `bg-white` / `bg-slate-50`,
- * so we force those ink colors to a dark palette.
+ * Readability on light “patch” panels (legacy sections):
  */
 .bg-white,
 .bg-slate-50 {
-  background-color: #eef7f4 !important; /* premium off-white (not harsh white) */
+  background-color: #ebeae8 !important;
 }
 
 .bg-white\/80,
 .bg-slate-50\/70 {
-  background-color: rgba(238, 247, 244, 0.85) !important;
+  background-color: rgba(235, 234, 232, 0.88) !important;
 }
 
 .bg-white .text-ink,
 .bg-slate-50 .text-ink,
 .bg-white\/80 .text-ink,
 .bg-slate-50\/70 .text-ink {
-  color: #0b1220 !important;
+  color: #18181c !important;
 }
 
 .bg-white .text-ink-soft,
@@ -98,6 +95,5 @@ body {
 .bg-slate-50 .text-ink\.soft,
 .bg-white\/80 .text-ink\.soft,
 .bg-slate-50\/70 .text-ink\.soft {
-  color: rgba(17, 24, 39, 0.66) !important;
+  color: rgba(24, 24, 28, 0.65) !important;
 }
-

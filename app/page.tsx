@@ -1,5 +1,5 @@
 import Image from "next/image";
-import logo from "@/pictures/logo.png";
+import logo from "@/pictures/Bravo_logo.png";
 import { ButtonLink } from "@/components/ui/Button";
 import { SectionHeader } from "@/components/ui/SectionHeader";
 import { Card } from "@/components/ui/Card";
@@ -16,20 +16,20 @@ export default function HomePage() {
         <section className="relative overflow-hidden border-b border-brand-stroke">
           <div className="absolute inset-0 bg-gradient-to-b from-brand-bg via-brand-bg to-brand-bg2/70" />
           <div className="pointer-events-none absolute inset-0 opacity-70 bg-laser-grid" />
-          <div className="pointer-events-none absolute -left-1/2 top-1/2 h-[520px] w-[1200px] -translate-y-1/2 rotate-[-8deg] bg-gradient-to-r from-transparent via-brand-emerald/18 to-transparent blur-2xl laser-sweep" />
+          <div className="pointer-events-none absolute -left-1/2 top-1/2 h-[520px] w-[1200px] -translate-y-1/2 rotate-[-8deg] bg-gradient-to-r from-transparent via-brand-gold/14 to-transparent blur-2xl laser-sweep" />
           <div className="pointer-events-none absolute -right-1/3 top-10 h-72 w-72 rounded-full bg-brand-gold/10 blur-3xl" />
-          <div className="pointer-events-none absolute left-10 bottom-10 h-72 w-72 rounded-full bg-brand-emerald/12 blur-3xl" />
+          <div className="pointer-events-none absolute left-10 bottom-10 h-72 w-72 rounded-full bg-brand-gold2/10 blur-3xl" />
 
           <div className="container-base relative py-20 sm:py-24">
             <div className="mx-auto max-w-3xl text-center">
               <div className="pointer-events-none absolute left-1/2 top-1/2 h-[520px] w-[520px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-black/20 blur-3xl" />
-              <div className="mx-auto relative h-24 w-24 overflow-hidden rounded-3xl border border-brand-stroke bg-brand-surface shadow-glow">
+              <div className="relative mx-auto h-20 w-[min(100%,280px)] sm:h-24">
                 <Image
                   src={logo}
                   alt="Bravo Laser"
-                  fill
-                  className="object-cover"
-                  sizes="96px"
+                  width={320}
+                  height={96}
+                  className="h-full w-auto max-w-full object-contain object-center"
                   priority
                 />
               </div>
@@ -61,7 +61,7 @@ export default function HomePage() {
                 ].map((x) => (
                   <div
                     key={x.k}
-                    className="glass rounded-3xl px-5 py-4 shadow-[0_0_0_1px_rgba(255,255,255,0.05)]"
+                    className="glass rounded-3xl px-5 py-4 shadow-[0_0_0_1px_rgba(92,92,95,0.35)]"
                   >
                     <p className="text-[10px] font-semibold uppercase tracking-[0.28em] text-ink.soft">
                       {x.k}
@@ -116,7 +116,7 @@ export default function HomePage() {
                   key={x.t}
                   className="glass p-6 hover:shadow-glow transition"
                 >
-                  <div className="h-8 w-8 rounded-2xl border border-brand-stroke bg-gradient-to-b from-brand-emerald/35 to-transparent shadow-[0_0_30px_rgba(13,163,143,0.18)]" />
+                  <div className="h-8 w-8 rounded-2xl border border-brand-stroke bg-gradient-to-b from-brand-gold/25 to-transparent shadow-[0_0_28px_rgba(214,152,60,0.12)]" />
                   <p className="mt-4 text-sm font-semibold tracking-[0.06em] text-ink">
                     {x.t}
                   </p>
@@ -140,7 +140,7 @@ export default function HomePage() {
             />
 
             <div className="mt-10 grid gap-6 lg:grid-cols-2">
-              <Card className="glass group p-8 transition hover:shadow-glow hover:border-[rgba(13,163,143,0.30)]">
+              <Card className="glass group p-8 transition hover:shadow-glow hover:border-brand-gold/35">
                 <p className="text-xs font-semibold uppercase tracking-[0.28em] text-brand-gold">
                   For patients
                 </p>
@@ -170,7 +170,7 @@ export default function HomePage() {
                 <div className="pointer-events-none mt-8 h-px w-full divider-gold opacity-40 group-hover:opacity-70 transition" />
               </Card>
 
-              <Card className="glass group p-8 transition hover:shadow-gold hover:border-[rgba(214,179,106,0.30)]">
+              <Card className="glass group p-8 transition hover:shadow-gold hover:border-brand-gold/35">
                 <p className="text-xs font-semibold uppercase tracking-[0.28em] text-brand-gold">
                   For providers
                 </p>
@@ -224,10 +224,10 @@ export default function HomePage() {
             ].map((x) => (
               <Card
                 key={x.t}
-                className="glass p-6 transition hover:shadow-glow hover:border-[rgba(13,163,143,0.28)]"
+                className="glass p-6 transition hover:shadow-glow hover:border-brand-gold/30"
               >
                 <div className="flex items-start gap-3">
-                  <div className="mt-0.5 h-2.5 w-2.5 rounded-full bg-brand-emerald shadow-[0_0_24px_rgba(13,163,143,0.35)]" />
+                  <div className="mt-0.5 h-2.5 w-2.5 rounded-full bg-brand-gold shadow-[0_0_22px_rgba(214,152,60,0.35)]" />
                   <div>
                     <p className="text-sm font-semibold tracking-[0.06em] text-ink">
                       {x.t}
@@ -257,7 +257,7 @@ export default function HomePage() {
                   key={i}
                   className="group relative overflow-hidden rounded-3xl border border-brand-stroke bg-brand-surface"
                 >
-                  <div className="h-56 bg-gradient-to-br from-brand-bg2/40 via-brand-bg to-brand-emerald/15 transition duration-500 group-hover:scale-[1.03]" />
+                  <div className="h-56 bg-gradient-to-br from-brand-bg2/40 via-brand-bg to-brand-gold/12 transition duration-500 group-hover:scale-[1.03]" />
                   <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/55 via-black/10 to-transparent opacity-90" />
                   <div className="absolute bottom-0 left-0 right-0 p-5">
                     <p className="text-[11px] font-semibold uppercase tracking-[0.28em] text-brand-gold">
@@ -333,7 +333,7 @@ export default function HomePage() {
               ].map((name) => (
                 <Card
                   key={name}
-                  className="glass p-6 transition hover:shadow-glow hover:border-[rgba(13,163,143,0.30)]"
+                  className="glass p-6 transition hover:shadow-glow hover:border-brand-gold/30"
                 >
                   <p className="text-sm font-semibold tracking-[0.06em] text-ink">
                     {name}
@@ -382,7 +382,7 @@ export default function HomePage() {
             ].map((x) => (
               <Card
                 key={x.q}
-                className="glass p-6 transition hover:shadow-gold hover:border-[rgba(214,179,106,0.28)]"
+                className="glass p-6 transition hover:shadow-gold hover:border-brand-gold/30"
               >
                 <p className="text-sm leading-relaxed text-ink">“{x.q}”</p>
                 <p className="mt-4 text-xs font-semibold uppercase tracking-[0.22em] text-brand-gold">

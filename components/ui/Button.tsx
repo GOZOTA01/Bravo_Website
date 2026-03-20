@@ -9,17 +9,18 @@ function cx(...classes: Array<string | false | undefined | null>) {
 }
 
 const base =
-  "inline-flex items-center justify-center rounded-pill font-semibold transition will-change-transform focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-emerald focus-visible:ring-offset-2 focus-visible:ring-offset-brand-bg";
+  "inline-flex items-center justify-center rounded-pill font-semibold transition will-change-transform focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-gold/50 focus-visible:ring-offset-2 focus-visible:ring-offset-brand-bg";
 
 const variants: Record<Variant, string> = {
   primary:
-    "bg-gradient-to-b from-brand-emerald to-brand-emerald2 text-white shadow-glow hover:translate-y-[-1px] hover:shadow-[0_0_0_1px_rgba(13,163,143,0.30),0_18px_90px_rgba(13,163,143,0.18)]",
-  gold: "bg-gradient-to-b from-brand-gold to-brand-gold2 text-brand-bg shadow-gold hover:translate-y-[-1px] hover:shadow-[0_0_0_1px_rgba(214,179,106,0.28),0_18px_90px_rgba(214,179,106,0.16)]",
+    "bg-gradient-to-b from-brand-gold to-brand-gold2 text-brand-bg shadow-glow hover:translate-y-[-1px] hover:shadow-glowHover",
+  gold:
+    "bg-gradient-to-b from-brand-gold to-brand-gold2 text-brand-bg shadow-glow hover:translate-y-[-1px] hover:shadow-glowHover",
   secondary:
-    "glass text-ink hover:border-[rgba(214,179,106,0.25)] hover:text-brand-mint",
+    "border border-brand-stroke bg-brand-surfaceMuted/80 text-ink backdrop-blur-sm hover:border-brand-gold/45 hover:text-brand-gold",
   outline:
-    "border border-brand-stroke bg-transparent text-ink hover:border-brand-gold/40 hover:text-brand-gold",
-  link: "text-ink.soft underline-offset-4 hover:text-ink hover:underline",
+    "border border-brand-gold/55 bg-transparent text-ink hover:border-brand-gold hover:bg-brand-gold hover:text-brand-bg",
+  link: "text-ink.soft underline-offset-4 hover:text-brand-gold hover:underline decoration-brand-gold/60",
 };
 
 const sizes: Record<Size, string> = {
@@ -54,4 +55,3 @@ export function ButtonLink({
     />
   );
 }
-

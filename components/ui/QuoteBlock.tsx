@@ -11,15 +11,14 @@ export function QuoteBlock({
 }) {
   return (
     <Card className="relative overflow-hidden p-6">
-      <div className="pointer-events-none absolute -right-16 -top-16 h-44 w-44 rounded-full bg-brand-emerald/10 blur-2xl" />
-      <blockquote className="relative text-sm leading-relaxed text-slate-900">
+      <div className="pointer-events-none absolute -right-16 -top-16 h-44 w-44 rounded-full bg-brand-gold/10 blur-2xl" />
+      <blockquote className="relative text-sm leading-relaxed text-ink">
         “{quote}”
       </blockquote>
-      <div className="mt-4 text-xs text-slate-700">
-        <p className="font-semibold text-slate-900">{name}</p>
+      <div className="mt-4 text-xs text-ink.soft">
+        <p className="font-semibold text-ink">{name}</p>
         {title ? <p>{title}</p> : null}
       </div>
     </Card>
   );
 }
-

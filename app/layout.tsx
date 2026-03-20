@@ -8,6 +8,10 @@ export const metadata: Metadata = {
   },
   description:
     "Bravo Laser is a modern, non‑invasive laser body contouring treatment that helps patients reduce stubborn fat with no surgery and no downtime while empowering providers with a scalable med‑tech solution.",
+  icons: {
+    icon: "/bravo-logo.png",
+    apple: "/bravo-logo.png",
+  },
 };
 
 export default function RootLayout({
@@ -23,4 +27,3 @@ export default function RootLayout({
     </html>
   );
 }
-

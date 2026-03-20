@@ -1,26 +1,25 @@
 import Link from "next/link";
 import Image from "next/image";
-import logo from "@/pictures/logo.png";
+import logo from "@/pictures/Bravo_logo.png";
+
+const logoClass = "relative h-9 w-[118px] shrink-0 sm:h-10 sm:w-[128px]";
 
 export function Footer() {
   return (
-    <footer className="mt-16 border-t border-brand-stroke bg-brand-bg">
+    <footer className="mt-16 border-t border-brand-stroke/90 bg-brand-bg">
       <div className="container-base py-12 text-sm text-ink.soft">
         <div className="grid gap-8 md:grid-cols-6">
           <div className="space-y-3 md:col-span-2">
-            <div className="flex items-center gap-2">
-              <div className="relative h-9 w-9 overflow-hidden rounded-xl border border-brand-stroke bg-brand-surface">
+            <div className="flex flex-wrap items-center gap-3">
+              <div className={logoClass}>
                 <Image
                   src={logo}
                   alt="Bravo Laser"
                   fill
-                  className="object-cover"
-                  sizes="36px"
+                  className="object-contain object-left"
+                  sizes="(max-width: 640px) 118px, 128px"
                 />
               </div>
-              <span className="text-sm font-semibold tracking-[0.18em] text-ink">
-                BRAVO LASER
-              </span>
             </div>
             <p className="max-w-xs text-xs leading-relaxed">
               Bravo Laser is a non‑invasive, laser‑based body contouring
@@ -38,27 +37,39 @@ export function Footer() {
             </h3>
             <ul className="space-y-1 text-xs">
               <li>
-                <Link className="hover:text-brand-gold" href="/what-is-bravo-laser">
+                <Link
+                  className="transition hover:text-brand-gold"
+                  href="/what-is-bravo-laser"
+                >
                   What is Bravo Laser
                 </Link>
               </li>
               <li>
-                <Link className="hover:text-brand-gold" href="/treatment">
+                <Link className="transition hover:text-brand-gold" href="/treatment">
                   Treatment
                 </Link>
               </li>
               <li>
-                <Link className="hover:text-brand-gold" href="/patient-results">
+                <Link
+                  className="transition hover:text-brand-gold"
+                  href="/patient-results"
+                >
                   Patient Results
                 </Link>
               </li>
               <li>
-                <Link className="hover:text-brand-gold" href="/treatment-areas">
+                <Link
+                  className="transition hover:text-brand-gold"
+                  href="/treatment-areas"
+                >
                   Treatment Areas
                 </Link>
               </li>
               <li>
-                <Link className="hover:text-brand-gold" href="/find-a-provider">
+                <Link
+                  className="transition hover:text-brand-gold"
+                  href="/find-a-provider"
+                >
                   Find a Provider
                 </Link>
               </li>
@@ -71,17 +82,23 @@ export function Footer() {
             </h3>
             <ul className="space-y-1 text-xs">
               <li>
-                <Link className="hover:text-brand-gold" href="/provider-benefits">
+                <Link
+                  className="transition hover:text-brand-gold"
+                  href="/provider-benefits"
+                >
                   Provider Benefits
                 </Link>
               </li>
               <li>
-                <Link className="hover:text-brand-gold" href="/faq#providers">
+                <Link className="transition hover:text-brand-gold" href="/faq#providers">
                   Provider FAQ
                 </Link>
               </li>
               <li>
-                <Link className="hover:text-brand-gold" href="/contact?type=provider">
+                <Link
+                  className="transition hover:text-brand-gold"
+                  href="/contact?type=provider"
+                >
                   Inquire Now
                 </Link>
               </li>
@@ -94,22 +111,22 @@ export function Footer() {
             </h3>
             <ul className="space-y-1 text-xs">
               <li>
-                <Link className="hover:text-brand-gold" href="/about">
+                <Link className="transition hover:text-brand-gold" href="/about">
                   About Us
                 </Link>
               </li>
               <li>
-                <Link className="hover:text-brand-gold" href="/contact">
+                <Link className="transition hover:text-brand-gold" href="/contact">
                   Contact
                 </Link>
               </li>
               <li>
-                <Link className="hover:text-brand-gold" href="/blog">
+                <Link className="transition hover:text-brand-gold" href="/blog">
                   Articles / Blog
                 </Link>
               </li>
               <li>
-                <Link className="hover:text-brand-gold" href="/news">
+                <Link className="transition hover:text-brand-gold" href="/news">
                   News
                 </Link>
               </li>
@@ -122,17 +139,17 @@ export function Footer() {
             </h3>
             <ul className="space-y-1 text-xs">
               <li>
-                <Link className="hover:text-brand-gold" href="/privacy">
+                <Link className="transition hover:text-brand-gold" href="/privacy">
                   Privacy Policy
                 </Link>
               </li>
               <li>
-                <Link className="hover:text-brand-gold" href="/terms">
+                <Link className="transition hover:text-brand-gold" href="/terms">
                   Terms &amp; Conditions
                 </Link>
               </li>
               <li>
-                <Link className="hover:text-brand-gold" href="/disclaimer">
+                <Link className="transition hover:text-brand-gold" href="/disclaimer">
                   Disclaimer
                 </Link>
               </li>
@@ -179,4 +196,3 @@ export function Footer() {
     </footer>
   );
 }
-

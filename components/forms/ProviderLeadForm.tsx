@@ -122,8 +122,8 @@ export function ProviderLeadForm() {
         <div
           className={
             state.ok
-              ? "rounded-2xl border border-emerald-200 bg-emerald-50 px-4 py-3 text-xs text-emerald-900"
-              : "rounded-2xl border border-red-200 bg-red-50 px-4 py-3 text-xs text-red-900"
+              ? "rounded-2xl border border-brand-gold/35 bg-brand-gold/10 px-4 py-3 text-xs text-ink"
+              : "rounded-2xl border border-red-400/35 bg-red-950/40 px-4 py-3 text-xs text-red-200"
           }
         >
           {state.message}

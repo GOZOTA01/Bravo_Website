@@ -2,8 +2,9 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import logo from "@/pictures/logo.png";
-import { useEffect, useId, useState } from "react";
+import logo from "@/pictures/Bravo_logo.png";
+import { ButtonLink } from "@/components/ui/Button";
+import { useEffect, useId, useRef, useState } from "react";
 
 const navLinks = [
   { href: "/what-is-bravo-laser", label: "What is Bravo Laser" },
@@ -17,9 +18,13 @@ const navLinks = [
   { href: "/blog", label: "Blog / News" },
 ] as const;
 
+const logoClass =
+  "relative h-9 w-[118px] shrink-0 sm:h-10 sm:w-[128px]";
+
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const menuId = useId();
+  const closeBtnRef = useRef<HTMLButtonElement>(null);
 
   useEffect(() => {
     if (!isOpen) return;
@@ -32,100 +37,144 @@ export function Navbar() {
     return () => window.removeEventListener("keydown", onKeyDown);
   }, [isOpen]);
 
+  useEffect(() => {
+    document.body.style.overflow = isOpen ? "hidden" : "";
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [isOpen]);
+
+  useEffect(() => {
+    if (isOpen) {
+      const t = window.setTimeout(() => closeBtnRef.current?.focus(), 100);
+      return () => window.clearTimeout(t);
+    }
+  }, [isOpen]);
+
   return (
     <>
-      <header className="sticky top-0 z-40 border-b border-brand-stroke bg-brand-bg/70 backdrop-blur">
-        <div className="container-base flex h-16 items-center justify-between gap-4">
-          <div className="flex items-center gap-3">
+      <header className="sticky top-0 z-40 border-b border-brand-stroke/80 bg-brand-bg/90 backdrop-blur-md">
+        <div className="container-base flex h-16 items-center justify-between gap-3 sm:gap-4">
+          <div className="flex min-w-0 items-center gap-2.5 sm:gap-3">
             <button
               type="button"
-              className="inline-flex items-center justify-center rounded-xl border border-brand-stroke bg-brand-surface p-2 text-ink transition hover:bg-white/5"
-              onClick={() => setIsOpen(true)}
-              aria-label="Open menu"
+              className="group inline-flex shrink-0 items-center gap-2 rounded-xl border border-brand-stroke/90 bg-brand-surfaceMuted/60 px-2.5 py-2 text-ink transition hover:border-brand-gold/45 hover:bg-white/[0.05] focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-gold/40"
+              onClick={() => setIsOpen((o) => !o)}
+              aria-label={isOpen ? "Close navigation menu" : "Open navigation menu"}
               aria-controls={menuId}
               aria-expanded={isOpen}
             >
-              <svg
-                width="20"
-                height="20"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-                aria-hidden="true"
-              >
-                <path
-                  d="M4 7H20"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                />
-                <path
-                  d="M4 12H20"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                />
-                <path
-                  d="M4 17H20"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                />
-              </svg>
+              <span className="relative block h-5 w-5 shrink-0" aria-hidden="true">
+                {isOpen ? (
+                  <svg
+                    className="absolute inset-0 m-auto h-[18px] w-[18px] transition-transform duration-300 ease-[cubic-bezier(0.22,1,0.36,1)]"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <path
+                      d="M6 6L18 18M18 6L6 18"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                    />
+                  </svg>
+                ) : (
+                  <svg
+                    className="absolute inset-0 m-auto h-[18px] w-[18px] transition-transform duration-300 ease-[cubic-bezier(0.22,1,0.36,1)]"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <path
+                      d="M4 7H20M4 12H20M4 17H20"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                    />
+                  </svg>
+                )}
+              </span>
+              <span className="hidden text-[11px] font-semibold uppercase tracking-[0.18em] text-ink/90 sm:inline">
+                {isOpen ? "Close" : "Menu"}
+              </span>
             </button>
 
-            <Link href="/" className="flex items-center gap-2">
-              <div className="relative h-9 w-9 overflow-hidden rounded-xl border border-brand-stroke bg-brand-surface">
+            <Link
+              href="/"
+              className="flex min-w-0 items-center"
+              onClick={() => setIsOpen(false)}
+            >
+              <div className={logoClass}>
                 <Image
                   src={logo}
                   alt="Bravo Laser"
                   fill
-                  className="object-cover"
-                  sizes="36px"
+                  className="object-contain object-left"
+                  sizes="(max-width: 640px) 118px, 128px"
                   priority
                 />
-              </div>
-              <div className="flex flex-col leading-tight">
-                <span className="text-sm font-semibold tracking-[0.18em] text-ink">
-                  BRAVO LASER
-                </span>
-                <span className="text-[11px] uppercase tracking-[0.22em] text-ink.soft">
-                  Advanced body contouring
-                </span>
               </div>
             </Link>
           </div>
 
+          <div className="flex shrink-0 items-center gap-1.5 sm:gap-2">
+            <ButtonLink
+              href="/contact?type=patient"
+              variant="outline"
+              size="sm"
+              className="!px-2.5 text-[10px] sm:!px-3 sm:text-xs"
+            >
+              <span className="sm:hidden">Book</span>
+              <span className="hidden sm:inline">Book consultation</span>
+            </ButtonLink>
+            <ButtonLink
+              href="/provider-benefits"
+              variant="primary"
+              size="sm"
+              className="!px-2.5 text-[10px] sm:!px-3 sm:text-xs"
+            >
+              <span className="sm:hidden">Providers</span>
+              <span className="hidden sm:inline">For providers</span>
+            </ButtonLink>
+          </div>
         </div>
       </header>
 
-      {/* Mobile sidebar */}
       <div
-        className={`fixed inset-0 z-50 bg-black/40 transition-opacity ${
-          isOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
+        className={`fixed inset-0 z-[100] transition-[opacity,backdrop-filter] duration-300 ease-out ${
+          isOpen
+            ? "bg-black/55 opacity-100 backdrop-blur-[2px] pointer-events-auto"
+            : "bg-black/0 opacity-0 pointer-events-none backdrop-blur-none"
         }`}
-        aria-hidden="true"
+        aria-hidden={!isOpen}
         onClick={() => setIsOpen(false)}
       />
 
       <aside
         id={menuId}
-        className={`fixed left-0 top-0 z-50 h-full w-80 max-w-[85vw] border-r border-brand-stroke bg-brand-bg/95 backdrop-blur transition-transform duration-300 ${
+        className={`fixed left-0 top-0 z-[101] flex h-full w-[min(100vw-3rem,22rem)] flex-col border-r border-brand-stroke/80 border-l-2 border-l-brand-gold/35 bg-brand-bg/95 shadow-[16px_0_64px_rgba(0,0,0,0.5)] backdrop-blur-xl transition-transform duration-[340ms] ease-[cubic-bezier(0.22,1,0.36,1)] will-change-transform sm:w-96 ${
           isOpen ? "translate-x-0" : "-translate-x-full"
         }`}
         role="dialog"
         aria-modal="true"
-        aria-label="Mobile navigation"
+        aria-label="Site navigation"
+        aria-hidden={!isOpen}
       >
-        <div className="flex h-16 items-center justify-between border-b border-brand-stroke px-5">
-          <span className="text-sm font-semibold tracking-[0.18em] text-ink">
-            BRAVO LASER
-          </span>
+        <div className="flex h-16 shrink-0 items-center justify-between gap-3 border-b border-brand-stroke/80 px-5">
+          <div className={logoClass}>
+            <Image
+              src={logo}
+              alt=""
+              fill
+              className="object-contain object-left"
+              sizes="118px"
+            />
+          </div>
           <button
+            ref={closeBtnRef}
             type="button"
-            className="rounded-xl border border-brand-stroke bg-brand-surface p-2 text-ink transition hover:bg-white/5"
+            className="shrink-0 rounded-xl border border-brand-stroke/90 bg-brand-surfaceMuted/60 p-2 text-ink transition hover:border-brand-gold/45 hover:bg-white/[0.05] focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-gold/40"
             onClick={() => setIsOpen(false)}
-            aria-label="Close menu"
+            aria-label="Close navigation menu"
           >
             <svg
               width="20"
@@ -151,39 +200,59 @@ export function Navbar() {
           </button>
         </div>
 
-        <nav className="flex h-[calc(100%-4rem)] flex-col gap-2 overflow-y-auto px-5 py-6">
-          <div className="flex flex-col gap-1">
-            {navLinks.map((item) => (
-              <Link
-                key={item.href}
-                href={item.href}
-                onClick={() => setIsOpen(false)}
-                className="rounded-2xl px-3 py-2 text-sm font-medium text-ink.soft transition hover:bg-white/5 hover:text-ink"
-              >
-                {item.label}
-              </Link>
+        <nav
+          className="flex min-h-0 flex-1 flex-col overflow-y-auto overscroll-contain px-4 py-5 sm:px-5"
+          aria-label="Primary pages"
+        >
+          <p className="mb-3 px-3 text-[10px] font-semibold uppercase tracking-[0.28em] text-brand-gold/90">
+            Navigate
+          </p>
+          <ul className="flex flex-col gap-0.5">
+            {navLinks.map((item, i) => (
+              <li key={item.href}>
+                <Link
+                  href={item.href}
+                  onClick={() => setIsOpen(false)}
+                  className={`block rounded-xl border border-transparent px-3 py-2.5 text-sm font-medium text-ink/90 transition-[transform,opacity,border-color,background-color,color] duration-300 ease-out hover:border-brand-stroke/60 hover:bg-white/[0.04] hover:text-brand-gold ${
+                    isOpen ? "translate-x-0 opacity-100" : "-translate-x-2 opacity-0"
+                  }`}
+                  style={{
+                    transitionDelay: isOpen ? `${60 + i * 42}ms` : "0ms",
+                  }}
+                >
+                  {item.label}
+                </Link>
+              </li>
             ))}
-          </div>
+          </ul>
 
-          <div className="mt-4 border-t border-brand-stroke pt-4">
-            <Link
-              href="/contact?type=patient"
-              onClick={() => setIsOpen(false)}
-              className="mb-3 block rounded-pill border border-brand-stroke bg-transparent px-4 py-2 text-center text-xs font-semibold text-brand-gold transition hover:border-[rgba(214,179,106,0.35)] hover:bg-white/5"
-            >
-              Book Consultation
-            </Link>
-            <Link
-              href="/provider-benefits"
-              onClick={() => setIsOpen(false)}
-              className="block rounded-pill bg-gradient-to-b from-brand-emerald to-brand-emerald2 px-4 py-2 text-center text-xs font-semibold text-white shadow-glow transition hover:shadow-[0_0_0_1px_rgba(13,163,143,0.30),0_18px_90px_rgba(13,163,143,0.18)]"
-            >
-              For Providers
-            </Link>
+          <div className="mt-auto border-t border-brand-stroke/70 pt-5">
+            <p className="mb-3 px-3 text-[10px] font-semibold uppercase tracking-[0.28em] text-brand-gold/90">
+              Quick actions
+            </p>
+            <div className="flex flex-col gap-2.5 px-1">
+              <ButtonLink
+                href="/contact?type=patient"
+                onClick={() => setIsOpen(false)}
+                variant="outline"
+                size="sm"
+                className="w-full justify-center"
+              >
+                Book consultation
+              </ButtonLink>
+              <ButtonLink
+                href="/provider-benefits"
+                onClick={() => setIsOpen(false)}
+                variant="primary"
+                size="sm"
+                className="w-full justify-center"
+              >
+                For providers
+              </ButtonLink>
+            </div>
           </div>
         </nav>
       </aside>
     </>
   );
 }
-

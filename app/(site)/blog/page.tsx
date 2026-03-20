@@ -51,7 +51,7 @@ export default function BlogPage() {
               key={p.slug}
               className="glass rounded-3xl p-6 shadow-sm"
             >
-              <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-brand-emerald">
+              <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-brand-gold">
                 {p.category}
               </p>
               <h2 className="mt-3 text-base font-semibold tracking-tight text-ink">

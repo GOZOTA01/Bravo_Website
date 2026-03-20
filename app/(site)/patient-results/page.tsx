@@ -41,7 +41,7 @@ export default function PatientResultsPage() {
               key={r.id}
               className="glass group overflow-hidden rounded-3xl shadow-sm"
             >
-              <div className="h-44 bg-gradient-to-br from-brand-bg2/30 via-brand-bg to-brand-emerald/25 transition group-hover:scale-[1.01]" />
+              <div className="h-44 bg-gradient-to-br from-brand-bg2/30 via-brand-bg to-brand-gold/15 transition group-hover:scale-[1.01]" />
               <div className="p-5">
                 <h3 className="text-sm font-semibold text-ink">{r.title}</h3>
                 <p className="mt-1 text-xs text-ink.soft">{r.detail}</p>

@@ -84,7 +84,7 @@ export default function ProviderBenefitsPage() {
             </ul>
 
             <div className="glass rounded-3xl p-6 shadow-sm">
-              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-brand-emerald">
+              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-brand-gold">
                 Financing / acquisition ready
               </p>
               <p className="mt-2 text-sm leading-relaxed text-ink.soft">
