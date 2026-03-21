@@ -22,7 +22,7 @@ import imgAiAnalyzer from "@/pictures/pico_laser/IMG_1321.png";
 export const metadata: Metadata = {
   title: "Equipment",
   description:
-    "Explore the Bravo Pico Laser Bravo 2-in-1 aesthetic laser platform and the MaxMaster Slim body contouring system—clinical-grade technology for modern practices.",
+    "Explore FDA-approved Bravo equipment including the Pico Laser Bravo 2-in-1 aesthetic laser platform and the MaxMaster Slim body contouring system for modern practices.",
 };
 
 export default function EquipmentPage() {
@@ -33,7 +33,7 @@ export default function EquipmentPage() {
           <SectionHeader
             eyebrow="Professional systems"
             title="Bravo equipment lineup"
-            subtitle="We support two flagship platforms today: a combined picosecond + diode laser workstation with optional AI skin analysis, and the MaxMaster Slim body contouring system—each chosen for clinical credibility and a premium in-office experience."
+            subtitle="We support two flagship FDA-approved platforms: a combined picosecond + diode laser workstation with optional AI skin analysis, and the MaxMaster Slim body contouring system—each chosen for clinical credibility and a premium in-office experience."
           />
           <div className="mt-8 flex flex-wrap gap-3">
             <ButtonLink href="/contact?type=provider" variant="primary">

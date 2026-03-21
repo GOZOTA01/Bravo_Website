@@ -1,10 +1,13 @@
+import Image from "next/image";
 import { SectionHeader } from "@/components/ui/SectionHeader";
 import { ButtonLink } from "@/components/ui/Button";
+
+import imgBravoWorkstation from "@/pictures/pico_laser/IMG_5848.png";
 
 export const metadata = {
   title: "What is Bravo Laser",
   description:
-    "Learn what Bravo Laser is, how the technology works, who it’s for, and why patients and providers choose a non‑invasive, science‑backed approach to body contouring.",
+    "Learn what Bravo Laser is, how the technology works, and why patients and providers choose an FDA-approved, non-invasive approach to body contouring.",
 };
 
 export default function WhatIsBravoLaserPage() {
@@ -15,7 +18,7 @@ export default function WhatIsBravoLaserPage() {
           <SectionHeader
             eyebrow="Science‑backed aesthetics & contouring"
             title="What is Bravo Laser?"
-            subtitle="Bravo Laser brings together professional-grade systems—including Pico Laser Bravo for picosecond and diode laser treatments and MaxMaster Slim for contour-focused body protocols—so patients and providers can choose a premium, non‑invasive path aligned with their goals."
+            subtitle="Bravo Laser brings together FDA-approved professional systems—including Pico Laser Bravo for picosecond and diode laser treatments and MaxMaster Slim for contour-focused body protocols—so patients and providers can choose a premium, non-invasive path aligned with their goals."
           />
 
           <div className="mt-8 flex flex-wrap gap-3">
@@ -28,6 +31,23 @@ export default function WhatIsBravoLaserPage() {
             <ButtonLink href="/contact?type=patient" variant="secondary">
               Book a Consultation
             </ButtonLink>
+          </div>
+        </div>
+      </section>
+
+      <section className="border-b border-brand-stroke bg-gradient-to-b from-brand-bg2/20 to-brand-bg">
+        <div className="container-base py-10 sm:py-12">
+          <div className="overflow-hidden rounded-3xl border border-brand-stroke/80 bg-brand-surfaceMuted/30 shadow-[0_0_0_1px_rgba(92,92,95,0.2)]">
+            <div className="relative aspect-[4/3] w-full sm:aspect-[16/9]">
+              <Image
+                src={imgBravoWorkstation}
+                alt="Bravo laser workstation with multilingual welcome screen and docked treatment handpieces"
+                fill
+                className="object-contain object-center bg-gradient-to-b from-brand-bg2/40 to-brand-bg"
+                sizes="(max-width: 1152px) 100vw, min(1152px, 96vw)"
+                priority
+              />
+            </div>
           </div>
         </div>
       </section>

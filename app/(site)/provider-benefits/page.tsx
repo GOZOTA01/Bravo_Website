@@ -10,7 +10,7 @@ import imgRoiConsole from "@/pictures/pico_laser/IMG_9105.png";
 export const metadata = {
   title: "Provider Benefits",
   description:
-    "A premium, conversion-focused overview for clinics and practices considering Bravo Laser—revenue potential, differentiation, easy integration, and provider support.",
+    "A premium, conversion-focused overview for clinics and practices considering FDA-approved Bravo Laser equipment—revenue potential, differentiation, easy integration, and provider support.",
 };
 
 function IconClinical() {
@@ -75,7 +75,7 @@ export default function ProviderBenefitsPage() {
           <SectionHeader
             eyebrow="For clinics & medical practices"
             title="Add Bravo Laser to your practice"
-            subtitle="A modern, high-trust contouring category designed to fit busy clinic schedules with premium positioning."
+            subtitle="A modern, high-trust contouring category built on FDA-approved equipment and designed to fit busy clinic schedules."
           />
           <div className="mt-8 flex flex-wrap gap-3">
             <ButtonLink href="/contact?type=provider" variant="primary">

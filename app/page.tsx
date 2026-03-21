@@ -39,13 +39,17 @@ export default function HomePage() {
               <p className="mt-6 text-xs font-semibold uppercase tracking-[0.32em] text-brand-gold text-gold-clarity">
                 Bravo laser platforms
               </p>
+              <p className="mx-auto mt-4 inline-flex items-center rounded-full border border-brand-gold/45 bg-brand-gold/10 px-4 py-1.5 text-[11px] font-semibold uppercase tracking-[0.16em] text-brand-gold">
+                FDA-approved equipment
+              </p>
               <h1 className="mt-4 text-4xl font-semibold tracking-[0.08em] text-ink text-clarity sm:text-5xl">
                 Advanced Laser Aesthetics &amp; Body Contouring
               </h1>
               <p className="mt-5 text-sm leading-relaxed text-ink.soft text-clarity sm:text-base">
                 From the Pico Laser Bravo 2-in-1 workstation to the MaxMaster Slim
-                contouring line—non‑invasive options designed for clarity, comfort,
-                and measurable outcomes.
+                contouring line—FDA-approved positioning across our core equipment
+                story, with non-invasive options designed for clarity, comfort, and
+                measurable outcomes.
               </p>
 
               <div className="mt-8 flex flex-wrap justify-center gap-3">
@@ -72,14 +76,16 @@ export default function HomePage() {
                   />
                 </div>
                 <p className="border-t border-brand-stroke/60 px-4 py-3 text-center text-[11px] leading-relaxed text-ink.soft sm:text-xs">
-                  Pico Laser Bravo: diode + picosecond laser in one professional
-                  workstation—optional AI skin analysis for smarter treatment planning.
+                  Pico Laser Bravo: FDA-approved diode + picosecond laser in one
+                  professional workstation, with optional AI skin analysis for
+                  smarter treatment planning.
                 </p>
               </div>
 
-              <div className="mt-10 grid gap-3 sm:grid-cols-3">
+              <div className="mt-10 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
                 {[
                   { k: "Platforms", v: "Pico + MaxMaster Slim" },
+                  { k: "Regulatory", v: "FDA-approved positioning" },
                   { k: "Downtime", v: "None" },
                   { k: "Experience", v: "Comfort-focused" },
                 ].map((x) => (

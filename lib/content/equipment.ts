@@ -7,7 +7,7 @@ export const picoLaserBravo = {
   name: "Pico Laser Bravo",
   tagline: "2-in-1 diode & picosecond laser platform",
   short:
-    "A single Bravo workstation combines high-performance hair removal with picosecond treatment for pigment, tattoos, and skin rejuvenation—optionally paired with AI-guided skin analysis.",
+    "A single Bravo workstation combines high-performance hair removal with picosecond treatment for pigment, tattoos, and skin rejuvenation—an FDA-approved positioning in our core equipment story (per manufacturer materials), optionally paired with AI-guided skin analysis.",
   highlights: [
     {
       title: "Picosecond core",
@@ -40,7 +40,7 @@ export const picoLaserBravo = {
     { label: "Display", value: "15.6 in, 4K HD retina screen (catalog card)" },
   ],
   disclaimer:
-    "Specifications above are listed from manufacturer catalog cards and may vary by configuration, region, and firmware. Clinical use, settings, and outcomes vary by patient and provider; always follow the latest manufacturer instructions and local regulations.",
+    "Specifications above are listed from manufacturer catalog cards and may vary by configuration, region, and firmware. FDA approval/clearance language on this site follows manufacturer materials and may vary by market and exact device configuration. Clinical use, settings, and outcomes vary by patient and provider; always follow the latest manufacturer instructions and local regulations.",
 } as const;
 
 export const maxMasterSlim = {
