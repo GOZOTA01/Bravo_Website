@@ -7,11 +7,13 @@ import { ButtonLink } from "@/components/ui/Button";
 import { useEffect, useId, useRef, useState } from "react";
 
 const navLinks = [
+  { href: "/", label: "Home" },
   { href: "/what-is-bravo-laser", label: "What is Bravo Laser" },
+  { href: "/equipment", label: "Equipment" },
   { href: "/treatment", label: "Treatment" },
   { href: "/patient-results", label: "Patient Results" },
   { href: "/provider-benefits", label: "Provider Benefits" },
-  { href: "/treatment-areas", label: "Treatment Areas" },
+  { href: "/treatment#treatment-areas", label: "Treatment Areas" },
   { href: "/find-a-provider", label: "Find a Provider" },
   { href: "/about", label: "About Us" },
   { href: "/contact", label: "Contact" },
@@ -152,10 +154,12 @@ export function Navbar() {
       <aside
         id={menuId}
         className={`fixed left-0 top-0 z-[101] flex h-full w-[min(100vw-3rem,22rem)] flex-col border-r border-brand-stroke/80 border-l-2 border-l-brand-gold/35 bg-brand-bg/95 shadow-[16px_0_64px_rgba(0,0,0,0.5)] backdrop-blur-xl transition-transform duration-[340ms] ease-[cubic-bezier(0.22,1,0.36,1)] will-change-transform sm:w-96 ${
-          isOpen ? "translate-x-0" : "-translate-x-full"
+          isOpen
+            ? "translate-x-0 pointer-events-auto"
+            : "-translate-x-full pointer-events-none"
         }`}
         role="dialog"
-        aria-modal="true"
+        aria-modal={isOpen}
         aria-label="Site navigation"
         aria-hidden={!isOpen}
       >

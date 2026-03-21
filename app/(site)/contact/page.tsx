@@ -6,7 +6,7 @@ import { ProviderLeadForm } from "@/components/forms/ProviderLeadForm";
 export const metadata = {
   title: "Contact",
   description:
-    "Contact Bravo Laser for patient support, provider inquiries, or media questions. Built to support separate B2C and B2B conversion flows.",
+    "Contact Bravo Laser for patient support and provider inquiries. Built to support separate B2C and B2B conversion flows.",
 };
 
 export default function ContactPage() {
@@ -17,13 +17,13 @@ export default function ContactPage() {
           <SectionHeader
             eyebrow="Get in touch"
             title="Contact Bravo Laser"
-            subtitle="Choose the path that matches your goals—patient consultation, provider inquiry, or media/press."
+            subtitle="Choose the path that matches your goals—patient consultation or provider inquiry."
           />
         </div>
       </section>
 
       <section className="container-base py-16">
-        <div className="grid gap-6 lg:grid-cols-3">
+        <div className="grid gap-6 lg:grid-cols-2">
           <div className="glass rounded-3xl p-6 shadow-sm">
             <h3 className="text-sm font-semibold text-ink">Patients</h3>
             <p className="mt-2 text-xs leading-relaxed text-ink.soft">
@@ -56,18 +56,6 @@ export default function ContactPage() {
               </ButtonLink>
               <ButtonLink href="/provider-benefits" variant="outline" size="sm">
                 Provider benefits
-              </ButtonLink>
-            </div>
-          </div>
-
-          <div className="glass rounded-3xl p-6 shadow-sm">
-            <h3 className="text-sm font-semibold text-ink">Media / Press</h3>
-            <p className="mt-2 text-xs leading-relaxed text-ink.soft">
-              For editorial requests, interviews, or brand assets.
-            </p>
-            <div className="mt-4 flex flex-wrap gap-3">
-              <ButtonLink href="/contact?type=press" variant="secondary" size="sm">
-                Media contact
               </ButtonLink>
             </div>
           </div>

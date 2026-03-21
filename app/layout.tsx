@@ -7,7 +7,7 @@ export const metadata: Metadata = {
     template: "%s | Bravo Laser",
   },
   description:
-    "Bravo Laser is a modern, non‑invasive laser body contouring treatment that helps patients reduce stubborn fat with no surgery and no downtime while empowering providers with a scalable med‑tech solution.",
+    "Bravo Laser offers Pico Laser Bravo (2-in-1 picosecond + diode aesthetics) and MaxMaster Slim body contouring—non‑invasive options for patients and scalable platforms for providers.",
   icons: {
     icon: "/bravo-logo.png",
     apple: "/bravo-logo.png",

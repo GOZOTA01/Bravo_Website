@@ -13,13 +13,16 @@ export default function WhatIsBravoLaserPage() {
       <section className="border-b border-brand-stroke bg-brand-bg">
         <div className="container-base py-14">
           <SectionHeader
-            eyebrow="Science‑backed body contouring"
+            eyebrow="Science‑backed aesthetics & contouring"
             title="What is Bravo Laser?"
-            subtitle="Bravo Laser is a modern, non‑invasive laser body contouring platform designed to help reduce stubborn fat and improve circumference—without surgery, freezing, or downtime."
+            subtitle="Bravo Laser brings together professional-grade systems—including Pico Laser Bravo for picosecond and diode laser treatments and MaxMaster Slim for contour-focused body protocols—so patients and providers can choose a premium, non‑invasive path aligned with their goals."
           />
 
           <div className="mt-8 flex flex-wrap gap-3">
-            <ButtonLink href="/find-a-provider" variant="primary">
+            <ButtonLink href="/equipment" variant="primary">
+              View equipment
+            </ButtonLink>
+            <ButtonLink href="/find-a-provider" variant="outline">
               Find a Provider
             </ButtonLink>
             <ButtonLink href="/contact?type=patient" variant="secondary">

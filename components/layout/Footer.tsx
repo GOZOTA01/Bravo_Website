@@ -22,9 +22,9 @@ export function Footer() {
               </div>
             </div>
             <p className="max-w-xs text-xs leading-relaxed">
-              Bravo Laser is a non‑invasive, laser‑based body contouring
-              platform designed to deliver clinically credible fat reduction
-              with no surgery and no downtime.
+              Bravo Laser supports Pico Laser Bravo aesthetic laser systems and
+              MaxMaster Slim body contouring—non‑invasive options for patients
+              and professional platforms for clinics.
             </p>
             <p className="text-[11px] text-ink.soft">
               © {new Date().getFullYear()} Bravo Laser. All rights reserved.
@@ -45,6 +45,11 @@ export function Footer() {
                 </Link>
               </li>
               <li>
+                <Link className="transition hover:text-brand-gold" href="/equipment">
+                  Equipment
+                </Link>
+              </li>
+              <li>
                 <Link className="transition hover:text-brand-gold" href="/treatment">
                   Treatment
                 </Link>
@@ -60,7 +65,7 @@ export function Footer() {
               <li>
                 <Link
                   className="transition hover:text-brand-gold"
-                  href="/treatment-areas"
+                  href="/treatment#treatment-areas"
                 >
                   Treatment Areas
                 </Link>

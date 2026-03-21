@@ -1,10 +1,11 @@
 import { SectionHeader } from "@/components/ui/SectionHeader";
 import { ButtonLink } from "@/components/ui/Button";
+import Link from "next/link";
 
 export const metadata = {
   title: "About Us",
   description:
-    "Meet Bravo Laser—our mission, values, and commitment to innovation, clinical credibility, and patient-first confidence transformations.",
+    "Bravo Laser offers Pico Laser Bravo and MaxMaster Slim—non-invasive aesthetic laser and body contouring platforms for patients and professional practices.",
 };
 
 export default function AboutPage() {
@@ -13,13 +14,16 @@ export default function AboutPage() {
       <section className="border-b border-brand-stroke bg-brand-bg">
         <div className="container-base py-14">
           <SectionHeader
-            eyebrow="High‑trust, modern med‑tech"
-            title="Built for confidence—engineered for credibility"
-            subtitle="Bravo Laser exists to make non‑invasive body contouring feel premium, clinical, and results‑driven—for patients and for the providers who care for them."
+            eyebrow="Bravo Laser"
+            title="Premium aesthetics, built for real clinics"
+            subtitle="We focus on non-invasive laser and contouring—clear expectations, comfortable sessions, and tools providers can run day to day."
           />
           <div className="mt-8 flex flex-wrap gap-3">
-            <ButtonLink href="/contact" variant="primary">
-              Contact Bravo Laser
+            <ButtonLink href="/equipment" variant="primary">
+              View equipment
+            </ButtonLink>
+            <ButtonLink href="/contact" variant="outline">
+              Contact
             </ButtonLink>
             <ButtonLink href="/provider-benefits" variant="secondary">
               For providers
@@ -30,67 +34,88 @@ export default function AboutPage() {
 
       <section className="container-base py-16">
         <div className="grid gap-10 lg:grid-cols-3">
-          <div className="space-y-6 lg:col-span-2">
+          <div className="space-y-8 lg:col-span-2">
             <div className="space-y-3 text-sm leading-relaxed text-ink.soft sm:text-base">
-              <h2 className="text-lg font-semibold text-ink">Our story</h2>
+              <h2 className="text-lg font-semibold text-ink">Who we are</h2>
               <p>
-                We built Bravo Laser around a simple idea: body contouring should
-                be science‑forward, comfortable, and easy to fit into real life.
-                That means non‑invasive protocols, clear expectations, and a
-                premium experience that patients trust.
+                Bravo Laser brings together professional-grade systems for
+                practices that want a credible, modern aesthetics line:{" "}
+                <Link
+                  href="/equipment#pico-laser-bravo"
+                  className="font-medium text-brand-gold underline-offset-4 hover:underline"
+                >
+                  Pico Laser Bravo
+                </Link>{" "}
+                for diode and picosecond laser work (including optional AI skin
+                analysis), and{" "}
+                <Link
+                  href="/equipment#maxmaster-slim"
+                  className="font-medium text-brand-gold underline-offset-4 hover:underline"
+                >
+                  MaxMaster Slim
+                </Link>{" "}
+                for contour-focused body protocols.
               </p>
               <p>
-                For providers, Bravo Laser is designed as a scalable category
-                with modern branding, high demand, and a workflow that can
-                integrate smoothly into busy practices.
+                Patients get straightforward education and a path to a local
+                provider. Clinics get positioning, workflow-friendly messaging,
+                and a clear story across both platforms.
               </p>
             </div>
 
-            <div className="grid gap-6 sm:grid-cols-2">
-              {[
-                {
-                  title: "Clinical clarity",
-                  body: "Clear, honest messaging and realistic expectations—built for trust.",
-                },
-                {
-                  title: "Patient comfort",
-                  body: "A well‑tolerated experience designed for consistency across sessions.",
-                },
-                {
-                  title: "Premium by design",
-                  body: "Modern med‑tech aesthetic: clean UI, high hierarchy, not cluttered.",
-                },
-                {
-                  title: "Provider partnership",
-                  body: "Support for clinics building a differentiated aesthetics category.",
-                },
-              ].map((v) => (
-                <div
-                  key={v.title}
-                  className="glass rounded-3xl p-6 shadow-sm"
-                >
-                  <h3 className="text-sm font-semibold text-ink">{v.title}</h3>
-                  <p className="mt-2 text-xs leading-relaxed text-ink.soft">
-                    {v.body}
-                  </p>
-                </div>
-              ))}
+            <div>
+              <h2 className="text-lg font-semibold text-ink">What we stand for</h2>
+              <div className="mt-4 grid gap-4 sm:grid-cols-2">
+                {[
+                  {
+                    title: "Clarity",
+                    body: "Honest copy and realistic outcomes—not hype.",
+                  },
+                  {
+                    title: "Comfort",
+                    body: "Sessions built to be well tolerated, with no downtime.",
+                  },
+                  {
+                    title: "Consistency",
+                    body: "Series-based plans and documentation-friendly workflows.",
+                  },
+                  {
+                    title: "Partnership",
+                    body: "Resources for practices adding or growing an aesthetics category.",
+                  },
+                ].map((v) => (
+                  <div
+                    key={v.title}
+                    className="glass rounded-3xl p-6 shadow-sm"
+                  >
+                    <h3 className="text-sm font-semibold text-ink">{v.title}</h3>
+                    <p className="mt-2 text-xs leading-relaxed text-ink.soft">
+                      {v.body}
+                    </p>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
 
-          <aside className="glass rounded-3xl p-6">
-            <h3 className="text-sm font-semibold text-ink">Medical credibility</h3>
+          <aside className="glass h-fit rounded-3xl p-6 lg:sticky lg:top-24">
+            <h3 className="text-sm font-semibold text-ink">Explore Bravo</h3>
             <p className="mt-2 text-xs leading-relaxed text-ink.soft">
-              This site is designed to support future clinical assets—study
-              summaries, safety language, expert quotes, and structured FAQs
-              suitable for schema markup.
+              Dig into how treatment fits together, read FAQs, or find a
+              provider near you.
             </p>
             <div className="mt-4 grid gap-3">
-              <ButtonLink href="/what-is-bravo-laser" variant="outline" size="sm">
-                Learn the technology
+              <ButtonLink href="/what-is-bravo-laser" variant="primary" size="sm">
+                What is Bravo Laser
+              </ButtonLink>
+              <ButtonLink href="/treatment" variant="outline" size="sm">
+                How treatment works
+              </ButtonLink>
+              <ButtonLink href="/find-a-provider" variant="outline" size="sm">
+                Find a provider
               </ButtonLink>
               <ButtonLink href="/faq" variant="secondary" size="sm">
-                Read FAQs
+                FAQs
               </ButtonLink>
             </div>
           </aside>
