@@ -15,7 +15,7 @@ body {
 }
 
 .glass {
-  @apply border border-brand-stroke/80 bg-brand-surface/90 backdrop-blur-sm;
+  @apply border border-brand-stroke/70 bg-white/85 shadow-sm backdrop-blur-sm;
 }
 
 .divider-gold {
@@ -50,25 +50,23 @@ body {
 
 .bg-laser-grid {
   background-image: radial-gradient(
-      rgba(214, 152, 60, 0.09) 1px,
+      rgba(214, 154, 46, 0.14) 1px,
       transparent 1px
     ),
-    radial-gradient(rgba(154, 112, 52, 0.06) 1px, transparent 1px);
+    radial-gradient(rgba(184, 131, 32, 0.1) 1px, transparent 1px);
   background-size: 64px 64px, 96px 96px;
   background-position: 0 0, 24px 40px;
-  mask-image: radial-gradient(circle at center, black 50%, transparent 78%);
+  mask-image: radial-gradient(circle at center, black 52%, transparent 80%);
 }
 
 .text-clarity {
-  text-shadow:
-    0 1px 0 rgba(0, 0, 0, 0.35),
-    0 10px 32px rgba(0, 0, 0, 0.35);
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.65);
 }
 
 .text-gold-clarity {
   text-shadow:
-    0 1px 0 rgba(0, 0, 0, 0.45),
-    0 12px 40px rgba(0, 0, 0, 0.35);
+    0 1px 0 rgba(255, 255, 255, 0.5),
+    0 1px 12px rgba(255, 255, 255, 0.35);
 }
 
 /*
@@ -87,8 +85,10 @@ body {
 .bg-white .text-ink,
 .bg-slate-50 .text-ink,
 .bg-white\/80 .text-ink,
-.bg-slate-50\/70 .text-ink {
-  color: #18181c !important;
+.bg-slate-50\/70 .text-ink,
+.bg-white\/85 .text-ink,
+.bg-white\/90 .text-ink {
+  color: #14141a !important;
 }
 
 .bg-white .text-ink-soft,
@@ -98,6 +98,10 @@ body {
 .bg-white .text-ink\.soft,
 .bg-slate-50 .text-ink\.soft,
 .bg-white\/80 .text-ink\.soft,
-.bg-slate-50\/70 .text-ink\.soft {
-  color: rgba(24, 24, 28, 0.65) !important;
+.bg-slate-50\/70 .text-ink\.soft,
+.bg-white\/85 .text-ink-soft,
+.bg-white\/90 .text-ink-soft,
+.bg-white\/85 .text-ink\.soft,
+.bg-white\/90 .text-ink\.soft {
+  color: rgba(0, 0, 0, 0.82) !important;
 }

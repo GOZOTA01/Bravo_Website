@@ -50,7 +50,7 @@ export function ProviderSearch() {
             value={query}
             onChange={(e) => setQuery(e.target.value)}
             placeholder="e.g., 78701, Austin, Bravo Partner Clinic"
-            className="mt-2 w-full rounded-2xl border border-brand-stroke bg-black/20 px-4 py-3 text-sm text-ink shadow-sm outline-none transition placeholder:text-white/45 focus:border-brand-gold/50 focus:ring-2 focus:ring-brand-gold/20"
+            className="mt-2 w-full rounded-2xl border border-brand-stroke bg-white px-4 py-3 text-sm text-ink shadow-sm outline-none transition placeholder:text-ink.soft/60 focus:border-brand-gold/50 focus:ring-2 focus:ring-brand-gold/20"
           />
         </label>
 
@@ -59,7 +59,7 @@ export function ProviderSearch() {
           <select
             value={state}
             onChange={(e) => setState(e.target.value)}
-            className="mt-2 w-full rounded-2xl border border-brand-stroke bg-black/20 px-4 py-3 text-sm text-ink shadow-sm outline-none transition focus:border-brand-gold/50 focus:ring-2 focus:ring-brand-gold/20"
+            className="mt-2 w-full rounded-2xl border border-brand-stroke bg-white px-4 py-3 text-sm text-ink shadow-sm outline-none transition focus:border-brand-gold/50 focus:ring-2 focus:ring-brand-gold/20"
           >
             <option value="">All states</option>
             {states.map((s) => (
@@ -88,7 +88,7 @@ export function ProviderSearch() {
                   {p.description}
                 </p>
               </div>
-              <span className="rounded-full bg-white/5 px-3 py-1 text-[11px] font-semibold text-ink.soft">
+              <span className="rounded-full border border-brand-stroke/70 bg-brand-surfaceMuted/90 px-3 py-1 text-[11px] font-semibold text-ink.soft">
                 {p.state}
               </span>
             </div>

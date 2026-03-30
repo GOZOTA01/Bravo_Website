@@ -10,17 +10,18 @@ const config: Config = {
     extend: {
       colors: {
         brand: {
-          bg: "#18181C",
-          bg2: "#121216",
-          surface: "#222228",
-          surfaceMuted: "#1C1C21",
-          stroke: "#5C5C5F",
-          gold: "#D6983C",
-          gold2: "#9A7034",
-          goldEdge: "#674E2C",
-          goldDeep: "#473927",
+          bg: "#F7F5F0",
+          bg2: "#EDE9E1",
+          surface: "#FFFFFF",
+          surfaceMuted: "#F3F1EB",
+          stroke: "#C8C3B8",
+          gold: "#D69A2E",
+          gold2: "#B88320",
+          goldEdge: "#8B6628",
+          goldDeep: "#5C4520",
+          onGold: "#14141A",
         },
-        ink: { DEFAULT: "#F6F6F6", soft: "rgba(246,246,246,0.78)" },
+        ink: { DEFAULT: "#14141A", soft: "rgba(0,0,0,0.80)" },
       },
       fontFamily: {
         sans: ["system-ui", "ui-sans-serif", "Inter", "sans-serif"],
@@ -29,10 +30,10 @@ const config: Config = {
         pill: "999px",
       },
       boxShadow: {
-        glow: "0 0 0 1px rgba(214,152,60,0.22), 0 10px 48px rgba(214,152,60,0.10)",
+        glow: "0 0 0 1px rgba(214,154,46,0.28), 0 12px 44px rgba(214,154,46,0.14)",
         glowHover:
-          "0 0 0 1px rgba(214,152,60,0.32), 0 18px 72px rgba(214,152,60,0.14)",
-        gold: "0 0 0 1px rgba(214,152,60,0.20), 0 14px 56px rgba(214,152,60,0.08)",
+          "0 0 0 1px rgba(214,154,46,0.38), 0 18px 56px rgba(214,154,46,0.18)",
+        gold: "0 0 0 1px rgba(214,154,46,0.22), 0 14px 48px rgba(184,131,32,0.10)",
       },
     },
   },

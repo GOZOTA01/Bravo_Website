@@ -25,7 +25,7 @@ export default function HomePage() {
 
           <div className="container-base relative py-20 sm:py-24">
             <div className="mx-auto max-w-3xl text-center">
-              <div className="pointer-events-none absolute left-1/2 top-1/2 h-[520px] w-[520px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-black/20 blur-3xl" />
+              <div className="pointer-events-none absolute left-1/2 top-1/2 h-[520px] w-[520px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-brand-gold/10 blur-3xl" />
               <div className="relative mx-auto h-20 w-[min(100%,280px)] sm:h-24">
                 <Image
                   src={logo}
@@ -41,7 +41,7 @@ export default function HomePage() {
                 Laser aesthetics &amp; fat reduction
               </p>
               <div className="mx-auto mt-6 flex flex-col items-center gap-3">
-                <div className="rounded-full bg-white p-2 shadow-[0_12px_40px_rgba(0,0,0,0.18)] ring-1 ring-black/10">
+                <div className="rounded-full bg-white p-2 shadow-[0_12px_36px_rgba(28,27,24,0.12)] ring-1 ring-brand-stroke/60">
                   <Image
                     src={fdaApprovedSeal}
                     alt="FDA Approved seal: Food and Drug Administration"
@@ -75,8 +75,8 @@ export default function HomePage() {
                 </ButtonLink>
               </div>
 
-              <div className="relative mx-auto mt-12 max-w-4xl overflow-hidden rounded-3xl border border-brand-stroke/80 bg-brand-surfaceMuted/30 shadow-[0_0_0_1px_rgba(92,92,95,0.2)]">
-                <div className="flex w-full justify-center bg-gradient-to-b from-brand-bg2/25 to-brand-bg/50 p-2 sm:p-4">
+              <div className="relative mx-auto mt-12 max-w-4xl overflow-hidden rounded-3xl border border-brand-stroke/70 bg-white/90 shadow-[0_0_0_1px_rgba(200,195,184,0.35),0_8px_40px_rgba(28,27,24,0.06)]">
+                <div className="flex w-full justify-center bg-gradient-to-b from-brand-bg2/80 to-brand-bg/90 p-2 sm:p-4">
                   <Image
                     src={heroEquipment}
                     alt="Bravo Laser systems: aesthetic laser workstation and MaxMaster Slim fat reduction device"

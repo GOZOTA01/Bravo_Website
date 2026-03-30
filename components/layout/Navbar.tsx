@@ -60,7 +60,7 @@ export function Navbar() {
           <div className="flex min-w-0 items-center gap-2.5 sm:gap-3">
             <button
               type="button"
-              className="group inline-flex shrink-0 items-center gap-2 rounded-xl border border-brand-stroke/90 bg-brand-surfaceMuted/60 px-2.5 py-2 text-ink transition hover:border-brand-gold/45 hover:bg-white/[0.05] focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-gold/40"
+              className="group inline-flex shrink-0 items-center gap-2 rounded-xl border border-brand-stroke/90 bg-transparent px-2.5 py-2 text-ink shadow-sm transition hover:border-brand-gold/45 hover:bg-brand-surfaceMuted/60 focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-gold/40"
               onClick={() => setIsOpen((o) => !o)}
               aria-label={isOpen ? "Close navigation menu" : "Open navigation menu"}
               aria-controls={menuId}
@@ -153,7 +153,7 @@ export function Navbar() {
 
       <aside
         id={menuId}
-        className={`fixed left-0 top-0 z-[101] flex h-full w-[min(100vw-3rem,22rem)] flex-col border-r border-brand-stroke/80 border-l-2 border-l-brand-gold/35 bg-brand-bg/95 shadow-[16px_0_64px_rgba(0,0,0,0.5)] backdrop-blur-xl transition-transform duration-[340ms] ease-[cubic-bezier(0.22,1,0.36,1)] will-change-transform sm:w-96 ${
+        className={`fixed left-0 top-0 z-[101] flex h-full w-[min(100vw-3rem,22rem)] flex-col border-r border-brand-stroke/80 border-l-2 border-l-brand-gold/35 bg-brand-bg/98 shadow-[16px_0_48px_rgba(28,27,24,0.12)] backdrop-blur-xl transition-transform duration-[340ms] ease-[cubic-bezier(0.22,1,0.36,1)] will-change-transform sm:w-96 ${
           isOpen
             ? "translate-x-0 pointer-events-auto"
             : "-translate-x-full pointer-events-none"
@@ -176,7 +176,7 @@ export function Navbar() {
           <button
             ref={closeBtnRef}
             type="button"
-            className="shrink-0 rounded-xl border border-brand-stroke/90 bg-brand-surfaceMuted/60 p-2 text-ink transition hover:border-brand-gold/45 hover:bg-white/[0.05] focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-gold/40"
+            className="shrink-0 rounded-xl border border-brand-stroke/90 bg-transparent p-2 text-ink shadow-sm transition hover:border-brand-gold/45 hover:bg-brand-surfaceMuted/60 focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-gold/40"
             onClick={() => setIsOpen(false)}
             aria-label="Close navigation menu"
           >
@@ -217,7 +217,7 @@ export function Navbar() {
                 <Link
                   href={item.href}
                   onClick={() => setIsOpen(false)}
-                  className={`block rounded-xl border border-transparent px-3 py-2.5 text-sm font-medium text-ink/90 transition-[transform,opacity,border-color,background-color,color] duration-300 ease-out hover:border-brand-stroke/60 hover:bg-white/[0.04] hover:text-brand-gold ${
+                  className={`block rounded-xl border border-transparent px-3 py-2.5 text-sm font-medium text-ink/90 transition-[transform,opacity,border-color,background-color,color] duration-300 ease-out hover:border-brand-stroke/60 hover:bg-white/90 hover:text-brand-gold ${
                     isOpen ? "translate-x-0 opacity-100" : "-translate-x-2 opacity-0"
                   }`}
                   style={{

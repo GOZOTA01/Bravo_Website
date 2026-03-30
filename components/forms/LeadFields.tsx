@@ -7,7 +7,7 @@ function cx(...classes: Array<string | false | undefined | null>) {
 }
 
 const fieldBase =
-  "mt-2 w-full rounded-2xl border border-brand-stroke bg-brand-surfaceMuted/80 px-4 py-3 text-sm text-ink shadow-sm outline-none transition placeholder:text-ink.soft/55 focus:border-brand-gold/60 focus:ring-2 focus:ring-brand-gold/15";
+  "mt-2 w-full rounded-2xl border border-brand-stroke bg-white px-4 py-3 text-sm text-ink shadow-sm outline-none transition placeholder:text-ink.soft/55 focus:border-brand-gold/60 focus:ring-2 focus:ring-brand-gold/15";
 
 export function Field({
   label,
@@ -133,13 +133,13 @@ export function ConsentField({
   const describedBy = error ? `${name}-error` : undefined;
   return (
     <div>
-      <label className="flex items-start gap-3 rounded-2xl border border-brand-stroke bg-brand-surfaceMuted/60 px-4 py-3">
+      <label className="flex items-start gap-3 rounded-2xl border border-brand-stroke bg-white/90 px-4 py-3">
         <input
           name={name}
           type="checkbox"
           aria-invalid={Boolean(error)}
           aria-describedby={describedBy}
-          className="mt-1 h-4 w-4 rounded border-brand-stroke bg-brand-bg text-brand-gold accent-brand-gold"
+          className="mt-1 h-4 w-4 rounded border-brand-stroke bg-white text-brand-gold accent-brand-gold"
         />
         <span className="text-xs leading-relaxed text-ink.soft">{label}</span>
       </label>

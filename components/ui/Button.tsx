@@ -13,13 +13,13 @@ const base =
 
 const variants: Record<Variant, string> = {
   primary:
-    "bg-gradient-to-b from-brand-gold to-brand-gold2 text-brand-bg shadow-glow hover:translate-y-[-1px] hover:shadow-glowHover",
+    "bg-gradient-to-b from-brand-gold to-brand-gold2 text-brand-onGold shadow-glow hover:translate-y-[-1px] hover:shadow-glowHover",
   gold:
-    "bg-gradient-to-b from-brand-gold to-brand-gold2 text-brand-bg shadow-glow hover:translate-y-[-1px] hover:shadow-glowHover",
+    "bg-gradient-to-b from-brand-gold to-brand-gold2 text-brand-onGold shadow-glow hover:translate-y-[-1px] hover:shadow-glowHover",
   secondary:
-    "border border-brand-stroke bg-brand-surfaceMuted/80 text-ink backdrop-blur-sm hover:border-brand-gold/45 hover:text-brand-gold",
+    "border border-brand-stroke bg-brand-surfaceMuted/90 text-ink backdrop-blur-sm hover:border-brand-gold/50 hover:text-brand-gold",
   outline:
-    "border border-brand-gold/55 bg-transparent text-ink hover:border-brand-gold hover:bg-brand-gold hover:text-brand-bg",
+    "border border-brand-gold/55 bg-transparent text-ink hover:border-brand-gold hover:bg-brand-gold hover:text-brand-onGold",
   link: "text-ink.soft underline-offset-4 hover:text-brand-gold hover:underline decoration-brand-gold/60",
 };
 
