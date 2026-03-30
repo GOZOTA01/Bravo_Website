@@ -7,20 +7,20 @@ const posts: Record<
   { title: string; category: string; body: Array<string> }
 > = {
   "non-invasive-body-contouring-explained": {
-    title: "Non‑invasive body contouring: what patients should know",
+    title: "Non-invasive fat reduction: what patients should know",
     category: "Education",
     body: [
-      "Non‑invasive body contouring works best when it’s approached like a structured plan—not a one‑time quick fix. The best clinics set expectations, track progress, and pair the protocol with realistic lifestyle reinforcement.",
-      "Bravo Laser is positioned as a comfortable, non‑surgical option for stubborn areas. Your provider will personalize treatment areas and cadence based on goals, body context, and timeline.",
+      "Non-invasive fat reduction works best when it is approached like a structured plan, not a one-time quick fix. The best clinics set expectations, track progress, and pair the protocol with realistic lifestyle reinforcement.",
+      "Bravo Laser is positioned as a comfortable, non-surgical option for stubborn areas. Your provider will personalize treatment areas and cadence based on goals, body context, and timeline.",
       "If you’re evaluating options, look for: clear consultation process, honest suitability screening, measurable tracking, and transparent pricing and timelines.",
     ],
   },
   "building-a-premium-contouring-offer": {
-    title: "How clinics build a premium contouring category",
+    title: "How clinics build a premium fat reduction category",
     category: "Providers",
     body: [
       "Premium positioning is created through clarity, consistency, and trust. The best offers combine a modern aesthetic, strong clinical messaging, and an operational workflow that staff can execute reliably.",
-      "Series-based plans are easiest to market when you can explain them in three steps: consult → sessions → results over time. Make results measurable through photos and circumference tracking.",
+      "Series-based plans are easiest to market when you can explain them in three steps: consult, then sessions, then results over time. Make results measurable through photos and circumference tracking.",
       "Bravo Laser is designed to support this structure with a clinic-friendly protocol and dual-audience conversion flows (patients + providers).",
     ],
   },
@@ -29,7 +29,7 @@ const posts: Record<
     category: "Education",
     body: [
       "Patients tend to request areas where fat is stubborn: abdomen, hips/love handles, back, arms, and thighs. These zones can be influenced by genetics and distribution patterns.",
-      "A good consultation prioritizes areas based on your goals and sets a realistic timeline. Tracking is key—photos and measurements can help validate progress over a series.",
+      "A good consultation prioritizes areas based on your goals and sets a realistic timeline. Tracking is key: photos and measurements can help validate progress over a series.",
       "Explore Bravo Laser treatment-area pages to understand what to expect and then confirm fit with a local provider.",
     ],
   },

@@ -3,11 +3,11 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: {
-    default: "Bravo Laser | Non‑Invasive Laser Body Contouring",
+    default: "Bravo Laser | Non-Invasive Laser Fat Reduction",
     template: "%s | Bravo Laser",
   },
   description:
-    "Bravo Laser offers Pico Laser Bravo (2-in-1 picosecond + diode aesthetics) and MaxMaster Slim body contouring—non‑invasive options for patients and scalable platforms for providers.",
+    "Bravo Laser offers Pico Laser Bravo (2-in-1 picosecond + diode aesthetics) and MaxMaster Slim fat reduction: non-invasive options for patients and scalable platforms for providers.",
   icons: {
     icon: "/bravo-logo.png",
     apple: "/bravo-logo.png",

@@ -9,7 +9,7 @@ import {
 export const metadata = {
   title: "Treatment",
   description:
-    "Understand the Bravo Laser treatment experience—from consultation to sessions to results—plus body areas you can target with a provider-guided plan.",
+    "Understand the Bravo Laser treatment experience from consultation to sessions to results, plus body areas you can target with a provider-guided plan.",
 };
 
 export default function TreatmentPage() {
@@ -20,7 +20,7 @@ export default function TreatmentPage() {
           <SectionHeader
             eyebrow="Comfortable. Structured. Clinical."
             title="The Bravo Laser treatment experience"
-            subtitle="A provider-guided plan designed for real life—no surgery, no downtime, and a protocol built around consistency over time."
+            subtitle="A provider-guided plan designed for real life: no surgery, no downtime, and a protocol built around consistency over time."
           />
           <div className="mt-8 flex flex-wrap gap-3">
             <ButtonLink href="/contact?type=patient" variant="primary">
@@ -57,7 +57,7 @@ export default function TreatmentPage() {
                 <p className="mt-2">
                   Treatments are applied externally. Many patients describe the
                   experience as gentle and easy to tolerate. Sessions are
-                  designed to be consistent, structured, and clinic‑friendly.
+                  designed to be consistent, structured, and clinic-friendly.
                 </p>
               </div>
               <div>
@@ -77,7 +77,7 @@ export default function TreatmentPage() {
                 <p className="mt-2 text-xs leading-relaxed text-ink.soft">
                   Results vary by individual, body area, and plan adherence.
                   Bravo Laser is not a substitute for overall health habits or
-                  medical weight management—it’s a targeted body contouring
+                  medical weight management. It is a targeted fat reduction
                   option for stubborn areas.
                 </p>
               </div>
@@ -89,7 +89,7 @@ export default function TreatmentPage() {
             <dl className="mt-4 space-y-4 text-xs text-ink.soft">
               <div>
                 <dt className="font-semibold text-ink">Downtime</dt>
-                <dd>None—return to normal activities immediately.</dd>
+                <dd>None. Return to normal activities immediately.</dd>
               </div>
               <div>
                 <dt className="font-semibold text-ink">Typical plan</dt>
@@ -120,7 +120,7 @@ export default function TreatmentPage() {
           <SectionHeader
             eyebrow="Targeted, provider-guided"
             title="Treatment areas"
-            subtitle="Each zone below includes what to expect, who it’s often a fit for, and quick answers—so you can jump to the area you care about."
+            subtitle="Each zone below includes what to expect, who it is often a fit for, and quick answers so you can jump to the area you care about."
             align="center"
           />
           <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">

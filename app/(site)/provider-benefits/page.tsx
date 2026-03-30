@@ -10,7 +10,7 @@ import imgRoiConsole from "@/pictures/pico_laser/IMG_9105.png";
 export const metadata = {
   title: "Provider Benefits",
   description:
-    "A premium, conversion-focused overview for clinics and practices considering FDA-approved Bravo Laser equipment—revenue potential, differentiation, easy integration, and provider support.",
+    "A premium, conversion-focused overview for clinics and practices considering FDA-approved Bravo Laser equipment: revenue potential, differentiation, easy integration, and provider support.",
 };
 
 function IconClinical() {
@@ -50,7 +50,7 @@ const competitiveEdge = [
   {
     title: "Built for diverse patient goals",
     body:
-      "Treat hair removal, pigment, and tattoos with Pico Laser Bravo, then contour with MaxMaster Slim—two platforms, one consistent clinic workflow.",
+      "Treat hair removal, pigment, and tattoos with Pico Laser Bravo, then contour with MaxMaster Slim: two platforms, one consistent clinic workflow.",
     Icon: IconClinical,
   },
   {
@@ -75,7 +75,7 @@ export default function ProviderBenefitsPage() {
           <SectionHeader
             eyebrow="For clinics & medical practices"
             title="Add Bravo Laser to your practice"
-            subtitle="A modern, high-trust contouring category built on FDA-approved equipment and designed to fit busy clinic schedules."
+            subtitle="A modern, high-trust fat reduction category built on FDA-approved equipment and designed to fit busy clinic schedules."
           />
           <div className="mt-8 flex flex-wrap gap-3">
             <ButtonLink href="/contact?type=provider" variant="primary">
@@ -154,7 +154,9 @@ export default function ProviderBenefitsPage() {
               </h2>
             <p className="text-sm leading-relaxed text-ink.soft sm:text-base">
                 When usage matches patient demand, Bravo can help support financing through revenue growth.
-                Many teams model payback on a <span className="font-medium text-ink/90">6–9 month</span> horizon based on package and market mix.
+                Many teams model payback on a{" "}
+                <span className="font-medium text-ink/90">6 to 9 month</span> horizon
+                based on package and market mix.
             </p>
             <div className="flex flex-wrap gap-3 pt-2">
               <ButtonLink href="/equipment" variant="gold">

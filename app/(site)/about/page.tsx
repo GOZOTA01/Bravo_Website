@@ -5,7 +5,7 @@ import Link from "next/link";
 export const metadata = {
   title: "About Us",
   description:
-    "Bravo Laser offers FDA-approved Pico Laser Bravo and MaxMaster Slim platforms for non-invasive aesthetic laser and body contouring care.",
+    "Bravo Laser offers FDA-approved Pico Laser Bravo and MaxMaster Slim platforms for non-invasive aesthetic laser and fat reduction care.",
 };
 
 export default function AboutPage() {
@@ -16,7 +16,7 @@ export default function AboutPage() {
           <SectionHeader
             eyebrow="Bravo Laser"
             title="Premium aesthetics, built for real clinics"
-            subtitle="We focus on FDA-approved, non-invasive laser and contouring—clear expectations, comfortable sessions, and tools providers can run day to day."
+            subtitle="We focus on FDA-approved, non-invasive laser and fat reduction: clear expectations, comfortable sessions, and tools providers can run day to day."
           />
           <div className="mt-8 flex flex-wrap gap-3">
             <ButtonLink href="/equipment" variant="primary">
@@ -69,7 +69,7 @@ export default function AboutPage() {
                 {[
                   {
                     title: "Clarity",
-                    body: "Honest copy and realistic outcomes—not hype.",
+                    body: "Honest copy and realistic outcomes, not hype.",
                   },
                   {
                     title: "Comfort",

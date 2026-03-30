@@ -23,7 +23,7 @@ export function Footer() {
             </div>
             <p className="max-w-xs text-xs leading-relaxed">
               Bravo Laser supports Pico Laser Bravo aesthetic laser systems and
-              MaxMaster Slim body contouring—non‑invasive options for patients
+              MaxMaster Slim fat reduction: non-invasive options for patients
               and professional platforms for clinics.
             </p>
             <p className="text-[11px] text-ink.soft">

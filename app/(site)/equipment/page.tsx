@@ -18,11 +18,19 @@ import imgUsbLock from "@/pictures/pico_laser/IMG_2623.png";
 import imgLanguages from "@/pictures/pico_laser/IMG_5854.png";
 import imgFacialTip from "@/pictures/pico_laser/IMG_8026.png";
 import imgAiAnalyzer from "@/pictures/pico_laser/IMG_1321.png";
+import imgMaxMasterHero from "@/pictures/MaxMaster Slim/IMG_7207.png";
+import imgMaxMasterProduct from "@/pictures/MaxMaster Slim/IMG_5850.png";
+import imgMaxMasterOnBody1 from "@/pictures/MaxMaster Slim/IMG_6221.png";
+import imgMaxMasterOnBody2 from "@/pictures/MaxMaster Slim/IMG_4882.png";
+import imgMaxMasterOnBody3 from "@/pictures/MaxMaster Slim/IMG_9924.png";
+import imgMaxMasterPanel from "@/pictures/MaxMaster Slim/image4.jpg";
+import imgMaxMasterLifestyle from "@/pictures/MaxMaster Slim/image2.jpg";
+import imgMaxMasterStudio from "@/pictures/MaxMaster Slim/image3.jpg";
 
 export const metadata: Metadata = {
   title: "Equipment",
   description:
-    "Explore FDA-approved Bravo equipment including the Pico Laser Bravo 2-in-1 aesthetic laser platform and the MaxMaster Slim body contouring system for modern practices.",
+    "Explore FDA-approved Bravo equipment including the Pico Laser Bravo 2-in-1 aesthetic laser platform and the MaxMaster Slim fat reduction system for modern practices.",
 };
 
 export default function EquipmentPage() {
@@ -33,7 +41,7 @@ export default function EquipmentPage() {
           <SectionHeader
             eyebrow="Professional systems"
             title="Bravo equipment lineup"
-            subtitle="We support two flagship FDA-approved platforms: a combined picosecond + diode laser workstation with optional AI skin analysis, and the MaxMaster Slim body contouring system—each chosen for clinical credibility and a premium in-office experience."
+            subtitle="We support two flagship FDA-approved platforms: a combined picosecond + diode laser workstation with optional AI skin analysis, and the MaxMaster Slim fat reduction system, each chosen for clinical credibility and a premium in-office experience."
           />
           <div className="mt-8 flex flex-wrap gap-3">
             <ButtonLink href="/contact?type=provider" variant="primary">
@@ -46,7 +54,7 @@ export default function EquipmentPage() {
         </div>
       </section>
 
-      {/* Pico — anchor */}
+      {/* Pico anchor */}
       <section
         id="pico-laser-bravo"
         className="scroll-mt-24 border-b border-brand-stroke bg-gradient-to-b from-brand-bg2/25 to-brand-bg"
@@ -160,7 +168,7 @@ export default function EquipmentPage() {
                   src: imgUsbLock,
                   alt: "Bravo USB internal safety lock and remote rental management",
                   caption:
-                    "USB safety lock and upgrade path—supporting secure rental and fleet models.",
+                    "USB safety lock and upgrade path, supporting secure rental and fleet models.",
                 },
                 {
                   src: imgLanguages,
@@ -184,15 +192,15 @@ export default function EquipmentPage() {
               Representative outcomes (catalog)
             </h3>
             <p className="mx-auto mt-2 max-w-2xl text-center text-sm text-ink.soft">
-              Illustrative before-and-after panels from the manufacturer catalog—
-              individual results vary; your provider will set expectations for your
+              Illustrative before-and-after panels from the manufacturer catalog.
+              Individual results vary; your provider will set expectations for your
               skin type and goals.
             </p>
             <div className="mt-8">
               <CatalogFigure
                 src={imgTreatmentEffect}
                 alt="Before and after treatment results for hair removal and skin concerns with Bravo Pico Laser"
-                caption="Catalog examples: hair removal and aesthetic indications—always consult a qualified provider."
+                caption="Catalog examples: hair removal and aesthetic indications. Always consult a qualified provider."
               />
             </div>
           </div>
@@ -225,7 +233,7 @@ export default function EquipmentPage() {
         </div>
       </section>
 
-      {/* MaxMaster — anchor */}
+      {/* MaxMaster anchor */}
       <section
         id="maxmaster-slim"
         className="scroll-mt-24 border-b border-brand-stroke bg-brand-bg"
@@ -262,20 +270,54 @@ export default function EquipmentPage() {
               </div>
             </div>
 
-            <Card className="relative overflow-hidden glass p-0">
-              <div className="absolute inset-0 bg-gradient-to-br from-brand-gold/12 via-brand-bg2 to-brand-bg" />
-              <div className="relative border-b border-brand-stroke/60 px-8 py-8">
-                <div className="mx-auto flex h-32 w-32 items-center justify-center rounded-3xl border border-brand-gold/35 bg-brand-surfaceMuted/80 text-4xl font-semibold tracking-tight text-brand-gold">
-                  MS
-                </div>
-                <p className="mt-6 text-center text-sm font-medium text-ink">
-                  MaxMaster Slim
-                </p>
-                <p className="mt-2 text-center text-xs leading-relaxed text-ink.soft">
-                  {maxMasterSlim.imageryNote}
-                </p>
-              </div>
-              <div className="relative px-8 py-6">
+            <div className="space-y-6">
+              <CatalogFigure
+                src={imgMaxMasterHero}
+                alt="MaxMaster Slim fat reduction workstation"
+                caption="MaxMaster Slim platform for non-invasive body contour sessions."
+              />
+              <ImageCarousel
+                slides={[
+                  {
+                    src: imgMaxMasterProduct,
+                    alt: "MaxMaster Slim product view with treatment arm and display",
+                    caption: "Product view with articulated arm and treatment modules.",
+                  },
+                  {
+                    src: imgMaxMasterOnBody1,
+                    alt: "MaxMaster Slim treatment setup over abdomen",
+                    caption: "Hands-free treatment setup over abdominal area.",
+                  },
+                  {
+                    src: imgMaxMasterOnBody2,
+                    alt: "Close-up of MaxMaster Slim light delivery over treatment area",
+                    caption: "Close-up of multi-point light delivery during treatment.",
+                  },
+                  {
+                    src: imgMaxMasterOnBody3,
+                    alt: "MaxMaster Slim applicators positioned over patient during session",
+                    caption: "Multi-angle applicator positioning for body contour workflow.",
+                  },
+                  {
+                    src: imgMaxMasterLifestyle,
+                    alt: "MaxMaster Slim treatment module used on lower body",
+                    caption: "Targeted treatment over lower-body areas.",
+                  },
+                  {
+                    src: imgMaxMasterStudio,
+                    alt: "MaxMaster Slim full workstation in studio-style view",
+                    caption: "Studio-style system view with full treatment arm.",
+                  },
+                  {
+                    src: imgMaxMasterPanel,
+                    alt: "MaxMaster Slim treatment examples panel",
+                    caption: "Examples of treatment positioning from product materials.",
+                  },
+                ]}
+                ariaLabel="MaxMaster Slim images"
+              />
+
+              <Card className="glass p-6">
                 <dl className="space-y-3 text-sm">
                   {maxMasterSlim.specs.map((s) => (
                     <div
@@ -287,8 +329,8 @@ export default function EquipmentPage() {
                     </div>
                   ))}
                 </dl>
-              </div>
-            </Card>
+              </Card>
+            </div>
           </div>
         </div>
       </section>

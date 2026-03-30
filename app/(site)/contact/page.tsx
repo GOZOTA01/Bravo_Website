@@ -17,7 +17,7 @@ export default function ContactPage() {
           <SectionHeader
             eyebrow="Get in touch"
             title="Contact Bravo Laser"
-            subtitle="Choose the path that matches your goals—patient consultation or provider inquiry."
+            subtitle="Choose the path that matches your goals: patient consultation or provider inquiry."
           />
         </div>
       </section>
@@ -67,7 +67,7 @@ export default function ContactPage() {
               Patient consultation request
             </h2>
             <p className="mt-2 text-sm leading-relaxed text-ink.soft">
-              Send a request and we’ll connect you with the next best step—either
+              Send a request and we will connect you with the next best step, either
               a local provider or a guidance call to map your plan.
             </p>
             <div className="mt-6">

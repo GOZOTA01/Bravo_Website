@@ -21,7 +21,7 @@ export default function PrivacyPage() {
         <div className="glass rounded-3xl p-8 shadow-sm">
           <p>
             Bravo Laser will publish its privacy policy here, including how we
-            handle lead submissions, analytics, and third‑party services.
+            handle lead submissions, analytics, and third-party services.
           </p>
         </div>
       </section>

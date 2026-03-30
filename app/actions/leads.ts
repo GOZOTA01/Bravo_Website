@@ -31,7 +31,7 @@ export async function submitPatientLead(
   return {
     ok: true,
     message:
-      "Thanks—your request was received. A Bravo Laser team member will follow up shortly.",
+      "Thanks. Your request was received. A Bravo Laser team member will follow up shortly.",
   };
 }
 
@@ -53,7 +53,7 @@ export async function submitProviderLead(
   return {
     ok: true,
     message:
-      "Thanks—your inquiry was received. We’ll follow up with next steps and details.",
+      "Thanks. Your inquiry was received. We will follow up with next steps and details.",
   };
 }
 

@@ -1,6 +1,7 @@
 import Image from "next/image";
 import logo from "@/pictures/Bravo_logo.png";
-import heroEquipment from "@/pictures/pico_laser/IMG_7479.png";
+import fdaApprovedSeal from "@/pictures/fda-approved-logo.jpg";
+import heroEquipment from "@/pictures/both.png";
 import catalogTreatmentGrid from "@/pictures/pico_laser/IMG_6747.png";
 import { ButtonLink } from "@/components/ui/Button";
 import { SectionHeader } from "@/components/ui/SectionHeader";
@@ -37,18 +38,29 @@ export default function HomePage() {
               </div>
 
               <p className="mt-6 text-xs font-semibold uppercase tracking-[0.32em] text-brand-gold text-gold-clarity">
-                Bravo laser platforms
+                Laser aesthetics &amp; fat reduction
               </p>
-              <p className="mx-auto mt-4 inline-flex items-center rounded-full border border-brand-gold/45 bg-brand-gold/10 px-4 py-1.5 text-[11px] font-semibold uppercase tracking-[0.16em] text-brand-gold">
-                FDA-approved equipment
-              </p>
-              <h1 className="mt-4 text-4xl font-semibold tracking-[0.08em] text-ink text-clarity sm:text-5xl">
-                Advanced Laser Aesthetics &amp; Body Contouring
+              <div className="mx-auto mt-6 flex flex-col items-center gap-3">
+                <div className="rounded-full bg-white p-2 shadow-[0_12px_40px_rgba(0,0,0,0.18)] ring-1 ring-black/10">
+                  <Image
+                    src={fdaApprovedSeal}
+                    alt="FDA Approved seal: Food and Drug Administration"
+                    width={120}
+                    height={120}
+                    className="h-[5.5rem] w-[5.5rem] rounded-full object-contain sm:h-28 sm:w-28"
+                    priority
+                  />
+                </div>
+                <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-brand-gold">
+                  FDA-approved equipment
+                </p>
+              </div>
+              <h1 className="mt-5 text-4xl font-semibold tracking-[0.08em] text-ink text-clarity sm:text-5xl">
+                Advanced Laser Aesthetics &amp; Fat Reduction
               </h1>
               <p className="mt-5 text-sm leading-relaxed text-ink.soft text-clarity sm:text-base">
-                FDA-approved laser systems for skin and body—non-invasive care built
-                for comfort, clear expectations, and results you can track with your
-                provider.
+                FDA-approved laser care for skin and hair and a body system for
+                slimming and fat reduction without surgery.
               </p>
 
               <div className="mt-8 flex flex-wrap justify-center gap-3">
@@ -64,28 +76,28 @@ export default function HomePage() {
               </div>
 
               <div className="relative mx-auto mt-12 max-w-4xl overflow-hidden rounded-3xl border border-brand-stroke/80 bg-brand-surfaceMuted/30 shadow-[0_0_0_1px_rgba(92,92,95,0.2)]">
-                <div className="relative aspect-[16/10] w-full sm:aspect-[2/1]">
+                <div className="flex w-full justify-center bg-gradient-to-b from-brand-bg2/25 to-brand-bg/50 p-2 sm:p-4">
                   <Image
                     src={heroEquipment}
-                    alt="Bravo Laser professional treatment system"
-                    fill
-                    className="object-cover object-center"
+                    alt="Bravo Laser systems: aesthetic laser workstation and MaxMaster Slim fat reduction device"
+                    className="h-auto w-full max-w-full object-contain"
                     sizes="(max-width: 896px) 100vw, 896px"
                     priority
                   />
                 </div>
                 <p className="border-t border-brand-stroke/60 px-4 py-3 text-center text-[11px] leading-relaxed text-ink.soft sm:text-xs">
-                  Professional Bravo workstation—FDA-approved equipment your provider
-                  uses to plan and deliver care.
+                  Laser workstation for face and body treatments, plus a fat-reduction
+                  system for targeted slimming sessions FDA-approved equipment your
+                  provider uses to plan care.
                 </p>
               </div>
 
               <div className="mt-10 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
                 {[
-                  { k: "Focus", v: "Skin & body" },
+                  { k: "Laser line", v: "Hair, skin & pigment" },
+                  { k: "Body line", v: "Fat reduction & slimming" },
                   { k: "Equipment", v: "FDA-approved" },
                   { k: "Downtime", v: "None" },
-                  { k: "Feel", v: "Comfort-first" },
                 ].map((x) => (
                   <div
                     key={x.k}
@@ -109,8 +121,8 @@ export default function HomePage() {
           <div className="mx-auto max-w-2xl text-center">
             <SectionHeader
               eyebrow="What is Bravo Laser"
-              title="One brand, options for skin and body"
-              subtitle="FDA-approved laser care for common aesthetic goals—with training and support for providers."
+              title="One brand, two ways we help you"
+              subtitle="Laser treatments for common skin and hair goals, plus non-invasive fat reduction for slimming-focused plans, with training and support for providers."
               align="center"
             />
             <div className="mt-6 flex flex-wrap justify-center gap-3">
@@ -128,7 +140,8 @@ export default function HomePage() {
           <div className="mx-auto mt-8 max-w-3xl">
             <div className="glass flex flex-wrap justify-center gap-2 rounded-2xl border border-brand-stroke/80 px-4 py-4 sm:gap-3 sm:px-5 sm:py-4">
               {[
-                "Clinical clarity",
+                "Laser & skin options",
+                "Fat reduction",
                 "Comfort first",
                 "No downtime",
                 "Track your progress",
@@ -150,7 +163,7 @@ export default function HomePage() {
             <SectionHeader
               eyebrow="Two paths. One premium brand."
               title="Built for patients and providers"
-              subtitle="Choose your journey. Each path is designed as its own conversion flow—clear, fast, and high-trust."
+              subtitle="Choose your journey. Each path is designed as its own conversion flow: clear, fast, and high-trust."
               align="center"
             />
 
@@ -163,8 +176,9 @@ export default function HomePage() {
                   Realistic, measurable contour change
                 </h3>
                 <p className="mt-3 text-sm leading-relaxed text-ink.soft">
-                  A comfortable series-based plan guided by a local provider—no
-                  surgery, no freezing, and no downtime.
+                  Laser options for skin and hair goals, plus fat-reduction plans for
+                  slimming-focused results, guided by a local provider with no surgery and
+                  no downtime.
                 </p>
                 <div className="mt-6 flex flex-wrap gap-3">
                   <ButtonLink
@@ -193,8 +207,8 @@ export default function HomePage() {
                   A premium category that scales
                 </h3>
                 <p className="mt-3 text-sm leading-relaxed text-ink.soft">
-                  Add a modern contouring service line with a clinic-friendly
-                  workflow, clear positioning, and strong patient demand.
+                  Offer laser aesthetics and a fat-reduction line, with clinic-friendly
+                  workflows, clear positioning, and strong patient interest.
                 </p>
                 <div className="mt-6 flex flex-wrap gap-3">
                   <ButtonLink
@@ -246,13 +260,13 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* SECTION 5: BEFORE / AFTER — catalog reference */}
+        {/* SECTION 5: BEFORE / AFTER (catalog reference) */}
         <section className="border-y border-brand-stroke bg-gradient-to-b from-brand-bg2/30 to-transparent">
           <div className="container-base py-16 sm:py-20">
             <SectionHeader
               eyebrow="Outcomes"
               title="Representative manufacturer results"
-              subtitle="Sample before-and-after images from our product materials—hair, pigment, redness, and tattoo examples. Everyone is different; your provider will set expectations for you."
+              subtitle="Sample before-and-after images from our product materials: hair, pigment, redness, and tattoo examples. Everyone is different; your provider will set expectations for you."
               align="center"
             />
             <div className="mt-10 overflow-hidden rounded-3xl border border-brand-stroke/80 bg-brand-surfaceMuted/30 shadow-[0_0_0_1px_rgba(92,92,95,0.25)]">

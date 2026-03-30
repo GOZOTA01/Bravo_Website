@@ -8,7 +8,7 @@ import catalogTreatmentEffect from "@/pictures/pico_laser/IMG_6747.png";
 export const metadata = {
   title: "Patient Results",
   description:
-    "See representative outcomes from Bravo Pico Laser: hair removal with the diode pathway and pigment, redness, and tattoo cases with the picosecond handpiece—always provider-guided.",
+    "See representative outcomes from Bravo Pico Laser: hair removal with the diode pathway and pigment, redness, and tattoo cases with the picosecond handpiece, always provider-guided.",
 };
 
 export default function PatientResultsPage() {
@@ -19,7 +19,7 @@ export default function PatientResultsPage() {
           <SectionHeader
             eyebrow="Confidence, backed by process"
             title="Patient results"
-            subtitle="Below you’ll find manufacturer catalog examples from the Pico Laser Bravo system—diode hair removal on one side and picosecond indications (pigment, redness, tattoo) on the other. Your provider will set realistic expectations for your skin type and goals."
+            subtitle="Below you will find manufacturer catalog examples from the Pico Laser Bravo system: diode hair removal on one side and picosecond indications (pigment, redness, tattoo) on the other. Your provider will set realistic expectations for your skin type and goals."
           />
           <div className="mt-8 flex flex-wrap gap-3">
             <ButtonLink href="/find-a-provider" variant="primary">
@@ -43,7 +43,7 @@ export default function PatientResultsPage() {
             </h2>
             <p className="mt-3 text-sm leading-relaxed text-ink.soft">
               Illustrative before-and-after panels from the Bravo marketing
-              catalog—split between{" "}
+              catalog, split between{" "}
               <span className="text-ink">diode hair removal</span> (left) and{" "}
               <span className="text-ink">picosecond aesthetic cases</span>{" "}
               (right). Individual results vary.
@@ -86,7 +86,7 @@ export default function PatientResultsPage() {
           </h2>
           <p className="mt-2 max-w-3xl text-sm leading-relaxed text-ink.soft">
             Whether you’re focused on hair reduction, pigment, or
-            body-contouring goals with our other platforms, your provider will
+            fat-reduction goals with our other platforms, your provider will
             set expectations based on the areas being treated, the number of
             sessions, and your overall plan.
           </p>

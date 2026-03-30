@@ -7,7 +7,7 @@ import imgBravoWorkstation from "@/pictures/pico_laser/IMG_5848.png";
 export const metadata = {
   title: "What is Bravo Laser",
   description:
-    "Learn what Bravo Laser is, how the technology works, and why patients and providers choose an FDA-approved, non-invasive approach to body contouring.",
+    "Learn what Bravo Laser is, how the technology works, and why patients and providers choose an FDA-approved, non-invasive approach to fat reduction.",
 };
 
 export default function WhatIsBravoLaserPage() {
@@ -16,9 +16,9 @@ export default function WhatIsBravoLaserPage() {
       <section className="border-b border-brand-stroke bg-brand-bg">
         <div className="container-base py-14">
           <SectionHeader
-            eyebrow="Science‑backed aesthetics & contouring"
+            eyebrow="Science-backed aesthetics & fat reduction"
             title="What is Bravo Laser?"
-            subtitle="Bravo Laser brings together FDA-approved professional systems—including Pico Laser Bravo for picosecond and diode laser treatments and MaxMaster Slim for contour-focused body protocols—so patients and providers can choose a premium, non-invasive path aligned with their goals."
+            subtitle="Bravo Laser brings together FDA-approved professional systems, including Pico Laser Bravo for picosecond and diode laser treatments and MaxMaster Slim for contour-focused body protocols, so patients and providers can choose a premium, non-invasive path aligned with their goals."
           />
 
           <div className="mt-8 flex flex-wrap gap-3">
@@ -62,7 +62,7 @@ export default function WhatIsBravoLaserPage() {
                 </h2>
                 <p className="mt-2">
                   Bravo Laser is designed for people who want a clinically
-                  credible, non‑invasive way to address areas of stubborn fat.
+                  credible, non-invasive way to address areas of stubborn fat.
                   Treatments are performed externally and are built to fit into
                   busy schedules with minimal disruption.
                 </p>
@@ -73,10 +73,10 @@ export default function WhatIsBravoLaserPage() {
                   The technology behind Bravo Laser
                 </h2>
                 <p className="mt-2">
-                  Using low‑level laser energy, Bravo Laser targets adipose
+                  Using low-level laser energy, Bravo Laser targets adipose
                   tissue in a gentle, comfortable protocol. The goal is to
                   support measurable circumference change over a structured
-                  treatment plan—without incisions or recovery time.
+                  treatment plan without incisions or recovery time.
                 </p>
               </div>
 
@@ -87,7 +87,7 @@ export default function WhatIsBravoLaserPage() {
                 <p className="mt-2">
                   Patients often choose Bravo Laser because it offers a
                   conservative approach: a series of sessions, gradual results,
-                  and an experience designed to be well‑tolerated. Your provider
+                  and an experience designed to be well-tolerated. Your provider
                   will personalize the plan based on goals, body areas, and
                   lifestyle context.
                 </p>
@@ -100,25 +100,25 @@ export default function WhatIsBravoLaserPage() {
                 <ul className="mt-3 grid gap-2">
                   <li className="glass rounded-2xl px-4 py-3">
                     <span className="font-semibold text-ink">
-                      Non‑surgical
+                      Non-surgical
                     </span>{" "}
                     <span>
-                      — no anesthesia, no incisions, no recovery timeline.
+                      No anesthesia, no incisions, no recovery timeline.
                     </span>
                   </li>
                   <li className="rounded-2xl border border-brand-stroke bg-brand-surface px-4 py-3">
                     <span className="font-semibold text-ink">
-                      Workflow‑friendly
+                      Workflow-friendly
                     </span>{" "}
                     <span>
-                      — comfortable sessions designed for real clinic
+                      Comfortable sessions designed for real clinic
                       operations.
                     </span>
                   </li>
                   <li className="rounded-2xl border border-brand-stroke bg-brand-surface px-4 py-3">
                     <span className="font-semibold text-ink">Premium</span>{" "}
                     <span>
-                      — a high‑trust, clinical experience with modern design and
+                      A high-trust, clinical experience with modern design and
                       messaging.
                     </span>
                   </li>

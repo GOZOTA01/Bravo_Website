@@ -60,17 +60,17 @@ export const treatmentAreaDetails: Record<TreatmentAreaSlug, TreatmentAreaDetail
   {
     abdomen: {
       title: "Laser stomach / abdomen fat reduction",
-      headline: "Laser abdomen contouring with Bravo Laser",
+      headline: "Laser abdomen fat reduction with Bravo Laser",
       commonWhy:
-        "The abdomen is one of the most common places people hold stubborn fat—even with consistent diet and training.",
+        "The abdomen is one of the most common places people hold stubborn fat, even with consistent diet and training.",
       whatToExpect:
-        "Your provider will map the area, set a session cadence, and track progress over time. The protocol is designed to be comfortable and non‑disruptive to daily life.",
+        "Your provider will map the area, set a session cadence, and track progress over time. The protocol is designed to be comfortable and non-disruptive to daily life.",
       idealCandidate:
-        "Patients seeking non‑surgical contour change who want a structured plan and realistic, measurable expectations.",
+        "Patients seeking non-surgical contour change who want a structured plan and realistic, measurable expectations.",
       faqs: [
         {
           q: "Does it hurt?",
-          a: "Many patients describe sessions as gentle and well‑tolerated. Your provider will review what sensations to expect.",
+          a: "Many patients describe sessions as gentle and well-tolerated. Your provider will review what sensations to expect.",
         },
         {
           q: "How quickly will I see results?",
@@ -80,17 +80,17 @@ export const treatmentAreaDetails: Record<TreatmentAreaSlug, TreatmentAreaDetail
     },
     arms: {
       title: "Laser arm fat reduction",
-      headline: "Laser arm contouring with Bravo Laser",
+      headline: "Laser arm fat reduction with Bravo Laser",
       commonWhy:
         "Upper arms can be difficult to refine with exercise alone, especially when fullness is localized.",
       whatToExpect:
-        "A provider‑guided series targeting the upper arm zone, designed for comfort and consistency.",
+        "A provider-guided series targeting the upper arm zone, designed for comfort and consistency.",
       idealCandidate:
-        "Patients who want a non‑invasive option to support a more refined arm contour.",
+        "Patients who want a non-invasive option to support a more refined arm contour.",
       faqs: [
         {
           q: "Is there downtime?",
-          a: "No—patients typically return to normal activities immediately.",
+          a: "No. Patients typically return to normal activities immediately.",
         },
         {
           q: "How many sessions?",
@@ -100,13 +100,13 @@ export const treatmentAreaDetails: Record<TreatmentAreaSlug, TreatmentAreaDetail
     },
     back: {
       title: "Laser back fat reduction",
-      headline: "Laser back contouring with Bravo Laser",
+      headline: "Laser back fat reduction with Bravo Laser",
       commonWhy:
         "Back contour concerns can be influenced by genetics, distribution patterns, and lifestyle.",
       whatToExpect:
         "External treatment sessions guided by a provider who tracks circumference and visible changes over time.",
       idealCandidate:
-        "Patients who want a gradual, non‑surgical approach to back contour refinement.",
+        "Patients who want a gradual, non-surgical approach to back contour refinement.",
       faqs: [
         {
           q: "Can this treat multiple zones?",
@@ -120,17 +120,17 @@ export const treatmentAreaDetails: Record<TreatmentAreaSlug, TreatmentAreaDetail
     },
     "love-handles": {
       title: "Laser love handle reduction",
-      headline: "Laser hips / love handle contouring with Bravo Laser",
+      headline: "Laser hips / love handle fat reduction with Bravo Laser",
       commonWhy:
         "Hips and love handles are common stubborn zones, even in otherwise active patients.",
       whatToExpect:
         "A structured series with tracking and lifestyle reinforcement where appropriate.",
       idealCandidate:
-        "Patients seeking non‑invasive waistline refinement and improved silhouette.",
+        "Patients seeking non-invasive waistline refinement and improved silhouette.",
       faqs: [
         {
           q: "Will I be sore afterward?",
-          a: "Most patients report minimal disruption. Your provider will review post‑care guidance.",
+          a: "Most patients report minimal disruption. Your provider will review post-care guidance.",
         },
         {
           q: "Do I need to change my diet?",
@@ -139,18 +139,18 @@ export const treatmentAreaDetails: Record<TreatmentAreaSlug, TreatmentAreaDetail
       ],
     },
     thighs: {
-      title: "Laser thigh contouring",
-      headline: "Laser thigh contouring with Bravo Laser",
+      title: "Laser thigh fat reduction",
+      headline: "Laser thigh fat reduction with Bravo Laser",
       commonWhy:
         "Thigh contour is a frequent goal, especially when fat distribution is localized.",
       whatToExpect:
-        "Provider‑guided sessions designed for consistency and measurable progress.",
+        "Provider-guided sessions designed for consistency and measurable progress.",
       idealCandidate:
-        "Patients who want a comfortable, non‑surgical approach to thigh contour refinement.",
+        "Patients who want a comfortable, non-surgical approach to thigh contour refinement.",
       faqs: [
         {
           q: "Can inner thighs be treated too?",
-          a: "Yes—ask your provider about a plan that includes inner thigh targeting when appropriate.",
+          a: "Yes. Ask your provider about a plan that includes inner thigh targeting when appropriate.",
         },
         {
           q: "How long is a session?",
@@ -160,13 +160,13 @@ export const treatmentAreaDetails: Record<TreatmentAreaSlug, TreatmentAreaDetail
     },
     "inner-thighs": {
       title: "Laser inner thigh fat reduction",
-      headline: "Laser inner thigh contouring with Bravo Laser",
+      headline: "Laser inner thigh fat reduction with Bravo Laser",
       commonWhy:
         "Inner thighs are a precise area where subtle changes can make a big difference in comfort and confidence.",
       whatToExpect:
-        "A targeted series that is provider‑guided, comfortable, and tracked over time.",
+        "A targeted series that is provider-guided, comfortable, and tracked over time.",
       idealCandidate:
-        "Patients seeking a non‑invasive option for a hard‑to‑treat zone.",
+        "Patients seeking a non-invasive option for a hard-to-treat zone.",
       faqs: [
         {
           q: "When should I book a consult?",
@@ -180,13 +180,13 @@ export const treatmentAreaDetails: Record<TreatmentAreaSlug, TreatmentAreaDetail
     },
     underarm: {
       title: "Laser underarm fat reduction",
-      headline: "Laser underarm contouring with Bravo Laser",
+      headline: "Laser underarm fat reduction with Bravo Laser",
       commonWhy:
         "Underarm fullness is a common concern and can be difficult to address with exercise alone.",
       whatToExpect:
-        "A provider‑guided protocol designed to fit into your week with no downtime.",
+        "A provider-guided protocol designed to fit into your week with no downtime.",
       idealCandidate:
-        "Patients wanting a conservative, non‑surgical approach to underarm contour.",
+        "Patients wanting a conservative, non-surgical approach to underarm contour.",
       faqs: [
         {
           q: "Will I need multiple sessions?",
@@ -199,14 +199,14 @@ export const treatmentAreaDetails: Record<TreatmentAreaSlug, TreatmentAreaDetail
       ],
     },
     waistline: {
-      title: "Laser waistline contouring",
-      headline: "Laser waistline contouring with Bravo Laser",
+      title: "Laser waistline fat reduction",
+      headline: "Laser waistline fat reduction with Bravo Laser",
       commonWhy:
         "Waistline definition is often impacted by stubborn fat distribution patterns.",
       whatToExpect:
         "A structured treatment plan with tracking and clear checkpoints over time.",
       idealCandidate:
-        "Patients who want measurable, non‑invasive contour change without downtime.",
+        "Patients who want measurable, non-invasive contour change without downtime.",
       faqs: [
         {
           q: "How do providers track progress?",

@@ -5,17 +5,17 @@ import { FaqAccordion } from "@/components/ui/FaqAccordion";
 export const metadata = {
   title: "FAQ",
   description:
-    "Patient and provider FAQs for Bravo Laser—how it works, what to expect, and how practices can get started.",
+    "Patient and provider FAQs for Bravo Laser: how it works, what to expect, and how practices can get started.",
 };
 
 const patientFaqs = [
   {
     q: "How does Bravo Laser work?",
-    a: "Bravo Laser is a non‑invasive, external laser body contouring protocol designed to target stubborn fat and support circumference change over a structured series.",
+    a: "Bravo Laser is a non-invasive, external laser fat reduction protocol designed to target stubborn fat and support circumference change over a structured series.",
   },
   {
     q: "Does it hurt?",
-    a: "Many patients describe sessions as comfortable and well‑tolerated. Your provider will explain what sensations to expect.",
+    a: "Many patients describe sessions as comfortable and well-tolerated. Your provider will explain what sensations to expect.",
   },
   {
     q: "How long is each appointment?",
@@ -27,11 +27,11 @@ const patientFaqs = [
   },
   {
     q: "Is there downtime?",
-    a: "No—patients typically return to daily activities right away.",
+    a: "No. Patients typically return to daily activities right away.",
   },
   {
     q: "Who is a good candidate?",
-    a: "Many candidates are looking for a non‑surgical option to address stubborn areas. Eligibility is individual—your provider will review goals and health context.",
+    a: "Many candidates are looking for a non-surgical option to address stubborn areas. Eligibility is individual. Your provider will review goals and health context.",
   },
   {
     q: "How many treatments will I need?",
