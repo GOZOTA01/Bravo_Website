@@ -9,7 +9,7 @@ export const metadata = {
 export default function NewsPage() {
   return (
     <>
-      <section className="border-b border-brand-stroke bg-brand-bg">
+      <section className="section-charcoal border-b border-brand-stroke">
         <div className="container-base py-14">
           <SectionHeader
             eyebrow="Updates"

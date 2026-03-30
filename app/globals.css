@@ -14,6 +14,33 @@ body {
   @apply mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-8;
 }
 
+.section-light {
+  @apply border-y border-brand-stroke/40 bg-white/90;
+}
+
+.section-charcoal {
+  background-color: #2a2a2a;
+}
+
+.section-charcoal .text-ink {
+  color: #ffffff !important;
+}
+
+.section-charcoal .text-ink-soft,
+.section-charcoal .text-ink\.soft {
+  color: rgba(255, 255, 255, 0.82) !important;
+}
+
+/* Light glass panels inside charcoal bands (e.g. dual-audience cards): dark text */
+.section-charcoal .glass .text-ink {
+  color: #14141a !important;
+}
+
+.section-charcoal .glass .text-ink-soft,
+.section-charcoal .glass .text-ink\.soft {
+  color: rgba(17, 24, 39, 0.82) !important;
+}
+
 .glass {
   @apply border border-brand-stroke/70 bg-white/85 shadow-sm backdrop-blur-sm;
 }

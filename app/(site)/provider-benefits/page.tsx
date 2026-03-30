@@ -70,7 +70,7 @@ const competitiveEdge = [
 export default function ProviderBenefitsPage() {
   return (
     <>
-      <section className="border-b border-brand-stroke bg-brand-bg">
+      <section className="section-charcoal border-b border-brand-stroke">
         <div className="container-base py-14">
           <SectionHeader
             eyebrow="For clinics & medical practices"
@@ -129,7 +129,8 @@ export default function ProviderBenefitsPage() {
         </div>
       </section>
 
-      <section className="container-base py-16 sm:py-20">
+      <section className="section-light">
+        <div className="container-base py-16 sm:py-20">
         <div className="grid gap-10 lg:grid-cols-2 lg:items-center">
           <div className="order-2 overflow-hidden rounded-3xl border border-brand-stroke/80 bg-brand-surfaceMuted/30 shadow-[0_0_0_1px_rgba(92,92,95,0.2)] lg:order-1">
             <div className="relative aspect-[4/3] w-full">
@@ -170,6 +171,7 @@ export default function ProviderBenefitsPage() {
                 Results vary by utilization, pricing, financing terms, and market factors.
               </p>
           </div>
+        </div>
         </div>
       </section>
 

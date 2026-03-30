@@ -26,18 +26,20 @@ export default function HomePage() {
           <div className="container-base relative py-20 sm:py-24">
             <div className="mx-auto max-w-3xl text-center">
               <div className="pointer-events-none absolute left-1/2 top-1/2 h-[520px] w-[520px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-brand-gold/10 blur-3xl" />
-              <div className="relative mx-auto h-20 w-[min(100%,280px)] sm:h-24">
-                <Image
-                  src={logo}
-                  alt="Bravo Laser"
-                  width={320}
-                  height={96}
-                  className="h-full w-auto max-w-full object-contain object-center"
-                  priority
-                />
+              <div className="mt-1 flex w-full justify-center">
+                <div className="relative h-24 w-[min(100%,320px)] sm:h-28">
+                  <Image
+                    src={logo}
+                    alt="Bravo Laser"
+                    width={360}
+                    height={110}
+                    className="h-full w-auto max-w-full object-contain object-center"
+                    priority
+                  />
+                </div>
               </div>
 
-              <p className="mt-6 text-xs font-semibold uppercase tracking-[0.32em] text-brand-gold text-gold-clarity">
+              <p className="mx-auto mt-6 w-fit text-center text-xs font-semibold uppercase tracking-[0.32em] text-brand-gold text-gold-clarity">
                 Laser aesthetics &amp; fat reduction
               </p>
               <div className="mx-auto mt-6 flex flex-col items-center gap-3">
@@ -117,48 +119,50 @@ export default function HomePage() {
         </section>
 
         {/* SECTION 2: EQUIPMENT + WHAT IS */}
-        <section className="container-base py-12 sm:py-14">
-          <div className="mx-auto max-w-2xl text-center">
+        <section className="section-light">
+          <div className="container-base py-12 sm:py-14">
+            <div className="mx-auto max-w-2xl text-center">
             <SectionHeader
               eyebrow="What is Bravo Laser"
               title="One brand, two ways we help you"
               subtitle="Laser treatments for common skin and hair goals, plus non-invasive fat reduction for slimming-focused plans, with training and support for providers."
               align="center"
             />
-            <div className="mt-6 flex flex-wrap justify-center gap-3">
-              <ButtonLink href="/equipment" variant="primary">
-                View equipment
-              </ButtonLink>
-              <ButtonLink href="/what-is-bravo-laser" variant="outline">
-                Read the overview
-              </ButtonLink>
-              <ButtonLink href="/treatment" variant="secondary">
-                How treatment works
-              </ButtonLink>
+              <div className="mt-6 flex flex-wrap justify-center gap-3">
+                <ButtonLink href="/equipment" variant="primary">
+                  View equipment
+                </ButtonLink>
+                <ButtonLink href="/what-is-bravo-laser" variant="outline">
+                  Read the overview
+                </ButtonLink>
+                <ButtonLink href="/treatment" variant="secondary">
+                  How treatment works
+                </ButtonLink>
+              </div>
             </div>
-          </div>
-          <div className="mx-auto mt-8 max-w-3xl">
-            <div className="glass flex flex-wrap justify-center gap-2 rounded-2xl border border-brand-stroke/80 px-4 py-4 sm:gap-3 sm:px-5 sm:py-4">
-              {[
-                "Laser & skin options",
-                "Fat reduction",
-                "Comfort first",
-                "No downtime",
-                "Track your progress",
-              ].map((label) => (
-                <span
-                  key={label}
-                  className="rounded-full border border-brand-stroke/70 bg-brand-surfaceMuted/40 px-3 py-1.5 text-xs font-medium tracking-[0.04em] text-ink/90 sm:text-sm"
-                >
-                  {label}
-                </span>
-              ))}
+            <div className="mx-auto mt-8 max-w-3xl">
+              <div className="glass flex flex-wrap justify-center gap-2 rounded-2xl border border-brand-stroke/80 px-4 py-4 sm:gap-3 sm:px-5 sm:py-4">
+                {[
+                  "Laser & skin options",
+                  "Fat reduction",
+                  "Comfort first",
+                  "No downtime",
+                  "Track your progress",
+                ].map((label) => (
+                  <span
+                    key={label}
+                    className="rounded-full border border-brand-stroke/70 bg-brand-surfaceMuted/40 px-3 py-1.5 text-xs font-medium tracking-[0.04em] text-ink/90 sm:text-sm"
+                  >
+                    {label}
+                  </span>
+                ))}
+              </div>
             </div>
           </div>
         </section>
 
         {/* SECTION 3: DUAL AUDIENCE */}
-        <section className="border-y border-brand-stroke bg-gradient-to-b from-brand-bg2/30 to-transparent">
+        <section className="section-charcoal border-y border-brand-stroke">
           <div className="container-base py-16 sm:py-20">
             <SectionHeader
               eyebrow="Two paths. One premium brand."
@@ -233,35 +237,37 @@ export default function HomePage() {
         </section>
 
         {/* SECTION 4: BENEFITS */}
-        <section className="container-base py-12 sm:py-14">
-          <SectionHeader
-            eyebrow="Benefits"
-            title="Why patients choose Bravo"
-            align="center"
-          />
-          <div className="mx-auto mt-8 max-w-3xl">
-            <div className="glass flex flex-wrap justify-center gap-2 rounded-2xl border border-brand-stroke/80 px-4 py-4 sm:gap-3 sm:px-5 sm:py-5">
-              {[
-                "Non-invasive",
-                "No downtime",
-                "Comfortable",
-                "Natural-looking results",
-                "Personalized plans",
-                "Easy to fit your schedule",
-              ].map((label) => (
-                <span
-                  key={label}
-                  className="rounded-full border border-brand-stroke/70 bg-brand-surfaceMuted/40 px-3 py-1.5 text-xs font-medium tracking-[0.04em] text-ink/90 sm:text-sm"
-                >
-                  {label}
-                </span>
-              ))}
+        <section className="section-light">
+          <div className="container-base py-12 sm:py-14">
+            <SectionHeader
+              eyebrow="Benefits"
+              title="Why patients choose Bravo"
+              align="center"
+            />
+            <div className="mx-auto mt-8 max-w-3xl">
+              <div className="glass flex flex-wrap justify-center gap-2 rounded-2xl border border-brand-stroke/80 px-4 py-4 sm:gap-3 sm:px-5 sm:py-5">
+                {[
+                  "Non-invasive",
+                  "No downtime",
+                  "Comfortable",
+                  "Natural-looking results",
+                  "Personalized plans",
+                  "Easy to fit your schedule",
+                ].map((label) => (
+                  <span
+                    key={label}
+                    className="rounded-full border border-brand-stroke/70 bg-brand-surfaceMuted/40 px-3 py-1.5 text-xs font-medium tracking-[0.04em] text-ink/90 sm:text-sm"
+                  >
+                    {label}
+                  </span>
+                ))}
+              </div>
             </div>
           </div>
         </section>
 
         {/* SECTION 5: BEFORE / AFTER (catalog reference) */}
-        <section className="border-y border-brand-stroke bg-gradient-to-b from-brand-bg2/30 to-transparent">
+        <section className="section-charcoal border-y border-brand-stroke">
           <div className="container-base py-16 sm:py-20">
             <SectionHeader
               eyebrow="Outcomes"
@@ -295,8 +301,8 @@ export default function HomePage() {
         </section>
 
         {/* FIND A PROVIDER CTA */}
-        <section className="relative overflow-hidden border-t border-brand-stroke">
-          <div className="absolute inset-0 bg-gradient-to-b from-brand-bg2/40 to-brand-bg" />
+        <section className="section-charcoal relative overflow-hidden border-t border-brand-stroke">
+          <div className="absolute inset-0 bg-[#2A2A2A]" />
           <div className="pointer-events-none absolute inset-0 opacity-70 bg-laser-grid" />
           <div className="container-base relative py-16 sm:py-20">
             <div className="mx-auto max-w-3xl text-center">

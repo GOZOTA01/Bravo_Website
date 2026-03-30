@@ -3,6 +3,11 @@
  * MaxMaster Slim: high-level positioning until catalog imagery is available.
  */
 
+export const equipmentPaths = {
+  picoLaserBravo: "/equipment/pico-laser-bravo",
+  maxMasterSlim: "/equipment/maxmaster-slim",
+} as const;
+
 export const picoLaserBravo = {
   name: "Pico Laser Bravo",
   tagline: "2-in-1 diode & picosecond laser platform",

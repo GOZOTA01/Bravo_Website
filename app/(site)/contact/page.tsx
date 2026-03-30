@@ -12,7 +12,7 @@ export const metadata = {
 export default function ContactPage() {
   return (
     <>
-      <section className="border-b border-brand-stroke bg-brand-bg">
+      <section className="section-charcoal border-b border-brand-stroke">
         <div className="container-base py-14">
           <SectionHeader
             eyebrow="Get in touch"
@@ -22,7 +22,8 @@ export default function ContactPage() {
         </div>
       </section>
 
-      <section className="container-base py-16">
+      <section className="section-light">
+        <div className="container-base py-16">
         <div className="grid gap-6 lg:grid-cols-2">
           <div className="glass rounded-3xl p-6 shadow-sm">
             <h3 className="text-sm font-semibold text-ink">Patients</h3>
@@ -115,6 +116,7 @@ export default function ContactPage() {
               </div>
             </dl>
           </div>
+        </div>
         </div>
       </section>
     </>

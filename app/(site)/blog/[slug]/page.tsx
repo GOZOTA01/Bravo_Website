@@ -52,7 +52,7 @@ export default async function BlogPostPage({
 
   return (
     <>
-      <section className="border-b border-brand-stroke bg-brand-bg">
+      <section className="section-charcoal border-b border-brand-stroke">
         <div className="container-base py-14">
           <SectionHeader
             eyebrow={post.category}

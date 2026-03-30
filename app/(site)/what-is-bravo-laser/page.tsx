@@ -13,7 +13,7 @@ export const metadata = {
 export default function WhatIsBravoLaserPage() {
   return (
     <>
-      <section className="border-b border-brand-stroke bg-brand-bg">
+      <section className="section-charcoal border-b border-brand-stroke">
         <div className="container-base py-14">
           <SectionHeader
             eyebrow="Science-backed aesthetics & fat reduction"
@@ -52,7 +52,8 @@ export default function WhatIsBravoLaserPage() {
         </div>
       </section>
 
-      <section className="container-base py-16">
+      <section className="section-light">
+        <div className="container-base py-16">
         <div className="grid gap-10 lg:grid-cols-3">
           <div className="lg:col-span-2">
             <div className="space-y-8 text-sm leading-relaxed text-ink.soft sm:text-base">
@@ -149,6 +150,7 @@ export default function WhatIsBravoLaserPage() {
               </ButtonLink>
             </div>
           </aside>
+        </div>
         </div>
       </section>
     </>

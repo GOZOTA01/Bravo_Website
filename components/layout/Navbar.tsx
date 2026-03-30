@@ -17,7 +17,6 @@ const navLinks = [
   { href: "/find-a-provider", label: "Find a Provider" },
   { href: "/about", label: "About Us" },
   { href: "/contact", label: "Contact" },
-  { href: "/blog", label: "Blog / News" },
 ] as const;
 
 const logoClass =
@@ -55,12 +54,12 @@ export function Navbar() {
 
   return (
     <>
-      <header className="sticky top-0 z-40 border-b border-brand-stroke/80 bg-brand-bg/90 backdrop-blur-md">
+      <header className="sticky top-0 z-40 border-b border-white/10 bg-[#2A2A2A]">
         <div className="container-base flex h-16 items-center justify-between gap-3 sm:gap-4">
           <div className="flex min-w-0 items-center gap-2.5 sm:gap-3">
             <button
               type="button"
-              className="group inline-flex shrink-0 items-center gap-2 rounded-xl border border-brand-stroke/90 bg-transparent px-2.5 py-2 text-ink shadow-sm transition hover:border-brand-gold/45 hover:bg-brand-surfaceMuted/60 focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-gold/40"
+              className="group inline-flex shrink-0 items-center gap-2 rounded-xl border border-white/20 bg-transparent px-2.5 py-2 text-white shadow-sm transition hover:border-brand-gold/55 hover:bg-white/10 focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-gold/40"
               onClick={() => setIsOpen((o) => !o)}
               aria-label={isOpen ? "Close navigation menu" : "Open navigation menu"}
               aria-controls={menuId}
@@ -95,7 +94,7 @@ export function Navbar() {
                   </svg>
                 )}
               </span>
-              <span className="hidden text-[11px] font-semibold uppercase tracking-[0.18em] text-ink/90 sm:inline">
+              <span className="hidden text-[11px] font-semibold uppercase tracking-[0.18em] text-white/90 sm:inline">
                 {isOpen ? "Close" : "Menu"}
               </span>
             </button>
@@ -123,7 +122,7 @@ export function Navbar() {
               href="/contact?type=patient"
               variant="outline"
               size="sm"
-              className="!px-2.5 text-[10px] sm:!px-3 sm:text-xs"
+              className="!border-white/40 !bg-transparent !px-2.5 text-[10px] !text-white hover:!border-brand-gold hover:!bg-white/10 hover:!text-brand-gold focus-visible:ring-offset-[#2A2A2A] sm:!px-3 sm:text-xs"
             >
               <span className="sm:hidden">Book</span>
               <span className="hidden sm:inline">Book consultation</span>
@@ -132,7 +131,7 @@ export function Navbar() {
               href="/provider-benefits"
               variant="primary"
               size="sm"
-              className="!px-2.5 text-[10px] sm:!px-3 sm:text-xs"
+              className="!px-2.5 text-[10px] focus-visible:ring-offset-[#2A2A2A] sm:!px-3 sm:text-xs"
             >
               <span className="sm:hidden">Providers</span>
               <span className="hidden sm:inline">For providers</span>
@@ -153,7 +152,7 @@ export function Navbar() {
 
       <aside
         id={menuId}
-        className={`fixed left-0 top-0 z-[101] flex h-full w-[min(100vw-3rem,22rem)] flex-col border-r border-brand-stroke/80 border-l-2 border-l-brand-gold/35 bg-brand-bg/98 shadow-[16px_0_48px_rgba(28,27,24,0.12)] backdrop-blur-xl transition-transform duration-[340ms] ease-[cubic-bezier(0.22,1,0.36,1)] will-change-transform sm:w-96 ${
+        className={`fixed left-0 top-0 z-[101] flex h-full w-[min(100vw-3rem,22rem)] flex-col border-r border-white/10 border-l-2 border-l-brand-gold/45 bg-[#2A2A2A] shadow-[16px_0_48px_rgba(0,0,0,0.35)] transition-transform duration-[340ms] ease-[cubic-bezier(0.22,1,0.36,1)] will-change-transform sm:w-96 ${
           isOpen
             ? "translate-x-0 pointer-events-auto"
             : "-translate-x-full pointer-events-none"
@@ -163,7 +162,7 @@ export function Navbar() {
         aria-label="Site navigation"
         aria-hidden={!isOpen}
       >
-        <div className="flex h-16 shrink-0 items-center justify-between gap-3 border-b border-brand-stroke/80 px-5">
+        <div className="flex h-16 shrink-0 items-center justify-between gap-3 border-b border-white/10 px-5">
           <div className={logoClass}>
             <Image
               src={logo}
@@ -176,7 +175,7 @@ export function Navbar() {
           <button
             ref={closeBtnRef}
             type="button"
-            className="shrink-0 rounded-xl border border-brand-stroke/90 bg-transparent p-2 text-ink shadow-sm transition hover:border-brand-gold/45 hover:bg-brand-surfaceMuted/60 focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-gold/40"
+            className="shrink-0 rounded-xl border border-white/20 bg-transparent p-2 text-white shadow-sm transition hover:border-brand-gold/55 hover:bg-white/10 focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-gold/40"
             onClick={() => setIsOpen(false)}
             aria-label="Close navigation menu"
           >
@@ -208,7 +207,7 @@ export function Navbar() {
           className="flex min-h-0 flex-1 flex-col overflow-y-auto overscroll-contain px-4 py-5 sm:px-5"
           aria-label="Primary pages"
         >
-          <p className="mb-3 px-3 text-[10px] font-semibold uppercase tracking-[0.28em] text-brand-gold/90">
+          <p className="mb-3 px-3 text-[10px] font-semibold uppercase tracking-[0.28em] text-brand-gold">
             Navigate
           </p>
           <ul className="flex flex-col gap-0.5">
@@ -217,7 +216,7 @@ export function Navbar() {
                 <Link
                   href={item.href}
                   onClick={() => setIsOpen(false)}
-                  className={`block rounded-xl border border-transparent px-3 py-2.5 text-sm font-medium text-ink/90 transition-[transform,opacity,border-color,background-color,color] duration-300 ease-out hover:border-brand-stroke/60 hover:bg-white/90 hover:text-brand-gold ${
+                  className={`block rounded-xl border border-transparent px-3 py-2.5 text-sm font-medium text-white/90 transition-[transform,opacity,border-color,background-color,color] duration-300 ease-out hover:border-white/15 hover:bg-white/10 hover:text-white ${
                     isOpen ? "translate-x-0 opacity-100" : "-translate-x-2 opacity-0"
                   }`}
                   style={{
@@ -230,8 +229,8 @@ export function Navbar() {
             ))}
           </ul>
 
-          <div className="mt-auto border-t border-brand-stroke/70 pt-5">
-            <p className="mb-3 px-3 text-[10px] font-semibold uppercase tracking-[0.28em] text-brand-gold/90">
+          <div className="mt-auto border-t border-white/10 pt-5">
+            <p className="mb-3 px-3 text-[10px] font-semibold uppercase tracking-[0.28em] text-brand-gold">
               Quick actions
             </p>
             <div className="flex flex-col gap-2.5 px-1">
@@ -240,7 +239,7 @@ export function Navbar() {
                 onClick={() => setIsOpen(false)}
                 variant="outline"
                 size="sm"
-                className="w-full justify-center"
+                className="w-full justify-center !border-white/40 !bg-transparent !text-white hover:!border-brand-gold hover:!bg-white/10 hover:!text-brand-gold focus-visible:ring-offset-[#2A2A2A]"
               >
                 Book consultation
               </ButtonLink>
@@ -249,7 +248,7 @@ export function Navbar() {
                 onClick={() => setIsOpen(false)}
                 variant="primary"
                 size="sm"
-                className="w-full justify-center"
+                className="w-full justify-center focus-visible:ring-offset-[#2A2A2A]"
               >
                 For providers
               </ButtonLink>

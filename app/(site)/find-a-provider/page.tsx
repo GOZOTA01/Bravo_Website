@@ -11,7 +11,7 @@ export const metadata = {
 export default function FindAProviderPage() {
   return (
     <>
-      <section className="border-b border-brand-stroke bg-brand-bg">
+      <section className="section-charcoal border-b border-brand-stroke">
         <div className="container-base py-14">
           <SectionHeader
             eyebrow="Locate a clinic"
@@ -29,8 +29,10 @@ export default function FindAProviderPage() {
         </div>
       </section>
 
-      <section className="container-base py-16">
-        <ProviderSearch />
+      <section className="section-light">
+        <div className="container-base py-16">
+          <ProviderSearch />
+        </div>
       </section>
     </>
   );

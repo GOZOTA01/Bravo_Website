@@ -15,7 +15,7 @@ export const metadata = {
 export default function TreatmentPage() {
   return (
     <>
-      <section className="border-b border-brand-stroke bg-brand-bg">
+      <section className="section-charcoal border-b border-brand-stroke">
         <div className="container-base py-14">
           <SectionHeader
             eyebrow="Comfortable. Structured. Clinical."
@@ -36,7 +36,8 @@ export default function TreatmentPage() {
         </div>
       </section>
 
-      <section className="container-base py-16">
+      <section className="section-light">
+        <div className="container-base py-16">
         <div className="grid gap-10 lg:grid-cols-3">
           <div className="lg:col-span-2">
             <div className="space-y-10 text-sm leading-relaxed text-ink.soft sm:text-base">
@@ -109,6 +110,7 @@ export default function TreatmentPage() {
               </ButtonLink>
             </div>
           </aside>
+        </div>
         </div>
       </section>
 

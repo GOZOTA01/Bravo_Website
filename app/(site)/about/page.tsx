@@ -11,7 +11,7 @@ export const metadata = {
 export default function AboutPage() {
   return (
     <>
-      <section className="border-b border-brand-stroke bg-brand-bg">
+      <section className="section-charcoal border-b border-brand-stroke">
         <div className="container-base py-14">
           <SectionHeader
             eyebrow="Bravo Laser"
@@ -32,7 +32,8 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="container-base py-16">
+      <section className="section-light">
+        <div className="container-base py-16">
         <div className="grid gap-10 lg:grid-cols-3">
           <div className="space-y-8 lg:col-span-2">
             <div className="space-y-3 text-sm leading-relaxed text-ink.soft sm:text-base">
@@ -41,7 +42,7 @@ export default function AboutPage() {
                 Bravo Laser brings together professional-grade systems for
                 practices that want a credible, modern aesthetics line:{" "}
                 <Link
-                  href="/equipment#pico-laser-bravo"
+                  href="/equipment/pico-laser-bravo"
                   className="font-medium text-brand-gold underline-offset-4 hover:underline"
                 >
                   Pico Laser Bravo
@@ -49,7 +50,7 @@ export default function AboutPage() {
                 for diode and picosecond laser work (including optional AI skin
                 analysis), and{" "}
                 <Link
-                  href="/equipment#maxmaster-slim"
+                  href="/equipment/maxmaster-slim"
                   className="font-medium text-brand-gold underline-offset-4 hover:underline"
                 >
                   MaxMaster Slim
@@ -119,6 +120,7 @@ export default function AboutPage() {
               </ButtonLink>
             </div>
           </aside>
+        </div>
         </div>
       </section>
     </>
