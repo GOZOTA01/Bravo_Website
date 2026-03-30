@@ -46,10 +46,9 @@ export default function HomePage() {
                 Advanced Laser Aesthetics &amp; Body Contouring
               </h1>
               <p className="mt-5 text-sm leading-relaxed text-ink.soft text-clarity sm:text-base">
-                From the Pico Laser Bravo 2-in-1 workstation to the MaxMaster Slim
-                contouring line—FDA-approved positioning across our core equipment
-                story, with non-invasive options designed for clarity, comfort, and
-                measurable outcomes.
+                FDA-approved laser systems for skin and body—non-invasive care built
+                for comfort, clear expectations, and results you can track with your
+                provider.
               </p>
 
               <div className="mt-8 flex flex-wrap justify-center gap-3">
@@ -68,7 +67,7 @@ export default function HomePage() {
                 <div className="relative aspect-[16/10] w-full sm:aspect-[2/1]">
                   <Image
                     src={heroEquipment}
-                    alt="Bravo Pico Laser Bravo 2-in-1 diode and picosecond laser system"
+                    alt="Bravo Laser professional treatment system"
                     fill
                     className="object-cover object-center"
                     sizes="(max-width: 896px) 100vw, 896px"
@@ -76,18 +75,17 @@ export default function HomePage() {
                   />
                 </div>
                 <p className="border-t border-brand-stroke/60 px-4 py-3 text-center text-[11px] leading-relaxed text-ink.soft sm:text-xs">
-                  Pico Laser Bravo: FDA-approved diode + picosecond laser in one
-                  professional workstation, with optional AI skin analysis for
-                  smarter treatment planning.
+                  Professional Bravo workstation—FDA-approved equipment your provider
+                  uses to plan and deliver care.
                 </p>
               </div>
 
               <div className="mt-10 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
                 {[
-                  { k: "Platforms", v: "Pico + MaxMaster Slim" },
-                  { k: "Regulatory", v: "FDA-approved positioning" },
+                  { k: "Focus", v: "Skin & body" },
+                  { k: "Equipment", v: "FDA-approved" },
                   { k: "Downtime", v: "None" },
-                  { k: "Experience", v: "Comfort-focused" },
+                  { k: "Feel", v: "Comfort-first" },
                 ].map((x) => (
                   <div
                     key={x.k}
@@ -107,56 +105,40 @@ export default function HomePage() {
         </section>
 
         {/* SECTION 2: EQUIPMENT + WHAT IS */}
-        <section className="container-base py-16 sm:py-20">
-          <div className="grid gap-10 lg:grid-cols-2 lg:items-center">
-            <div>
-              <SectionHeader
-                eyebrow="What is Bravo Laser"
-                title="Two platforms—one premium clinical standard"
-                subtitle="Bravo brings together Pico Laser Bravo for picosecond + diode laser aesthetics and the MaxMaster Slim system for contour-focused body treatments—each supported with clear protocols and provider training."
-              />
-              <div className="mt-6 h-px w-full divider-gold opacity-80" />
-              <div className="mt-7 flex flex-wrap gap-3">
-                <ButtonLink href="/equipment" variant="primary">
-                  View equipment
-                </ButtonLink>
-                <ButtonLink href="/what-is-bravo-laser" variant="outline">
-                  Read the overview
-                </ButtonLink>
-                <ButtonLink href="/treatment" variant="secondary">
-                  How treatment works
-                </ButtonLink>
-              </div>
+        <section className="container-base py-12 sm:py-14">
+          <div className="mx-auto max-w-2xl text-center">
+            <SectionHeader
+              eyebrow="What is Bravo Laser"
+              title="One brand, options for skin and body"
+              subtitle="FDA-approved laser care for common aesthetic goals—with training and support for providers."
+              align="center"
+            />
+            <div className="mt-6 flex flex-wrap justify-center gap-3">
+              <ButtonLink href="/equipment" variant="primary">
+                View equipment
+              </ButtonLink>
+              <ButtonLink href="/what-is-bravo-laser" variant="outline">
+                Read the overview
+              </ButtonLink>
+              <ButtonLink href="/treatment" variant="secondary">
+                How treatment works
+              </ButtonLink>
             </div>
-
-            <div className="grid gap-4 sm:grid-cols-2">
+          </div>
+          <div className="mx-auto mt-8 max-w-3xl">
+            <div className="glass flex flex-wrap justify-center gap-2 rounded-2xl border border-brand-stroke/80 px-4 py-4 sm:gap-3 sm:px-5 sm:py-4">
               {[
-                {
-                  t: "Clinical positioning",
-                  d: "High-trust messaging built for medical aesthetics.",
-                },
-                {
-                  t: "Comfort first",
-                  d: "Gentle protocol designed for consistency.",
-                },
-                { t: "No downtime", d: "Return to daily life immediately." },
-                {
-                  t: "Measurable",
-                  d: "Track with photos, measurements, and fit changes.",
-                },
-              ].map((x) => (
-                <Card
-                  key={x.t}
-                  className="glass p-6 hover:shadow-glow transition"
+                "Clinical clarity",
+                "Comfort first",
+                "No downtime",
+                "Track your progress",
+              ].map((label) => (
+                <span
+                  key={label}
+                  className="rounded-full border border-brand-stroke/70 bg-brand-surfaceMuted/40 px-3 py-1.5 text-xs font-medium tracking-[0.04em] text-ink/90 sm:text-sm"
                 >
-                  <div className="h-8 w-8 rounded-2xl border border-brand-stroke bg-gradient-to-b from-brand-gold/25 to-transparent shadow-[0_0_28px_rgba(214,152,60,0.12)]" />
-                  <p className="mt-4 text-sm font-semibold tracking-[0.06em] text-ink">
-                    {x.t}
-                  </p>
-                  <p className="mt-2 text-xs leading-relaxed text-ink.soft">
-                    {x.d}
-                  </p>
-                </Card>
+                  {label}
+                </span>
               ))}
             </div>
           </div>
@@ -237,41 +219,30 @@ export default function HomePage() {
         </section>
 
         {/* SECTION 4: BENEFITS */}
-        <section className="container-base py-16 sm:py-20">
+        <section className="container-base py-12 sm:py-14">
           <SectionHeader
             eyebrow="Benefits"
-            title="Premium experience. Clinical clarity."
-            subtitle="Short, powerful benefits that communicate trust without hype."
+            title="Why patients choose Bravo"
             align="center"
           />
-          <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-            {[
-              { t: "Non‑invasive", d: "No incisions. No anesthesia." },
-              { t: "No downtime", d: "Back to life immediately." },
-              { t: "Comfortable", d: "Well‑tolerated protocol." },
-              { t: "Science‑forward", d: "High-trust positioning." },
-              { t: "Natural-looking", d: "Gradual improvements." },
-              { t: "Personalized", d: "Provider-guided plan." },
-              { t: "Measurable", d: "Track circumference & photos." },
-              { t: "Clinic-ready", d: "Workflow-friendly sessions." },
-            ].map((x) => (
-              <Card
-                key={x.t}
-                className="glass p-6 transition hover:shadow-glow hover:border-brand-gold/30"
-              >
-                <div className="flex items-start gap-3">
-                  <div className="mt-0.5 h-2.5 w-2.5 rounded-full bg-brand-gold shadow-[0_0_22px_rgba(214,152,60,0.35)]" />
-                  <div>
-                    <p className="text-sm font-semibold tracking-[0.06em] text-ink">
-                      {x.t}
-                    </p>
-                    <p className="mt-1 text-xs leading-relaxed text-ink.soft">
-                      {x.d}
-                    </p>
-                  </div>
-                </div>
-              </Card>
-            ))}
+          <div className="mx-auto mt-8 max-w-3xl">
+            <div className="glass flex flex-wrap justify-center gap-2 rounded-2xl border border-brand-stroke/80 px-4 py-4 sm:gap-3 sm:px-5 sm:py-5">
+              {[
+                "Non-invasive",
+                "No downtime",
+                "Comfortable",
+                "Natural-looking results",
+                "Personalized plans",
+                "Easy to fit your schedule",
+              ].map((label) => (
+                <span
+                  key={label}
+                  className="rounded-full border border-brand-stroke/70 bg-brand-surfaceMuted/40 px-3 py-1.5 text-xs font-medium tracking-[0.04em] text-ink/90 sm:text-sm"
+                >
+                  {label}
+                </span>
+              ))}
+            </div>
           </div>
         </section>
 
@@ -281,22 +252,21 @@ export default function HomePage() {
             <SectionHeader
               eyebrow="Outcomes"
               title="Representative manufacturer results"
-              subtitle="Illustrative before-and-after panels from the Pico Laser Bravo catalog—hair removal, pigment, redness, and tattoo cases. Individual results vary; your provider will personalize expectations."
+              subtitle="Sample before-and-after images from our product materials—hair, pigment, redness, and tattoo examples. Everyone is different; your provider will set expectations for you."
               align="center"
             />
             <div className="mt-10 overflow-hidden rounded-3xl border border-brand-stroke/80 bg-brand-surfaceMuted/30 shadow-[0_0_0_1px_rgba(92,92,95,0.25)]">
               <div className="flex w-full justify-center bg-gradient-to-b from-brand-bg2/25 to-brand-bg/50 p-2 sm:p-4">
                 <Image
                   src={catalogTreatmentGrid}
-                  alt="Catalog before and after examples for hair removal, pigmentation, and tattoo treatment with Bravo Pico Laser"
+                  alt="Before and after examples for hair removal, pigmentation, and tattoo treatment"
                   className="h-auto w-full max-w-full object-contain"
                   sizes="(max-width: 1152px) 100vw, min(1152px, 96vw)"
                 />
               </div>
               <div className="border-t border-brand-stroke/60 px-4 py-4 text-center sm:px-6">
                 <p className="text-xs leading-relaxed text-ink.soft">
-                  For full technical specs, handpieces, and platform features, visit
-                  the{" "}
+                  See photos and details on the{" "}
                   <Link
                     href="/equipment"
                     className="font-medium text-brand-gold underline-offset-4 hover:underline"
@@ -307,44 +277,6 @@ export default function HomePage() {
                 </p>
               </div>
             </div>
-          </div>
-        </section>
-
-        {/* SECTION 6: SCIENCE / CREDIBILITY */}
-        <section className="container-base py-16 sm:py-20">
-          <div className="grid gap-10 lg:grid-cols-2 lg:items-center">
-            <div>
-              <SectionHeader
-                eyebrow="Science & credibility"
-                title="Clear science. Real expectations."
-                subtitle="Bravo Laser keeps treatment communication simple: how it works, what to expect, and how progress is tracked."
-              />
-              <div className="mt-6 space-y-3 text-sm text-ink.soft">
-                <p>
-                  Non-invasive contour care with no downtime, designed for a
-                  comfortable in-office experience.
-                </p>
-              </div>
-              <div className="mt-7 flex flex-wrap gap-3">
-                <ButtonLink href="/what-is-bravo-laser" variant="gold">
-                  Read the science overview
-                </ButtonLink>
-                <ButtonLink href="/faq#patients" variant="outline">
-                  Patient FAQs
-                </ButtonLink>
-              </div>
-            </div>
-
-            <Card className="glass p-8">
-              <p className="text-xs font-semibold uppercase tracking-[0.28em] text-brand-gold">
-                Why it builds trust
-              </p>
-              <ul className="mt-4 space-y-3 text-sm text-ink.soft">
-                <li>Clear treatment plans and timelines</li>
-                <li>Progress tracked with photos and measurements</li>
-                <li>Comfort-focused sessions with no downtime</li>
-              </ul>
-            </Card>
           </div>
         </section>
 
