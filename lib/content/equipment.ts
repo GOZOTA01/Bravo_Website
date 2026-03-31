@@ -9,7 +9,7 @@ export const equipmentPaths = {
 } as const;
 
 export const picoLaserBravo = {
-  name: "Pico Laser Bravo",
+  name: "Diode & Picosecond Laser",
   tagline: "2-in-1 diode & picosecond laser platform",
   short:
     "A single Bravo workstation combines high-performance hair removal with picosecond treatment for pigment, tattoos, and skin rejuvenation, with FDA-approved positioning in our core equipment story (per manufacturer materials), optionally paired with AI-guided skin analysis.",

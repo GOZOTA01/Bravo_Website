@@ -51,7 +51,7 @@ const competitiveEdge = [
   {
     title: "Built for diverse patient goals",
     body:
-      "Treat hair removal, pigment, and tattoos with Pico Laser Bravo, then contour with MaxMaster Slim: two platforms, one consistent clinic workflow.",
+      "Treat hair removal, pigment, and tattoos with Diode & Picosecond Laser, then contour with MaxMaster Slim: two platforms, one consistent clinic workflow.",
     Icon: IconClinical,
   },
   {
@@ -94,7 +94,7 @@ export default function ProviderBenefitsPage() {
           <SectionHeader
             eyebrow="Competitive positioning"
             title="Why clinics choose Bravo Laser"
-            subtitle="Pico Laser Bravo + MaxMaster Slim are built for clear workflows, comfort-focused experiences, and consistent documentation across a treatment series."
+            subtitle="Diode & Picosecond Laser + MaxMaster Slim are built for clear workflows, comfort-focused experiences, and consistent documentation across a treatment series."
             align="center"
           />
           <div className="mt-12 grid gap-10 lg:grid-cols-2 lg:items-center">
@@ -116,14 +116,14 @@ export default function ProviderBenefitsPage() {
               <div className="relative aspect-[16/9] w-full">
                 <Image
                   src={imgBoth}
-                  alt="Pico Laser Bravo and MaxMaster Slim side-by-side in a clinical setting"
+                  alt="Diode & Picosecond Laser and MaxMaster Slim side-by-side in a clinical setting"
                   fill
                   className="object-contain object-center"
                   sizes="(max-width: 1024px) 100vw, 50vw"
                 />
               </div>
               <p className="border-t border-brand-stroke/60 px-4 py-3 text-center text-[11px] leading-relaxed text-ink.soft sm:text-xs">
-                Two FDA-approved platforms in one practice workflow: Pico Laser Bravo + MaxMaster Slim.
+                Two FDA-approved platforms in one practice workflow: Diode &amp; Picosecond Laser + MaxMaster Slim.
               </p>
             </div>
           </div>

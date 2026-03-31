@@ -19,7 +19,7 @@ export default function WhatIsBravoLaserPage() {
           <SectionHeader
             eyebrow="Science-backed aesthetics & fat reduction"
             title="What is Bravo Laser?"
-            subtitle="Bravo Laser brings together FDA-approved professional systems, including Pico Laser Bravo for picosecond and diode laser treatments and MaxMaster Slim for contour-focused body protocols, so patients and providers can choose a premium, non-invasive path aligned with their goals."
+            subtitle="Bravo Laser brings together FDA-approved professional systems, including Diode & Picosecond Laser for picosecond and diode laser treatments and MaxMaster Slim for contour-focused body protocols, so patients and providers can choose a premium, non-invasive path aligned with their goals."
           />
 
           <div className="mt-8 flex flex-wrap gap-3">

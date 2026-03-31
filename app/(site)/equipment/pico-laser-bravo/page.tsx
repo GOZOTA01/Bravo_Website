@@ -8,9 +8,9 @@ import { EquipmentDisclaimer } from "@/components/equipment/EquipmentDisclaimer"
 import { equipmentPaths, picoLaserBravo } from "@/lib/content/equipment";
 
 export const metadata: Metadata = {
-  title: "Pico Laser Bravo",
+  title: "Diode & Picosecond Laser",
   description:
-    "Pico Laser Bravo: 2-in-1 diode and picosecond laser platform with optional AI skin analysis. FDA-approved positioning per manufacturer materials.",
+    "Diode & Picosecond Laser: 2-in-1 diode and picosecond laser platform with optional AI skin analysis. FDA-approved positioning per manufacturer materials.",
 };
 
 export default function PicoLaserBravoPage() {
@@ -41,7 +41,7 @@ export default function PicoLaserBravoPage() {
               href={"/catalogs/PICO%20L%C3%81SER%20BRAVO.pdf" as Route}
               variant="outline"
             >
-              Pico Laser Bravo catalog
+              Diode &amp; Picosecond Laser catalog
             </ButtonLink>
           </div>
         </div>

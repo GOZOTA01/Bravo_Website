@@ -52,7 +52,7 @@ export default function MaxMasterSlimPage() {
         <div className="container-base py-8 sm:py-10">
           <div className="flex justify-center">
             <ButtonLink href={equipmentPaths.picoLaserBravo} variant="outline">
-              Explore Pico Laser Bravo
+              Explore Diode &amp; Picosecond Laser
             </ButtonLink>
           </div>
         </div>

@@ -19,7 +19,7 @@ export default function PatientResultsPage() {
           <SectionHeader
             eyebrow="Confidence, backed by process"
             title="Patient results"
-            subtitle="Below you will find manufacturer catalog examples from the Pico Laser Bravo system: diode hair removal on one side and picosecond indications (pigment, redness, tattoo) on the other. Your provider will set realistic expectations for your skin type and goals."
+            subtitle="Below you will find manufacturer catalog examples from the Diode & Picosecond Laser system: diode hair removal on one side and picosecond indications (pigment, redness, tattoo) on the other. Your provider will set realistic expectations for your skin type and goals."
           />
           <div className="mt-8 flex flex-wrap gap-3">
             <ButtonLink href="/find-a-provider" variant="primary">

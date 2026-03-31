@@ -5,7 +5,7 @@ import Link from "next/link";
 export const metadata = {
   title: "About Us",
   description:
-    "Bravo Laser offers FDA-approved Pico Laser Bravo and MaxMaster Slim platforms for non-invasive aesthetic laser and fat reduction care.",
+    "Bravo Laser offers FDA-approved Diode & Picosecond Laser and MaxMaster Slim platforms for non-invasive aesthetic laser and fat reduction care.",
 };
 
 export default function AboutPage() {
@@ -45,7 +45,7 @@ export default function AboutPage() {
                   href="/equipment/pico-laser-bravo"
                   className="font-medium text-brand-gold underline-offset-4 hover:underline"
                 >
-                  Pico Laser Bravo
+                  Diode &amp; Picosecond Laser
                 </Link>{" "}
                 for diode and picosecond laser work (including optional AI skin
                 analysis), and{" "}

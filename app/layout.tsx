@@ -7,7 +7,7 @@ export const metadata: Metadata = {
     template: "%s | Bravo Laser",
   },
   description:
-    "Bravo Laser offers Pico Laser Bravo (2-in-1 picosecond + diode aesthetics) and MaxMaster Slim fat reduction: non-invasive options for patients and scalable platforms for providers.",
+    "Bravo Laser offers Diode & Picosecond Laser (2-in-1 picosecond + diode aesthetics) and MaxMaster Slim fat reduction: non-invasive options for patients and scalable platforms for providers.",
   icons: {
     icon: "/bravo-logo.png",
     apple: "/bravo-logo.png",

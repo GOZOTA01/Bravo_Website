@@ -117,7 +117,7 @@ export function PicoLaserBravoDetail() {
                   "Optional AI Skin Analyzer: high-resolution capture to support treatment parameters and documentation.",
               },
             ]}
-            ariaLabel="Pico Laser Bravo feature images"
+            ariaLabel="Diode & Picosecond Laser feature images"
           />
         </div>
 

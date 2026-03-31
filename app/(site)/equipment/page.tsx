@@ -16,7 +16,7 @@ import imgMaxMaster from "@/pictures/MaxMaster Slim/IMG_7207.png";
 export const metadata: Metadata = {
   title: "Equipment",
   description:
-    "Explore FDA-approved Bravo equipment: Pico Laser Bravo 2-in-1 aesthetic laser platform and MaxMaster Slim fat reduction system.",
+    "Explore FDA-approved Bravo equipment: Diode & Picosecond Laser 2-in-1 aesthetic platform and MaxMaster Slim fat reduction system.",
 };
 
 const machines = [
@@ -26,7 +26,7 @@ const machines = [
     tagline: picoLaserBravo.tagline,
     blurb: picoLaserBravo.short,
     image: imgPico,
-    alt: "Pico Laser Bravo 2-in-1 workstation",
+    alt: "Diode & Picosecond Laser 2-in-1 workstation",
   },
   {
     href: equipmentPaths.maxMasterSlim,
