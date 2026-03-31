@@ -10,7 +10,7 @@ import {
   picoLaserBravo,
 } from "@/lib/content/equipment";
 
-import imgPico from "@/pictures/pico_laser/IMG_7479.png";
+import imgPico from "@/pictures/pico_laser/Gemini.png";
 import imgMaxMaster from "@/pictures/MaxMaster Slim/IMG_7207.png";
 
 export const metadata: Metadata = {

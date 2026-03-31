@@ -4,8 +4,8 @@ import { ImageCarousel } from "@/components/equipment/ImageCarousel";
 import { picoLaserBravo } from "@/lib/content/equipment";
 
 import img2in1 from "@/pictures/pico_laser/IMG_7479.png";
-import imgPicosecondSpecs from "@/pictures/pico_laser/IMG_3146.png";
-import imgDiodeHandpiece from "@/pictures/pico_laser/IMG_5224.png";
+import imgPicosecondSpecs from "@/pictures/pico_laser/pico-laser.png";
+import imgDiodeHandpiece from "@/pictures/pico_laser/diode.png";
 import imgTreatmentEffect from "@/pictures/pico_laser/IMG_6747.png";
 import imgCooling from "@/pictures/pico_laser/IMG_8127.png";
 import imgScreen from "@/pictures/pico_laser/IMG_9105.png";
