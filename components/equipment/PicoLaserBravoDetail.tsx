@@ -3,7 +3,6 @@ import { CatalogFigure } from "@/components/equipment/CatalogFigure";
 import { ImageCarousel } from "@/components/equipment/ImageCarousel";
 import { picoLaserBravo } from "@/lib/content/equipment";
 
-import img2in1 from "@/pictures/pico_laser/IMG_7479.png";
 import imgPicosecondSpecs from "@/pictures/pico_laser/pico-laser.png";
 import imgDiodeHandpiece from "@/pictures/pico_laser/diode.png";
 import imgTreatmentEffect from "@/pictures/pico_laser/IMG_6747.png";
@@ -20,16 +19,7 @@ export function PicoLaserBravoDetail() {
   return (
     <section className="section-light border-b border-brand-stroke">
       <div className="container-base py-16 sm:py-20">
-        <div className="mt-2">
-          <CatalogFigure
-            src={img2in1}
-            priority
-            alt="Bravo Pico Laser Bravo 2-in-1 system: diode laser and picosecond laser with optional AI skin analyzer"
-            caption="2-in-1 configuration: diode laser + picosecond laser, with optional AI Skin Analyzer integration for smarter treatment planning."
-          />
-        </div>
-
-        <div className="mt-14 grid gap-6 lg:grid-cols-3">
+        <div className="grid gap-6 lg:grid-cols-3">
           {picoLaserBravo.highlights.map((h) => (
             <Card key={h.title} className="glass p-6">
               <p className="text-xs font-semibold uppercase tracking-[0.2em] text-brand-gold">
