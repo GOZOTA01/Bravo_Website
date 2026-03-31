@@ -11,6 +11,7 @@ const navLinks = [
   { href: "/what-is-bravo-laser", label: "What is Bravo Laser" },
   { href: "/equipment", label: "Equipment" },
   { href: "/treatment", label: "Treatment" },
+  { href: "/patient-results", label: "Patient Results" },
   { href: "/provider-benefits", label: "Provider Benefits" },
   { href: "/find-a-provider", label: "Find a Provider" },
   { href: "/about", label: "About Us" },
