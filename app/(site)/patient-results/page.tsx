@@ -1,10 +1,10 @@
-import Image from "next/image";
 import { SectionHeader } from "@/components/ui/SectionHeader";
 import { ButtonLink } from "@/components/ui/Button";
 import Link from "next/link";
 import { ImageCarousel } from "@/components/equipment/ImageCarousel";
 
-import catalogTreatmentEffect from "@/pictures/pico_laser/IMG_6747.png";
+import catalogTreatmentEffect from "@/pictures/pico_laser/before-after1.jpeg";
+import catalogTreatmentEffectAlt from "@/pictures/pico_laser/before-after.jpeg";
 import beforeAfter1 from "@/pictures/before-after/Emerald-Before-Afters-1.webp";
 import beforeAfter5 from "@/pictures/before-after/Emerald-Before-Afters-5.webp";
 import beforeAfter34 from "@/pictures/before-after/Emerald-Before-Afters-34.webp";
@@ -63,15 +63,22 @@ export default function PatientResultsPage() {
           </div>
 
           <div className="mx-auto mt-10 max-w-5xl overflow-hidden rounded-3xl border border-brand-stroke/80 bg-brand-bg shadow-[0_0_0_1px_rgba(92,92,95,0.25)]">
-            <div className="flex w-full justify-center bg-brand-bg2/40 px-2 py-3 sm:px-4 sm:py-4">
-              <Image
-                src={catalogTreatmentEffect}
-                alt="Before and after treatment examples: diode laser hair removal and Pico Laser results for pigmentation, redness, and tattoo removal"
-                width={catalogTreatmentEffect.width}
-                height={catalogTreatmentEffect.height}
-                className="h-auto w-full max-w-full object-contain"
-                sizes="(max-width: 1024px) calc(100vw - 2rem), min(1024px, 100%)"
-                priority
+            <div className="bg-brand-bg2/40 px-2 py-3 sm:px-4 sm:py-4">
+              <ImageCarousel
+                ariaLabel="Diode and Picosecond Laser results carousel"
+                slides={[
+                  {
+                    src: catalogTreatmentEffect,
+                    alt: "Before and after treatment examples: diode laser hair removal and Pico Laser results for pigmentation, redness, and tattoo removal",
+                    priority: true,
+                    uniformFrame: true,
+                  },
+                  {
+                    src: catalogTreatmentEffectAlt,
+                    alt: "Additional before-and-after examples for Diode and Picosecond Laser treatments",
+                    uniformFrame: true,
+                  },
+                ]}
               />
             </div>
             <div className="border-t border-brand-stroke/60 px-4 py-4 text-center sm:px-6">

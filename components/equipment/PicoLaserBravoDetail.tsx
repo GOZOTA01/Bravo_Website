@@ -5,7 +5,8 @@ import { picoLaserBravo } from "@/lib/content/equipment";
 
 import imgPicosecondSpecs from "@/pictures/pico_laser/pico-laser.png";
 import imgDiodeHandpiece from "@/pictures/pico_laser/diode.png";
-import imgTreatmentEffect from "@/pictures/pico_laser/IMG_6747.png";
+import imgTreatmentEffect from "@/pictures/pico_laser/before-after1.jpeg";
+import imgTreatmentEffectAlt from "@/pictures/pico_laser/before-after.jpeg";
 import imgCooling from "@/pictures/pico_laser/IMG_8127.png";
 import imgScreen from "@/pictures/pico_laser/IMG_9105.png";
 import imgDirectInput from "@/pictures/pico_laser/IMG_7227.png";
@@ -131,10 +132,25 @@ export function PicoLaserBravoDetail() {
             type and goals.
           </p>
           <div className="mt-8">
-            <CatalogFigure
-              src={imgTreatmentEffect}
-              alt="Before and after treatment results for hair removal and skin concerns with Bravo Pico Laser"
-              caption="Catalog examples: hair removal and aesthetic indications. Always consult a qualified provider."
+            <ImageCarousel
+              ariaLabel="Representative outcomes catalog carousel"
+              slides={[
+                {
+                  src: imgTreatmentEffect,
+                  alt: "Before and after treatment results for hair removal and skin concerns with Diode and Picosecond Laser",
+                  caption:
+                    "Catalog examples: hair removal and aesthetic indications. Always consult a qualified provider.",
+                  priority: true,
+                  uniformFrame: true,
+                },
+                {
+                  src: imgTreatmentEffectAlt,
+                  alt: "Additional before-and-after treatment results for Diode and Picosecond Laser",
+                  caption:
+                    "Additional catalog examples across diode and picosecond indications.",
+                  uniformFrame: true,
+                },
+              ]}
             />
           </div>
         </div>

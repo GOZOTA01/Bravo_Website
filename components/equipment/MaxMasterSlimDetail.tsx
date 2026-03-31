@@ -6,10 +6,22 @@ import { maxMasterSlim } from "@/lib/content/equipment";
 import imgMaxMasterProduct from "@/pictures/MaxMaster Slim/IMG_5850.png";
 import imgMaxMasterOnBody1 from "@/pictures/MaxMaster Slim/IMG_6221.png";
 import imgMaxMasterOnBody2 from "@/pictures/MaxMaster Slim/IMG_4882.png";
-import imgMaxMasterOnBody3 from "@/pictures/MaxMaster Slim/IMG_9924.png";
+import imgMaxMasterOnBody3 from "@/pictures/MaxMaster Slim/emerald-laser-consultation.jpg";
 import imgMaxMasterBeforeAfter from "@/pictures/MaxMaster Slim/front-1.webp";
 import imgMaxMasterLifestyle from "@/pictures/MaxMaster Slim/image2.jpg";
 import imgMaxMasterStudio from "@/pictures/MaxMaster Slim/image3.jpg";
+import beforeAfter1 from "@/pictures/before-after/Emerald-Before-Afters-1.webp";
+import beforeAfter5 from "@/pictures/before-after/Emerald-Before-Afters-5.webp";
+import beforeAfter34 from "@/pictures/before-after/Emerald-Before-Afters-34.webp";
+import beforeAfter35 from "@/pictures/before-after/Emerald-Before-Afters-35.webp";
+import beforeAfter39 from "@/pictures/before-after/Emerald-Before-Afters-39.webp";
+import beforeAfter40 from "@/pictures/before-after/Emerald-Before-Afters-40.webp";
+import beforeAfter42 from "@/pictures/before-after/Emerald-Before-Afters-42.webp";
+import beforeAfter43 from "@/pictures/before-after/Emerald-Before-Afters-43.webp";
+import beforeAfter44 from "@/pictures/before-after/Emerald-Before-Afters-44.webp";
+import beforeAfter46 from "@/pictures/before-after/Emerald-Before-Afters-46.webp";
+import beforeAfter47 from "@/pictures/before-after/Emerald-Before-Afters-47.webp";
+import beforeAfter49 from "@/pictures/before-after/Emerald-Before-Afters-49.webp";
 
 export function MaxMasterSlimDetail() {
   return (
@@ -104,11 +116,30 @@ export function MaxMasterSlimDetail() {
             see changes in 4 weeks or less. Individual results vary.
           </p>
           <div className="mt-8">
-            <CatalogFigure
-              src={imgMaxMasterBeforeAfter}
-              uniformFrame
-              alt="MaxMaster Slim before-and-after treatment results"
-              caption="Catalog examples: before-and-after treatment outcomes. Always consult a qualified provider."
+            <ImageCarousel
+              ariaLabel="MaxMaster Slim representative outcomes carousel"
+              slides={[
+                {
+                  src: imgMaxMasterBeforeAfter,
+                  alt: "MaxMaster Slim before-and-after treatment results",
+                  caption:
+                    "Catalog examples: before-and-after treatment outcomes. Always consult a qualified provider.",
+                  priority: true,
+                  uniformFrame: true,
+                },
+                { src: beforeAfter1, alt: "MaxMaster Slim before-and-after example", uniformFrame: true },
+                { src: beforeAfter5, alt: "MaxMaster Slim before-and-after example", uniformFrame: true },
+                { src: beforeAfter34, alt: "MaxMaster Slim before-and-after example", uniformFrame: true },
+                { src: beforeAfter35, alt: "MaxMaster Slim before-and-after example", uniformFrame: true },
+                { src: beforeAfter39, alt: "MaxMaster Slim before-and-after example", uniformFrame: true },
+                { src: beforeAfter40, alt: "MaxMaster Slim before-and-after example", uniformFrame: true },
+                { src: beforeAfter42, alt: "MaxMaster Slim before-and-after example", uniformFrame: true },
+                { src: beforeAfter43, alt: "MaxMaster Slim before-and-after example", uniformFrame: true },
+                { src: beforeAfter44, alt: "MaxMaster Slim before-and-after example", uniformFrame: true },
+                { src: beforeAfter46, alt: "MaxMaster Slim before-and-after example", uniformFrame: true },
+                { src: beforeAfter47, alt: "MaxMaster Slim before-and-after example", uniformFrame: true },
+                { src: beforeAfter49, alt: "MaxMaster Slim before-and-after example", uniformFrame: true },
+              ]}
             />
           </div>
         </div>

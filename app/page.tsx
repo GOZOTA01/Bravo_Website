@@ -2,10 +2,24 @@ import Image from "next/image";
 import logo from "@/pictures/Bravo_logo.png";
 import fdaApprovedSeal from "@/pictures/fda-approved-logo.jpg";
 import heroEquipment from "@/pictures/both.png";
-import catalogTreatmentGrid from "@/pictures/pico_laser/IMG_6747.png";
+import catalogTreatmentGrid from "@/pictures/pico_laser/before-after.jpeg";
+import catalogTreatmentGridAlt from "@/pictures/pico_laser/before-after1.jpeg";
+import beforeAfter1 from "@/pictures/before-after/Emerald-Before-Afters-1.webp";
+import beforeAfter5 from "@/pictures/before-after/Emerald-Before-Afters-5.webp";
+import beforeAfter34 from "@/pictures/before-after/Emerald-Before-Afters-34.webp";
+import beforeAfter35 from "@/pictures/before-after/Emerald-Before-Afters-35.webp";
+import beforeAfter39 from "@/pictures/before-after/Emerald-Before-Afters-39.webp";
+import beforeAfter40 from "@/pictures/before-after/Emerald-Before-Afters-40.webp";
+import beforeAfter42 from "@/pictures/before-after/Emerald-Before-Afters-42.webp";
+import beforeAfter43 from "@/pictures/before-after/Emerald-Before-Afters-43.webp";
+import beforeAfter44 from "@/pictures/before-after/Emerald-Before-Afters-44.webp";
+import beforeAfter46 from "@/pictures/before-after/Emerald-Before-Afters-46.webp";
+import beforeAfter47 from "@/pictures/before-after/Emerald-Before-Afters-47.webp";
+import beforeAfter49 from "@/pictures/before-after/Emerald-Before-Afters-49.webp";
 import { ButtonLink } from "@/components/ui/Button";
 import { SectionHeader } from "@/components/ui/SectionHeader";
 import { Card } from "@/components/ui/Card";
+import { ImageCarousel } from "@/components/equipment/ImageCarousel";
 import Link from "next/link";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
@@ -276,12 +290,34 @@ export default function HomePage() {
               align="center"
             />
             <div className="mt-10 overflow-hidden rounded-3xl border border-brand-stroke/80 bg-brand-surfaceMuted/30 shadow-[0_0_0_1px_rgba(92,92,95,0.25)]">
-              <div className="flex w-full justify-center bg-gradient-to-b from-brand-bg2/25 to-brand-bg/50 p-2 sm:p-4">
-                <Image
-                  src={catalogTreatmentGrid}
-                  alt="Before and after examples for hair removal, pigmentation, and tattoo treatment"
-                  className="h-auto w-full max-w-full object-contain"
-                  sizes="(max-width: 1152px) 100vw, min(1152px, 96vw)"
+              <div className="bg-gradient-to-b from-brand-bg2/25 to-brand-bg/50 p-2 sm:p-4">
+                <ImageCarousel
+                  ariaLabel="Representative outcomes carousel"
+                  slides={[
+                    {
+                      src: catalogTreatmentGrid,
+                      alt: "Before and after examples for hair removal, pigmentation, and tattoo treatment",
+                      priority: true,
+                      uniformFrame: true,
+                    },
+                    {
+                      src: catalogTreatmentGridAlt,
+                      alt: "Before-and-after examples for treatment outcomes",
+                      uniformFrame: true,
+                    },
+                    { src: beforeAfter1, alt: "Before-and-after treatment example", uniformFrame: true },
+                    { src: beforeAfter5, alt: "Before-and-after treatment example", uniformFrame: true },
+                    { src: beforeAfter34, alt: "Before-and-after treatment example", uniformFrame: true },
+                    { src: beforeAfter35, alt: "Before-and-after treatment example", uniformFrame: true },
+                    { src: beforeAfter39, alt: "Before-and-after treatment example", uniformFrame: true },
+                    { src: beforeAfter40, alt: "Before-and-after treatment example", uniformFrame: true },
+                    { src: beforeAfter42, alt: "Before-and-after treatment example", uniformFrame: true },
+                    { src: beforeAfter43, alt: "Before-and-after treatment example", uniformFrame: true },
+                    { src: beforeAfter44, alt: "Before-and-after treatment example", uniformFrame: true },
+                    { src: beforeAfter46, alt: "Before-and-after treatment example", uniformFrame: true },
+                    { src: beforeAfter47, alt: "Before-and-after treatment example", uniformFrame: true },
+                    { src: beforeAfter49, alt: "Before-and-after treatment example", uniformFrame: true },
+                  ]}
                 />
               </div>
               <div className="border-t border-brand-stroke/60 px-4 py-4 text-center sm:px-6">
