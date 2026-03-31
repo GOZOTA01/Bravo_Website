@@ -8,7 +8,7 @@ import imgFdaApprovedLogo from "@/pictures/fda-approved-logo.jpg";
 export const metadata = {
   title: "What is Bravo Laser",
   description:
-    "Learn what Bravo Laser is, how the technology works, and why patients and providers choose an FDA-approved, non-invasive approach to fat reduction.",
+    "Below are manufacturer-backed examples and overview details for Bravo Laser systems, including Diode & Picosecond Laser indications and provider-guided planning based on skin type and goals.",
 };
 
 export default function WhatIsBravoLaserPage() {
@@ -19,7 +19,7 @@ export default function WhatIsBravoLaserPage() {
           <SectionHeader
             eyebrow="Science-backed aesthetics & fat reduction"
             title="What is Bravo Laser?"
-            subtitle="Bravo Laser brings together FDA-approved professional systems, including Diode & Picosecond Laser for picosecond and diode laser treatments and MaxMaster Slim for contour-focused body protocols, so patients and providers can choose a premium, non-invasive path aligned with their goals."
+            subtitle="Bravo Laser brings together FDA-approved systems, including Diode & Picosecond Laser for diode hair removal and picosecond indications (pigment, redness, tattoo), plus MaxMaster Slim body-contour protocols. Your provider will set realistic expectations for your skin type and goals."
           />
 
           <div className="mt-8 flex flex-wrap gap-3">
