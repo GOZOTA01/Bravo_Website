@@ -224,23 +224,6 @@ export default function ProviderBenefitsPage() {
                 </li>
               ))}
             </ul>
-
-            <div className="glass rounded-3xl p-6 shadow-sm">
-              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-brand-gold">
-                Financing / acquisition ready
-              </p>
-              <p className="mt-2 text-sm leading-relaxed text-ink.soft">
-                We support device add-ons or category expansion. Share your goals and we will outline next steps.
-              </p>
-              <div className="mt-4 flex flex-wrap gap-3">
-                <ButtonLink href="/contact?type=provider" variant="primary">
-                  Talk to sales
-                </ButtonLink>
-                <ButtonLink href="/contact?type=provider" variant="outline">
-                  Request details
-                </ButtonLink>
-              </div>
-            </div>
           </div>
 
           <div className="glass rounded-3xl p-8 shadow-sm">
