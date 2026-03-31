@@ -9,6 +9,12 @@ type Slide = {
   alt: string;
   caption?: string;
   priority?: boolean;
+  /** Pass through to CatalogFigure: full image, intrinsic aspect ratio */
+  natural?: boolean;
+  /** With natural: cap max height (carousel slides default to constrained) */
+  constrainNatural?: boolean;
+  /** Same aspect box + contain for every slide (recommended for mixed aspect ratios) */
+  uniformFrame?: boolean;
 };
 
 export function ImageCarousel({
@@ -120,6 +126,13 @@ export function ImageCarousel({
                 alt={slide.alt}
                 caption={slide.caption}
                 priority={slide.priority}
+                uniformFrame={slide.uniformFrame}
+                natural={slide.uniformFrame ? false : slide.natural}
+                constrainNatural={
+                  slide.uniformFrame
+                    ? false
+                    : slide.constrainNatural ?? (slide.natural === true ? true : false)
+                }
                 className="border-0 shadow-none"
               />
             </div>

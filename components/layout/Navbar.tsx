@@ -13,7 +13,6 @@ const navLinks = [
   { href: "/treatment", label: "Treatment" },
   { href: "/patient-results", label: "Patient Results" },
   { href: "/provider-benefits", label: "Provider Benefits" },
-  { href: "/treatment#treatment-areas", label: "Treatment Areas" },
   { href: "/find-a-provider", label: "Find a Provider" },
   { href: "/about", label: "About Us" },
   { href: "/contact", label: "Contact" },

@@ -75,12 +75,12 @@ export default function EquipmentPage() {
                 href={m.href}
                 className="group flex flex-col overflow-hidden rounded-3xl border border-brand-stroke/70 bg-white/90 shadow-sm transition hover:border-brand-gold/40 hover:shadow-[0_12px_40px_rgba(28,27,24,0.08)]"
               >
-                <div className="relative aspect-[4/3] w-full bg-brand-surfaceMuted/40">
+                <div className="relative aspect-[4/3] w-full bg-brand-surfaceMuted/40 p-3 sm:p-4">
                   <Image
                     src={m.image}
                     alt={m.alt}
                     fill
-                    className="object-cover object-center transition duration-500 group-hover:scale-[1.02]"
+                    className="object-contain object-center transition duration-500 group-hover:scale-[1.02]"
                     sizes="(max-width: 640px) 100vw, 50vw"
                   />
                 </div>

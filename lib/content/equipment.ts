@@ -52,22 +52,22 @@ export const maxMasterSlim = {
   name: "MaxMaster Slim",
   tagline: "Non-invasive fat reduction & slimming",
   short:
-    "A complementary Bravo platform focused on circumference-focused fat reduction, designed for structured, comfortable sessions without surgery and with minimal disruption to daily life.",
+    "An FDA-approved low-level laser marketed for gentler fat loss and body contouring in a non-surgical, low-disruption experience.",
   highlights: [
     {
-      title: "Contour-first workflow",
+      title: "FDA-approved laser",
       body:
-        "Built for practices that want a clear, repeatable slimming and fat-reduction protocol with measurable checkpoints over a treatment series.",
+        "Low-level laser light marketed to help reduce fat and cellulite. Non-surgical contouring.",
     },
     {
-      title: "Patient comfort",
+      title: "Gentler than lipo and freezing",
       body:
-        "Positioned for well-tolerated sessions that fit modern schedules, aligned with the same premium, clinical tone as the rest of the Bravo family.",
+        "Marketed as gentler than liposuction and freezing. It aims to help fat cells shrink, then clear naturally through the lymphatic system.",
     },
     {
-      title: "Provider-friendly operation",
+      title: "Painless with minimal downtime",
       body:
-        "Ideal for med spas and aesthetic clinics adding a dedicated slimming line alongside laser services.",
+        "Marketed as painless. No freezing, no bruising, and no swelling. Many patients may see results in 4 weeks or less with light exercise and hydration.",
     },
   ],
   specs: [

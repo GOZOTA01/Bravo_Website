@@ -36,6 +36,12 @@ export default function PicoLaserBravoPage() {
             <ButtonLink href="/contact?type=provider" variant="primary">
               Provider inquiry
             </ButtonLink>
+            <ButtonLink
+              href="/catalogs/PICO%20L%C3%81SER%20BRAVO.pdf"
+              variant="outline"
+            >
+              Pico Laser Bravo catalog
+            </ButtonLink>
             <ButtonLink href={equipmentPaths.maxMasterSlim} variant="outline">
               MaxMaster Slim
             </ButtonLink>

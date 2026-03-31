@@ -36,6 +36,12 @@ export default function MaxMasterSlimPage() {
             <ButtonLink href="/contact?type=patient" variant="primary">
               Ask about treatment
             </ButtonLink>
+            <ButtonLink
+              href="/catalogs/MaxMaster%20Slim.pdf%203.pdf"
+              variant="outline"
+            >
+              MaxMaster Slim catalog
+            </ButtonLink>
             <ButtonLink href={equipmentPaths.picoLaserBravo} variant="outline">
               Pico Laser Bravo
             </ButtonLink>
