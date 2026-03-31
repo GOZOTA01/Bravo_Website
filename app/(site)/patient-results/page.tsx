@@ -2,8 +2,21 @@ import Image from "next/image";
 import { SectionHeader } from "@/components/ui/SectionHeader";
 import { ButtonLink } from "@/components/ui/Button";
 import Link from "next/link";
+import { ImageCarousel } from "@/components/equipment/ImageCarousel";
 
 import catalogTreatmentEffect from "@/pictures/pico_laser/IMG_6747.png";
+import beforeAfter1 from "@/pictures/before-after/Emerald-Before-Afters-1.webp";
+import beforeAfter5 from "@/pictures/before-after/Emerald-Before-Afters-5.webp";
+import beforeAfter34 from "@/pictures/before-after/Emerald-Before-Afters-34.webp";
+import beforeAfter35 from "@/pictures/before-after/Emerald-Before-Afters-35.webp";
+import beforeAfter39 from "@/pictures/before-after/Emerald-Before-Afters-39.webp";
+import beforeAfter40 from "@/pictures/before-after/Emerald-Before-Afters-40.webp";
+import beforeAfter42 from "@/pictures/before-after/Emerald-Before-Afters-42.webp";
+import beforeAfter43 from "@/pictures/before-after/Emerald-Before-Afters-43.webp";
+import beforeAfter44 from "@/pictures/before-after/Emerald-Before-Afters-44.webp";
+import beforeAfter46 from "@/pictures/before-after/Emerald-Before-Afters-46.webp";
+import beforeAfter47 from "@/pictures/before-after/Emerald-Before-Afters-47.webp";
+import beforeAfter49 from "@/pictures/before-after/Emerald-Before-Afters-49.webp";
 
 export const metadata = {
   title: "Patient Results",
@@ -19,7 +32,7 @@ export default function PatientResultsPage() {
           <SectionHeader
             eyebrow="Confidence, backed by process"
             title="Patient results"
-            subtitle="Below you will find manufacturer catalog examples from the Diode & Picosecond Laser system: diode hair removal on one side and picosecond indications (pigment, redness, tattoo) on the other. Your provider will set realistic expectations for your skin type and goals."
+            subtitle="Below are manufacturer catalog examples for the Diode & Picosecond Laser system: diode hair removal and picosecond indications (pigment, redness, tattoo). Your provider will set realistic expectations for your skin type and goals."
           />
           <div className="mt-8 flex flex-wrap gap-3">
             <ButtonLink href="/find-a-provider" variant="primary">
@@ -39,14 +52,13 @@ export default function PatientResultsPage() {
         <div className="container-base py-14 sm:py-16">
           <div className="mx-auto max-w-3xl text-center">
             <h2 className="text-lg font-semibold tracking-[0.06em] text-ink sm:text-xl">
-              Catalog reference: treatment effect
+              Diode &amp; Picosecond Laser results 
             </h2>
             <p className="mt-3 text-sm leading-relaxed text-ink.soft">
-              Illustrative before-and-after panels from the Bravo marketing
-              catalog, split between{" "}
-              <span className="text-ink">diode hair removal</span> (left) and{" "}
-              <span className="text-ink">picosecond aesthetic cases</span>{" "}
-              (right). Individual results vary.
+              Illustrative before-and-after panels from manufacturer materials,
+              showing <span className="text-ink">diode hair removal</span> and{" "}
+              <span className="text-ink">picosecond indications</span> (pigment,
+              redness, and tattoo). Individual results vary.
             </p>
           </div>
 
@@ -75,6 +87,39 @@ export default function PatientResultsPage() {
                 </Link>
               </p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="section-light border-b border-brand-stroke">
+        <div className="container-base py-14 sm:py-16">
+          <div className="mx-auto max-w-3xl text-center">
+            <h2 className="text-lg font-semibold tracking-[0.06em] text-ink sm:text-xl">
+              MaxMaster Slim before-and-after examples
+            </h2>
+            <p className="mt-3 text-sm leading-relaxed text-ink.soft">
+              Representative MaxMaster Slim results from manufacturer materials.
+              Everyone is different; your provider will set realistic expectations.
+            </p>
+          </div>
+          <div className="mx-auto mt-8 w-full max-w-4xl">
+            <ImageCarousel
+              ariaLabel="MaxMaster Slim before-and-after carousel"
+              slides={[
+                { src: beforeAfter1, alt: "MaxMaster Slim before-and-after example", uniformFrame: true },
+                { src: beforeAfter5, alt: "MaxMaster Slim before-and-after example", uniformFrame: true },
+                { src: beforeAfter34, alt: "MaxMaster Slim before-and-after example", uniformFrame: true },
+                { src: beforeAfter35, alt: "MaxMaster Slim before-and-after example", uniformFrame: true },
+                { src: beforeAfter39, alt: "MaxMaster Slim before-and-after example", uniformFrame: true },
+                { src: beforeAfter40, alt: "MaxMaster Slim before-and-after example", uniformFrame: true },
+                { src: beforeAfter42, alt: "MaxMaster Slim before-and-after example", uniformFrame: true },
+                { src: beforeAfter43, alt: "MaxMaster Slim before-and-after example", uniformFrame: true },
+                { src: beforeAfter44, alt: "MaxMaster Slim before-and-after example", uniformFrame: true },
+                { src: beforeAfter46, alt: "MaxMaster Slim before-and-after example", uniformFrame: true },
+                { src: beforeAfter47, alt: "MaxMaster Slim before-and-after example", uniformFrame: true },
+                { src: beforeAfter49, alt: "MaxMaster Slim before-and-after example", uniformFrame: true },
+              ]}
+            />
           </div>
         </div>
       </section>
