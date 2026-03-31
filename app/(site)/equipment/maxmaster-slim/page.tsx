@@ -43,14 +43,20 @@ export default function MaxMasterSlimPage() {
             >
               MaxMaster Slim catalog
             </ButtonLink>
-            <ButtonLink href={equipmentPaths.picoLaserBravo} variant="outline">
-              Pico Laser Bravo
-            </ButtonLink>
           </div>
         </div>
       </section>
 
       <MaxMasterSlimDetail />
+      <section className="section-light border-t border-brand-stroke/50">
+        <div className="container-base py-8 sm:py-10">
+          <div className="flex justify-center">
+            <ButtonLink href={equipmentPaths.picoLaserBravo} variant="outline">
+              Explore Pico Laser Bravo
+            </ButtonLink>
+          </div>
+        </div>
+      </section>
       <EquipmentDisclaimer />
     </>
   );

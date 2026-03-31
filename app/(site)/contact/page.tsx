@@ -1,5 +1,4 @@
 import { SectionHeader } from "@/components/ui/SectionHeader";
-import { ButtonLink } from "@/components/ui/Button";
 import { PatientLeadForm } from "@/components/forms/PatientLeadForm";
 import { ProviderLeadForm } from "@/components/forms/ProviderLeadForm";
 
@@ -24,45 +23,7 @@ export default function ContactPage() {
 
       <section className="section-light">
         <div className="container-base py-16">
-        <div className="grid gap-6 lg:grid-cols-2">
-          <div className="glass rounded-3xl p-6 shadow-sm">
-            <h3 className="text-sm font-semibold text-ink">Patients</h3>
-            <p className="mt-2 text-xs leading-relaxed text-ink.soft">
-              Request a consult, ask questions about what to expect, or get help
-              finding the right clinic.
-            </p>
-            <div className="mt-4 flex flex-wrap gap-3">
-              <ButtonLink href="/contact?type=patient" variant="primary" size="sm">
-                Consultation request
-              </ButtonLink>
-              <ButtonLink href="/find-a-provider" variant="outline" size="sm">
-                Find a provider
-              </ButtonLink>
-            </div>
-          </div>
-
-          <div className="glass rounded-3xl p-6 shadow-sm">
-            <h3 className="text-sm font-semibold text-ink">Providers</h3>
-            <p className="mt-2 text-xs leading-relaxed text-ink.soft">
-              Learn about adding Bravo Laser to your practice, integration
-              requirements, and available support.
-            </p>
-            <div className="mt-4 flex flex-wrap gap-3">
-              <ButtonLink
-                href="/contact?type=provider"
-                variant="primary"
-                size="sm"
-              >
-                Provider inquiry
-              </ButtonLink>
-              <ButtonLink href="/provider-benefits" variant="outline" size="sm">
-                Provider benefits
-              </ButtonLink>
-            </div>
-          </div>
-        </div>
-
-        <div className="mt-10 grid gap-8 lg:grid-cols-2">
+        <div className="grid gap-8 lg:grid-cols-2">
           <div className="glass rounded-3xl p-8 shadow-sm">
             <h2 className="text-lg font-semibold text-ink">
               Patient consultation request
