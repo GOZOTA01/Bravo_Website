@@ -26,14 +26,14 @@ export default function HomePage() {
           <div className="container-base relative py-20 sm:py-24">
             <div className="mx-auto max-w-3xl text-center">
               <div className="pointer-events-none absolute left-1/2 top-1/2 h-[520px] w-[520px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-brand-gold/10 blur-3xl" />
-              <div className="mt-1 flex w-full justify-center">
+              <div className="mt-1 flex justify-center">
                 <div className="relative h-24 w-[min(100%,320px)] sm:h-28">
                   <Image
                     src={logo}
                     alt="Bravo Laser"
                     width={360}
                     height={110}
-                    className="h-full w-auto max-w-full object-contain object-center"
+                    className="mx-auto h-full w-auto max-w-full object-contain object-center"
                     priority
                   />
                 </div>
