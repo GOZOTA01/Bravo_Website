@@ -4,8 +4,9 @@ import { ButtonLink } from "@/components/ui/Button";
 import { Card } from "@/components/ui/Card";
 import { ProviderLeadForm } from "@/components/forms/ProviderLeadForm";
 
+import imgBoth from "@/pictures/both.png";
 import imgComparison from "@/pictures/pico_laser/IMG_7479.png";
-import imgRoiConsole from "@/pictures/pico_laser/IMG_9105.png";
+import imgFdaApprovedLogo from "@/pictures/fda-approved-logo.jpg";
 
 export const metadata = {
   title: "Provider Benefits",
@@ -112,17 +113,17 @@ export default function ProviderBenefitsPage() {
               ))}
             </div>
             <div className="overflow-hidden rounded-3xl border border-brand-stroke/80 bg-brand-surfaceMuted/30 shadow-[0_0_0_1px_rgba(92,92,95,0.2)]">
-              <div className="relative aspect-[4/3] w-full sm:aspect-[16/11]">
+              <div className="relative aspect-[16/9] w-full">
                 <Image
-                  src={imgComparison}
-                  alt="Bravo Pico Laser Bravo professional workstation in a clinical setting"
+                  src={imgBoth}
+                  alt="Pico Laser Bravo and MaxMaster Slim side-by-side in a clinical setting"
                   fill
-                  className="object-cover object-center"
+                  className="object-contain object-center"
                   sizes="(max-width: 1024px) 100vw, 50vw"
                 />
               </div>
               <p className="border-t border-brand-stroke/60 px-4 py-3 text-center text-[11px] leading-relaxed text-ink.soft sm:text-xs">
-                Pico Laser Bravo: diode + picosecond in one workstation, with optional AI skin analysis.
+                Two FDA-approved platforms in one practice workflow: Pico Laser Bravo + MaxMaster Slim.
               </p>
             </div>
           </div>
@@ -133,17 +134,17 @@ export default function ProviderBenefitsPage() {
         <div className="container-base py-16 sm:py-20">
         <div className="grid gap-10 lg:grid-cols-2 lg:items-center">
           <div className="order-2 overflow-hidden rounded-3xl border border-brand-stroke/80 bg-brand-surfaceMuted/30 shadow-[0_0_0_1px_rgba(92,92,95,0.2)] lg:order-1">
-            <div className="relative aspect-[4/3] w-full">
+            <div className="relative aspect-[1/1] w-full">
               <Image
-                src={imgRoiConsole}
-                alt="Bravo Pico Laser Bravo touchscreen console with main menu interface"
+                src={imgFdaApprovedLogo}
+                alt="FDA approved logo"
                 fill
-                className="object-cover object-center"
+                className="object-contain object-center"
                 sizes="(max-width: 1024px) 100vw, 50vw"
               />
             </div>
             <p className="border-t border-brand-stroke/60 px-4 py-3 text-center text-[11px] text-ink.soft sm:text-xs">
-                Intuitive console workflow for quick room turns and staff training.
+                FDA-approved equipment built into your clinic workflow.
             </p>
           </div>
           <div className="order-1 space-y-5 lg:order-2">

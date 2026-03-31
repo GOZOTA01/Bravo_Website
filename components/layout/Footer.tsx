@@ -57,22 +57,6 @@ export function Footer() {
               <li>
                 <Link
                   className="transition hover:text-brand-gold"
-                  href="/patient-results"
-                >
-                  Patient Results
-                </Link>
-              </li>
-              <li>
-                <Link
-                  className="transition hover:text-brand-gold"
-                  href="/treatment#treatment-areas"
-                >
-                  Treatment Areas
-                </Link>
-              </li>
-              <li>
-                <Link
-                  className="transition hover:text-brand-gold"
                   href="/find-a-provider"
                 >
                   Find a Provider

@@ -3,6 +3,7 @@ import { SectionHeader } from "@/components/ui/SectionHeader";
 import { ButtonLink } from "@/components/ui/Button";
 
 import imgBravoWorkstation from "@/pictures/pico_laser/IMG_5848.png";
+import imgFdaApprovedLogo from "@/pictures/fda-approved-logo.jpg";
 
 export const metadata = {
   title: "What is Bravo Laser",
@@ -47,6 +48,15 @@ export default function WhatIsBravoLaserPage() {
                 sizes="(max-width: 1152px) 100vw, min(1152px, 96vw)"
                 priority
               />
+              <div className="pointer-events-none absolute bottom-4 right-4 sm:bottom-6 sm:right-6">
+                <Image
+                  src={imgFdaApprovedLogo}
+                  alt="FDA approved"
+                  width={88}
+                  height={88}
+                  className="h-16 w-16 sm:h-20 sm:w-20"
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -62,8 +72,8 @@ export default function WhatIsBravoLaserPage() {
                   The overview
                 </h2>
                 <p className="mt-2">
-                  Bravo Laser is designed for people who want a clinically
-                  credible, non-invasive way to address areas of stubborn fat.
+                  Bravo Laser is FDA-approved for a clinically credible, non-invasive way
+                  to address areas of stubborn fat.
                   Treatments are performed externally and are built to fit into
                   busy schedules with minimal disruption.
                 </p>
@@ -74,10 +84,10 @@ export default function WhatIsBravoLaserPage() {
                   The technology behind Bravo Laser
                 </h2>
                 <p className="mt-2">
-                  Using low-level laser energy, Bravo Laser targets adipose
-                  tissue in a gentle, comfortable protocol. The goal is to
+                  Using low-level laser energy, this FDA-approved protocol targets
+                  adipose tissue in a gentle, comfortable way. The goal is to
                   support measurable circumference change over a structured
-                  treatment plan without incisions or recovery time.
+                  treatment plan, without incisions or recovery time.
                 </p>
               </div>
 
@@ -86,11 +96,11 @@ export default function WhatIsBravoLaserPage() {
                   How it works in the body (high level)
                 </h2>
                 <p className="mt-2">
-                  Patients often choose Bravo Laser because it offers a
-                  conservative approach: a series of sessions, gradual results,
-                  and an experience designed to be well-tolerated. Your provider
-                  will personalize the plan based on goals, body areas, and
-                  lifestyle context.
+                  Patients often choose Bravo Laser because it is FDA-approved and
+                  offers a conservative approach: a series of sessions, gradual
+                  results, and an experience designed to be well-tolerated.
+                  Your provider will personalize the plan based on goals, body
+                  areas, and lifestyle context.
                 </p>
               </div>
 
@@ -101,7 +111,7 @@ export default function WhatIsBravoLaserPage() {
                 <ul className="mt-3 grid gap-2">
                   <li className="glass rounded-2xl px-4 py-3">
                     <span className="font-semibold text-ink">
-                      Non-surgical
+                      FDA-approved &amp; non-surgical
                     </span>{" "}
                     <span>
                       No anesthesia, no incisions, no recovery timeline.
