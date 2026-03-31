@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import type { Route } from "next";
 import { SectionHeader } from "@/components/ui/SectionHeader";
 import { ButtonLink } from "@/components/ui/Button";
 import { PicoLaserBravoDetail } from "@/components/equipment/PicoLaserBravoDetail";
@@ -37,10 +38,7 @@ export default function PicoLaserBravoPage() {
               Provider inquiry
             </ButtonLink>
             <ButtonLink
-              href={{
-                pathname: "/catalogs/[file]",
-                query: { file: "PICO LÁSER BRAVO.pdf" },
-              }}
+              href={"/catalogs/PICO%20L%C3%81SER%20BRAVO.pdf" as Route}
               variant="outline"
             >
               Pico Laser Bravo catalog

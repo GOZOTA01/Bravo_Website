@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import type { Route } from "next";
 import { SectionHeader } from "@/components/ui/SectionHeader";
 import { ButtonLink } from "@/components/ui/Button";
 import { MaxMasterSlimDetail } from "@/components/equipment/MaxMasterSlimDetail";
@@ -37,10 +38,7 @@ export default function MaxMasterSlimPage() {
               Ask about treatment
             </ButtonLink>
             <ButtonLink
-              href={{
-                pathname: "/catalogs/[file]",
-                query: { file: "MaxMaster Slim.pdf 3.pdf" },
-              }}
+              href={"/catalogs/MaxMaster%20Slim.pdf%203.pdf" as Route}
               variant="outline"
             >
               MaxMaster Slim catalog
