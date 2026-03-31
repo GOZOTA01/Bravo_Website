@@ -11,7 +11,7 @@ import {
 } from "@/lib/content/equipment";
 
 import imgPico from "@/pictures/pico_laser/Gemini.jpg";
-import imgMaxMaster from "@/pictures/MaxMaster Slim/IMG_7207.png";
+import imgMaxMaster from "@/pictures/MaxMaster Slim/PHOTO-2026-03-19-08-07-34.jpg";
 
 export const metadata: Metadata = {
   title: "Equipment",
