@@ -37,7 +37,10 @@ export default function PicoLaserBravoPage() {
               Provider inquiry
             </ButtonLink>
             <ButtonLink
-              href="/catalogs/PICO%20L%C3%81SER%20BRAVO.pdf"
+              href={{
+                pathname: "/catalogs/[file]",
+                query: { file: "PICO LÁSER BRAVO.pdf" },
+              }}
               variant="outline"
             >
               Pico Laser Bravo catalog

@@ -37,7 +37,10 @@ export default function MaxMasterSlimPage() {
               Ask about treatment
             </ButtonLink>
             <ButtonLink
-              href="/catalogs/MaxMaster%20Slim.pdf%203.pdf"
+              href={{
+                pathname: "/catalogs/[file]",
+                query: { file: "MaxMaster Slim.pdf 3.pdf" },
+              }}
               variant="outline"
             >
               MaxMaster Slim catalog
