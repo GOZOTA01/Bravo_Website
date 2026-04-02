@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import type { Route } from "next";
 import { SectionHeader } from "@/components/ui/SectionHeader";
@@ -6,6 +7,8 @@ import { ButtonLink } from "@/components/ui/Button";
 import { PicoLaserBravoDetail } from "@/components/equipment/PicoLaserBravoDetail";
 import { EquipmentDisclaimer } from "@/components/equipment/EquipmentDisclaimer";
 import { equipmentPaths, picoLaserBravo } from "@/lib/content/equipment";
+
+import imgPicoHero from "@/pictures/pico_laser/Gemini.jpg";
 
 export const metadata: Metadata = {
   title: "Diode & Picosecond Laser",
@@ -43,6 +46,18 @@ export default function PicoLaserBravoPage() {
             >
               Diode &amp; Picosecond Laser catalog
             </ButtonLink>
+          </div>
+          <div className="mt-8 overflow-hidden rounded-3xl border border-brand-stroke/70 bg-white/90 shadow-sm">
+            <div className="relative aspect-[4/3] w-full bg-brand-surfaceMuted/40 p-3 sm:p-4">
+              <Image
+                src={imgPicoHero}
+                alt="Diode & Picosecond Laser 2-in-1 workstation"
+                fill
+                className="object-contain object-center"
+                sizes="(max-width: 1152px) 100vw, min(1152px, 96vw)"
+                priority
+              />
+            </div>
           </div>
         </div>
       </section>

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import type { Route } from "next";
 import { SectionHeader } from "@/components/ui/SectionHeader";
@@ -6,6 +7,8 @@ import { ButtonLink } from "@/components/ui/Button";
 import { MaxMasterSlimDetail } from "@/components/equipment/MaxMasterSlimDetail";
 import { EquipmentDisclaimer } from "@/components/equipment/EquipmentDisclaimer";
 import { equipmentPaths, maxMasterSlim } from "@/lib/content/equipment";
+
+import imgMaxMasterHero from "@/pictures/MaxMaster Slim/PHOTO-2026-03-19-08-07-34.jpg";
 
 export const metadata: Metadata = {
   title: "MaxMaster Slim",
@@ -43,6 +46,18 @@ export default function MaxMasterSlimPage() {
             >
               MaxMaster Slim catalog
             </ButtonLink>
+          </div>
+          <div className="mt-8 overflow-hidden rounded-3xl border border-brand-stroke/70 bg-white/90 shadow-sm">
+            <div className="relative aspect-[4/3] w-full bg-brand-surfaceMuted/40 p-3 sm:p-4">
+              <Image
+                src={imgMaxMasterHero}
+                alt="MaxMaster Slim fat reduction system"
+                fill
+                className="object-contain object-center"
+                sizes="(max-width: 1152px) 100vw, min(1152px, 96vw)"
+                priority
+              />
+            </div>
           </div>
         </div>
       </section>
