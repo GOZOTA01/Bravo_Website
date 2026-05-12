@@ -1,6 +1,8 @@
+import { createReadStream } from "node:fs";
+import { stat } from "node:fs/promises";
+import path from "node:path";
+import { Readable } from "node:stream";
 import { NextResponse } from "next/server";
-import fs from "fs/promises";
-import path from "path";
 
 const CATALOGS_DIR = path.join(process.cwd(), "catalogs");
 
@@ -25,15 +27,19 @@ export async function GET(
   }
 
   try {
-    const data = await fs.readFile(resolvedFile);
-    return new NextResponse(data, {
-      headers: {
-        "Content-Type": "application/pdf",
-        "Content-Disposition": `inline; filename="${basename}"`,
-      },
-    });
+    await stat(resolvedFile);
   } catch {
     return new NextResponse("Not found", { status: 404 });
   }
-}
 
+  const stream = createReadStream(resolvedFile);
+  const webStream = Readable.toWeb(stream);
+
+  return new NextResponse(webStream as unknown as BodyInit, {
+    headers: {
+      "Content-Type": "application/pdf",
+      "Content-Disposition": `inline; filename="${basename}"`,
+      "Cache-Control": "public, max-age=86400, stale-while-revalidate=604800",
+    },
+  });
+}

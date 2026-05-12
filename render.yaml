@@ -11,3 +11,7 @@ services:
         value: 20
       - key: NODE_ENV
         value: production
+      # Avoids in-process Sharp resizing on `/_next/image` (major RAM saver on small plans).
+      # Remove if you upgrade instance memory and want on-the-fly optimization again.
+      - key: NEXT_DISABLE_IMAGE_OPTIMIZATION
+        value: "1"
